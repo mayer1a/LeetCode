@@ -72,7 +72,7 @@ final class UnitTests: XCTestCase {
 
         XCTAssertEqual(solution.binaryTreeLevelOrderTraversal(case1, iterative: false), case1Result)
     }
-
+    
     // MARK: - 121. Best Time to Buy and Sell Stock
 
     func testBestTimeToBuyAndSellStock() throws {
