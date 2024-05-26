@@ -100,4 +100,47 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.linkedListCycleII(case1)?.val, case1Result)
     }
 
+    // MARK: - 205. Isomorphic Strings
+
+    func testIsomorphicString() throws {
+        let case1 = ("egg", "add")
+        let case2 = ("foo", "bar")
+        let case3 = ("paper", "title")
+        let case4 = ("a", "a")
+        let case5 = ("badc", "baba")
+
+        let case1Result = true
+        let case2Result = false
+        let case3Result = true
+        let case4Result = true
+        let case5Result = false
+
+        XCTAssertEqual(solution.isomorphicString(case1.0, case1.1), case1Result)
+        XCTAssertEqual(solution.isomorphicString(case2.0, case2.1), case2Result)
+        XCTAssertEqual(solution.isomorphicString(case3.0, case3.1), case3Result)
+        XCTAssertEqual(solution.isomorphicString(case4.0, case4.1), case4Result)
+        XCTAssertEqual(solution.isomorphicString(case5.0, case5.1), case5Result)
+
+        XCTAssertEqual(solution.isomorphicString(case1.0, case1.1, alternativeSolution: true),
+                       case1Result)
+        XCTAssertEqual(solution.isomorphicString(case2.0, case2.1, alternativeSolution: true),
+                       case2Result)
+        XCTAssertEqual(solution.isomorphicString(case3.0, case3.1, alternativeSolution: true),
+                       case3Result)
+        XCTAssertEqual(solution.isomorphicString(case4.0, case4.1, alternativeSolution: true),
+                       case4Result)
+        XCTAssertEqual(solution.isomorphicString(case5.0, case5.1, alternativeSolution: true),
+                       case5Result)
+    }
+
+    // MARK: - 278. First Bad Version
+
+    func testFirstBadVersion() throws {
+        let case1 = 8
+
+        let case1Result = 5
+
+        XCTAssertEqual(solution.firstBadVersion(case1), case1Result)
+    }
+
 }

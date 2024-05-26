@@ -42,5 +42,19 @@ final class Solution {
         return solution.detectCycle(head)
     }
 
+    // MARK: - 205. Isomorphic Strings
+
+    func isomorphicString(_ s: String, _ t: String, alternativeSolution: Bool = false) -> Bool {
+        let solution = IsomorphicStrings_Solution()
+        return alternativeSolution ? solution.isIsomorphic_v2(s, t) : solution.isIsomorphic_v1(s, t)
+    }
+
+    // MARK: - 278. First Bad Version
+
+    func firstBadVersion(_ n: Int) -> Int {
+        let solution = FirstBadVersion_Solution()
+        return solution.firstBadVersion(n)
+    }
+
 }
 
