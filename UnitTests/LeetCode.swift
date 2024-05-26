@@ -73,4 +73,31 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.binaryTreeLevelOrderTraversal(case1, iterative: false), case1Result)
     }
 
+    // MARK: - 121. Best Time to Buy and Sell Stock
+
+    func testBestTimeToBuyAndSellStock() throws {
+        let case1 = [7,1,5,3,6,4]
+        let case2 = [7,6,4,3,1]
+
+        let case1Result = 5
+        let case2Result = 0
+
+        XCTAssertEqual(solution.bestTimeToBuyAndSellStock(case1), case1Result)
+        XCTAssertEqual(solution.bestTimeToBuyAndSellStock(case2), case2Result)
+    }
+
+    // MARK: - 142. Linked List Cycle II
+
+    func testLinkedListCycleII() throws {
+        let nnCycle = ListNode(5)
+        let nCycle = ListNode(4, nnCycle)
+        let sCycle = ListNode(3, nCycle)
+        nnCycle.next = sCycle
+        let case1: ListNode? = ListNode(1, ListNode(2, sCycle))
+
+        let case1Result = 3
+
+        XCTAssertEqual(solution.linkedListCycleII(case1)?.val, case1Result)
+    }
+
 }
