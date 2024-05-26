@@ -56,5 +56,19 @@ final class Solution {
         return solution.firstBadVersion(n)
     }
 
+    // MARK: - 409. Longest Palindrome
+
+    func longestPalindrome(_ s: String) -> Int {
+        let solution = LongestPalindrome_Solution()
+        return solution.longestPalindrome(s)
+    }
+
+    // MARK: - 589. N-ary Tree Preorder Traversal
+
+    func treePreorderTraversal(_ root: Node?, iterative: Bool = true) -> [Int] {
+        let solution = NAryTreePreorderTraversal_Solution()
+        return iterative ? solution.preorder_iteratively(root) : solution.preorder_recursive(root)
+    }
+
 }
 
