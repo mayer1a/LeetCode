@@ -1,0 +1,1021 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		494A7B5628B91461008CDBFE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B5528B91461008CDBFE /* main.swift */; };
+		494A7B6428B91557008CDBFE /* LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B6328B91557008CDBFE /* LeetCode.swift */; };
+		494A7B6C28B919C9008CDBFE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B5528B91461008CDBFE /* main.swift */; };
+		495D40492BFC94DC00ECFC81 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
+		495D404B2BFC95E400ECFC81 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404A2BFC95E400ECFC81 /* ListNode.swift */; };
+		495D404D2BFC960B00ECFC81 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
+		495D404F2BFC965F00ECFC81 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404E2BFC965F00ECFC81 /* Node.swift */; };
+		495D40532BFC969F00ECFC81 /* FirstBadVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40522BFC969F00ECFC81 /* FirstBadVersion.swift */; };
+		495D40562BFC970200ECFC81 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40552BFC970200ECFC81 /* BinarySearch.swift */; };
+		495D40592BFC977100ECFC81 /* LargestTimeForGivenDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40582BFC977100ECFC81 /* LargestTimeForGivenDigits.swift */; };
+		495D405C2BFC97AF00ECFC81 /* BinaryTreeLevelOrderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D405B2BFC97AF00ECFC81 /* BinaryTreeLevelOrderTraversal.swift */; };
+		495D405F2BFC986700ECFC81 /* NAryTreePreorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D405E2BFC986700ECFC81 /* NAryTreePreorderTraversal.swift */; };
+		495D40622BFC98B900ECFC81 /* LongestPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40612BFC98B900ECFC81 /* LongestPalindrome.swift */; };
+		495D40652BFC992500ECFC81 /* BestTimeToBuyAndSellStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40642BFC992500ECFC81 /* BestTimeToBuyAndSellStock.swift */; };
+		495D40682BFC995D00ECFC81 /* LinkedListCycleII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40672BFC995D00ECFC81 /* LinkedListCycleII.swift */; };
+		495D406B2BFC999400ECFC81 /* MiddleOfTheLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D406A2BFC999400ECFC81 /* MiddleOfTheLinkedList.swift */; };
+		495D40712BFC9A2600ECFC81 /* MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40702BFC9A2600ECFC81 /* MergeTwoSortedLists.swift */; };
+		495D40772BFC9ADE00ECFC81 /* IsomorphicStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40762BFC9ADE00ECFC81 /* IsomorphicStrings.swift */; };
+		495D407D2BFC9B8A00ECFC81 /* RunningSumOf1dArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D407C2BFC9B8A00ECFC81 /* RunningSumOf1dArray.swift */; };
+		495D40EE2BFCBB7000ECFC81 /* MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40702BFC9A2600ECFC81 /* MergeTwoSortedLists.swift */; };
+		495D40EF2BFCBB7400ECFC81 /* BinaryTreeLevelOrderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D405B2BFC97AF00ECFC81 /* BinaryTreeLevelOrderTraversal.swift */; };
+		495D40F02BFCBB7900ECFC81 /* BestTimeToBuyAndSellStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40642BFC992500ECFC81 /* BestTimeToBuyAndSellStock.swift */; };
+		495D40F12BFCBB8200ECFC81 /* LinkedListCycleII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40672BFC995D00ECFC81 /* LinkedListCycleII.swift */; };
+		495D40F22BFCBB8500ECFC81 /* IsomorphicStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40762BFC9ADE00ECFC81 /* IsomorphicStrings.swift */; };
+		495D40F42BFCBB8C00ECFC81 /* FirstBadVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40522BFC969F00ECFC81 /* FirstBadVersion.swift */; };
+		495D40F62BFCBBA500ECFC81 /* LongestPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40612BFC98B900ECFC81 /* LongestPalindrome.swift */; };
+		495D40F72BFCBBA800ECFC81 /* NAryTreePreorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D405E2BFC986700ECFC81 /* NAryTreePreorderTraversal.swift */; };
+		495D40F82BFCBBAB00ECFC81 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40552BFC970200ECFC81 /* BinarySearch.swift */; };
+		495D40FA2BFCBBB200ECFC81 /* MiddleOfTheLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D406A2BFC999400ECFC81 /* MiddleOfTheLinkedList.swift */; };
+		495D40FB2BFCBBB600ECFC81 /* LargestTimeForGivenDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40582BFC977100ECFC81 /* LargestTimeForGivenDigits.swift */; };
+		495D40FC2BFCBBB900ECFC81 /* RunningSumOf1dArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D407C2BFC9B8A00ECFC81 /* RunningSumOf1dArray.swift */; };
+		495D40FD2BFCBBBE00ECFC81 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404E2BFC965F00ECFC81 /* Node.swift */; };
+		495D40FE2BFCBBBE00ECFC81 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
+		495D40FF2BFCBBBE00ECFC81 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
+		495D41002BFCBBBE00ECFC81 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404A2BFC95E400ECFC81 /* ListNode.swift */; };
+		499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
+		499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
+		499763182BFF8181009D6EF5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404E2BFC965F00ECFC81 /* Node.swift */; };
+		499763192BFF8181009D6EF5 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404A2BFC95E400ECFC81 /* ListNode.swift */; };
+		4997631A2BFF8181009D6EF5 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
+		4997631B2BFF8181009D6EF5 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
+		4997631C2BFF8181009D6EF5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404E2BFC965F00ECFC81 /* Node.swift */; };
+		4997631D2BFF8181009D6EF5 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404A2BFC95E400ECFC81 /* ListNode.swift */; };
+		4997631E2BFF8590009D6EF5 /* ReverseLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D406D2BFC99D300ECFC81 /* ReverseLinkedList.swift */; };
+		4997631F2BFF8591009D6EF5 /* ReverseLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D406D2BFC99D300ECFC81 /* ReverseLinkedList.swift */; };
+		499763202BFF8597009D6EF5 /* MoveZeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499762D82BFF5D19009D6EF5 /* MoveZeroes.swift */; };
+		499763212BFF8597009D6EF5 /* MoveZeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499762D82BFF5D19009D6EF5 /* MoveZeroes.swift */; };
+		499763222BFF859B009D6EF5 /* ReverseVowelsOfString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AF933F2BFE1C2D0037C895 /* ReverseVowelsOfString.swift */; };
+		499763232BFF859C009D6EF5 /* ReverseVowelsOfString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AF933F2BFE1C2D0037C895 /* ReverseVowelsOfString.swift */; };
+		499763242BFF85A0009D6EF5 /* IsSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40732BFC9AA000ECFC81 /* IsSubsequence.swift */; };
+		499763252BFF85A1009D6EF5 /* IsSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40732BFC9AA000ECFC81 /* IsSubsequence.swift */; };
+		499763262BFF85A5009D6EF5 /* CanPlaceFlowers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AF933B2BFE0C0E0037C895 /* CanPlaceFlowers.swift */; };
+		499763272BFF85A6009D6EF5 /* CanPlaceFlowers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AF933B2BFE0C0E0037C895 /* CanPlaceFlowers.swift */; };
+		499763282BFF85AA009D6EF5 /* MaximumAverageSubarrayI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499762DC2BFF6AC0009D6EF5 /* MaximumAverageSubarrayI.swift */; };
+		499763292BFF85AA009D6EF5 /* MaximumAverageSubarrayI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499762DC2BFF6AC0009D6EF5 /* MaximumAverageSubarrayI.swift */; };
+		4997632A2BFF85AE009D6EF5 /* FindPivotIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40792BFC9B6000ECFC81 /* FindPivotIndex.swift */; };
+		4997632B2BFF85AF009D6EF5 /* FindPivotIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40792BFC9B6000ECFC81 /* FindPivotIndex.swift */; };
+		4997632C2BFF85C9009D6EF5 /* GreatestCommonDivisorOfStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D41022BFCF0D700ECFC81 /* GreatestCommonDivisorOfStrings.swift */; };
+		4997632D2BFF85CA009D6EF5 /* GreatestCommonDivisorOfStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D41022BFCF0D700ECFC81 /* GreatestCommonDivisorOfStrings.swift */; };
+		4997632E2BFF85CE009D6EF5 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AF93372BFE04E60037C895 /* KidsWithTheGreatestNumberOfCandies.swift */; };
+		4997632F2BFF85CE009D6EF5 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AF93372BFE04E60037C895 /* KidsWithTheGreatestNumberOfCandies.swift */; };
+		499763302BFF85D4009D6EF5 /* MergeStringsAlternately.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499762E22BFF7DCB009D6EF5 /* MergeStringsAlternately.swift */; };
+		499763312BFF85D4009D6EF5 /* MergeStringsAlternately.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499762E22BFF7DCB009D6EF5 /* MergeStringsAlternately.swift */; };
+		499763322BFF85D7009D6EF5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499762EB2BFF8031009D6EF5 /* main.swift */; };
+		499763332BFF85D8009D6EF5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499762EB2BFF8031009D6EF5 /* main.swift */; };
+		499763372BFF88A7009D6EF5 /* LeetCode75.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499763112BFF811C009D6EF5 /* LeetCode75.swift */; };
+		49E8F4CB2C0354130036243E /* UniqueNumberOfOccurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E8F4CA2C0354130036243E /* UniqueNumberOfOccurrences.swift */; };
+		49E8F4CC2C0354130036243E /* UniqueNumberOfOccurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E8F4CA2C0354130036243E /* UniqueNumberOfOccurrences.swift */; };
+		49F57A672C007D2000F8E675 /* FindTheHighestAltitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F57A662C007D2000F8E675 /* FindTheHighestAltitude.swift */; };
+		49F57A682C007D2000F8E675 /* FindTheHighestAltitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F57A662C007D2000F8E675 /* FindTheHighestAltitude.swift */; };
+		49F57A6B2C008CA000F8E675 /* FindTheDifferenceOfTwoArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F57A6A2C008CA000F8E675 /* FindTheDifferenceOfTwoArrays.swift */; };
+		49F57A6C2C008CA000F8E675 /* FindTheDifferenceOfTwoArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F57A6A2C008CA000F8E675 /* FindTheDifferenceOfTwoArrays.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		494A7B5028B91461008CDBFE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		499762E72BFF8031009D6EF5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		494A7B5228B91461008CDBFE /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
+		494A7B5528B91461008CDBFE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		494A7B6128B91557008CDBFE /* LeetCode_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		494A7B6328B91557008CDBFE /* LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode.swift; sourceTree = "<group>"; };
+		495D40482BFC94DC00ECFC81 /* BenchTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchTimer.swift; sourceTree = "<group>"; };
+		495D404A2BFC95E400ECFC81 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
+		495D404C2BFC960B00ECFC81 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		495D404E2BFC965F00ECFC81 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		495D40522BFC969F00ECFC81 /* FirstBadVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBadVersion.swift; sourceTree = "<group>"; };
+		495D40552BFC970200ECFC81 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		495D40582BFC977100ECFC81 /* LargestTimeForGivenDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargestTimeForGivenDigits.swift; sourceTree = "<group>"; };
+		495D405B2BFC97AF00ECFC81 /* BinaryTreeLevelOrderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeLevelOrderTraversal.swift; sourceTree = "<group>"; };
+		495D405E2BFC986700ECFC81 /* NAryTreePreorderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAryTreePreorderTraversal.swift; sourceTree = "<group>"; };
+		495D40612BFC98B900ECFC81 /* LongestPalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindrome.swift; sourceTree = "<group>"; };
+		495D40642BFC992500ECFC81 /* BestTimeToBuyAndSellStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestTimeToBuyAndSellStock.swift; sourceTree = "<group>"; };
+		495D40672BFC995D00ECFC81 /* LinkedListCycleII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListCycleII.swift; sourceTree = "<group>"; };
+		495D406A2BFC999400ECFC81 /* MiddleOfTheLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleOfTheLinkedList.swift; sourceTree = "<group>"; };
+		495D406D2BFC99D300ECFC81 /* ReverseLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseLinkedList.swift; sourceTree = "<group>"; };
+		495D40702BFC9A2600ECFC81 /* MergeTwoSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTwoSortedLists.swift; sourceTree = "<group>"; };
+		495D40732BFC9AA000ECFC81 /* IsSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsSubsequence.swift; sourceTree = "<group>"; };
+		495D40762BFC9ADE00ECFC81 /* IsomorphicStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsomorphicStrings.swift; sourceTree = "<group>"; };
+		495D40792BFC9B6000ECFC81 /* FindPivotIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPivotIndex.swift; sourceTree = "<group>"; };
+		495D407C2BFC9B8A00ECFC81 /* RunningSumOf1dArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningSumOf1dArray.swift; sourceTree = "<group>"; };
+		495D41022BFCF0D700ECFC81 /* GreatestCommonDivisorOfStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatestCommonDivisorOfStrings.swift; sourceTree = "<group>"; };
+		499762D82BFF5D19009D6EF5 /* MoveZeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveZeroes.swift; sourceTree = "<group>"; };
+		499762DC2BFF6AC0009D6EF5 /* MaximumAverageSubarrayI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumAverageSubarrayI.swift; sourceTree = "<group>"; };
+		499762E22BFF7DCB009D6EF5 /* MergeStringsAlternately.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeStringsAlternately.swift; sourceTree = "<group>"; };
+		499762E92BFF8031009D6EF5 /* LeetCode75 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode75; sourceTree = BUILT_PRODUCTS_DIR; };
+		499762EB2BFF8031009D6EF5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		499762F42BFF809E009D6EF5 /* LeetCode75_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode75_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		499763112BFF811C009D6EF5 /* LeetCode75.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode75.swift; sourceTree = "<group>"; };
+		49AF93372BFE04E60037C895 /* KidsWithTheGreatestNumberOfCandies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsWithTheGreatestNumberOfCandies.swift; sourceTree = "<group>"; };
+		49AF933B2BFE0C0E0037C895 /* CanPlaceFlowers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanPlaceFlowers.swift; sourceTree = "<group>"; };
+		49AF933F2BFE1C2D0037C895 /* ReverseVowelsOfString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseVowelsOfString.swift; sourceTree = "<group>"; };
+		49E8F4CA2C0354130036243E /* UniqueNumberOfOccurrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueNumberOfOccurrences.swift; sourceTree = "<group>"; };
+		49F57A662C007D2000F8E675 /* FindTheHighestAltitude.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheHighestAltitude.swift; sourceTree = "<group>"; };
+		49F57A6A2C008CA000F8E675 /* FindTheDifferenceOfTwoArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheDifferenceOfTwoArrays.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		494A7B4F28B91461008CDBFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494A7B5E28B91557008CDBFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499762E62BFF8031009D6EF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499762F12BFF809E009D6EF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		491085842BFF893D006F73CC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				495D40502BFC967300ECFC81 /* Helpers */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		494A7B4928B91461008CDBFE = {
+			isa = PBXGroup;
+			children = (
+				491085842BFF893D006F73CC /* Shared */,
+				494A7B5428B91461008CDBFE /* LeetCode */,
+				499762EA2BFF8031009D6EF5 /* LeetCode75 */,
+				494A7B5328B91461008CDBFE /* Products */,
+				494A7B6228B91557008CDBFE /* UnitTests */,
+			);
+			sourceTree = "<group>";
+		};
+		494A7B5328B91461008CDBFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				494A7B5228B91461008CDBFE /* LeetCode */,
+				494A7B6128B91557008CDBFE /* LeetCode_UnitTests.xctest */,
+				499762E92BFF8031009D6EF5 /* LeetCode75 */,
+				499762F42BFF809E009D6EF5 /* LeetCode75_UnitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		494A7B5428B91461008CDBFE /* LeetCode */ = {
+			isa = PBXGroup;
+			children = (
+				495D406F2BFC9A1B00ECFC81 /* 21. Merge Two Sorted Lists */,
+				495D405A2BFC979B00ECFC81 /* 102. Binary Tree Level Order Traversal */,
+				495D40632BFC991600ECFC81 /* 121. Best Time to Buy and Sell Stock */,
+				495D40662BFC994E00ECFC81 /* 142. Linked List Cycle II */,
+				495D40752BFC9AD700ECFC81 /* 205. Isomorphic Strings */,
+				495D40512BFC967A00ECFC81 /* 278. First Bad Version */,
+				495D40602BFC98A500ECFC81 /* 409. Longest Palindrome */,
+				495D405D2BFC985E00ECFC81 /* 589. N-ary Tree Preorder Traversal */,
+				495D40542BFC96F800ECFC81 /* 704. Binary Search */,
+				495D40692BFC998700ECFC81 /* 876. Middle of the Linked List */,
+				495D40572BFC976000ECFC81 /* 949. Largest Time for Given Digits */,
+				495D407B2BFC9B7D00ECFC81 /* 1480. Running Sum of 1d Array */,
+				494A7B5528B91461008CDBFE /* main.swift */,
+			);
+			path = LeetCode;
+			sourceTree = "<group>";
+		};
+		494A7B6228B91557008CDBFE /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				494A7B6328B91557008CDBFE /* LeetCode.swift */,
+				499763112BFF811C009D6EF5 /* LeetCode75.swift */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		495D40502BFC967300ECFC81 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				495D40482BFC94DC00ECFC81 /* BenchTimer.swift */,
+				495D404E2BFC965F00ECFC81 /* Node.swift */,
+				495D404A2BFC95E400ECFC81 /* ListNode.swift */,
+				495D404C2BFC960B00ECFC81 /* TreeNode.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		495D40512BFC967A00ECFC81 /* 278. First Bad Version */ = {
+			isa = PBXGroup;
+			children = (
+				495D40522BFC969F00ECFC81 /* FirstBadVersion.swift */,
+			);
+			path = "278. First Bad Version";
+			sourceTree = "<group>";
+		};
+		495D40542BFC96F800ECFC81 /* 704. Binary Search */ = {
+			isa = PBXGroup;
+			children = (
+				495D40552BFC970200ECFC81 /* BinarySearch.swift */,
+			);
+			path = "704. Binary Search";
+			sourceTree = "<group>";
+		};
+		495D40572BFC976000ECFC81 /* 949. Largest Time for Given Digits */ = {
+			isa = PBXGroup;
+			children = (
+				495D40582BFC977100ECFC81 /* LargestTimeForGivenDigits.swift */,
+			);
+			path = "949. Largest Time for Given Digits";
+			sourceTree = "<group>";
+		};
+		495D405A2BFC979B00ECFC81 /* 102. Binary Tree Level Order Traversal */ = {
+			isa = PBXGroup;
+			children = (
+				495D405B2BFC97AF00ECFC81 /* BinaryTreeLevelOrderTraversal.swift */,
+			);
+			path = "102. Binary Tree Level Order Traversal";
+			sourceTree = "<group>";
+		};
+		495D405D2BFC985E00ECFC81 /* 589. N-ary Tree Preorder Traversal */ = {
+			isa = PBXGroup;
+			children = (
+				495D405E2BFC986700ECFC81 /* NAryTreePreorderTraversal.swift */,
+			);
+			path = "589. N-ary Tree Preorder Traversal";
+			sourceTree = "<group>";
+		};
+		495D40602BFC98A500ECFC81 /* 409. Longest Palindrome */ = {
+			isa = PBXGroup;
+			children = (
+				495D40612BFC98B900ECFC81 /* LongestPalindrome.swift */,
+			);
+			path = "409. Longest Palindrome";
+			sourceTree = "<group>";
+		};
+		495D40632BFC991600ECFC81 /* 121. Best Time to Buy and Sell Stock */ = {
+			isa = PBXGroup;
+			children = (
+				495D40642BFC992500ECFC81 /* BestTimeToBuyAndSellStock.swift */,
+			);
+			path = "121. Best Time to Buy and Sell Stock";
+			sourceTree = "<group>";
+		};
+		495D40662BFC994E00ECFC81 /* 142. Linked List Cycle II */ = {
+			isa = PBXGroup;
+			children = (
+				495D40672BFC995D00ECFC81 /* LinkedListCycleII.swift */,
+			);
+			path = "142. Linked List Cycle II";
+			sourceTree = "<group>";
+		};
+		495D40692BFC998700ECFC81 /* 876. Middle of the Linked List */ = {
+			isa = PBXGroup;
+			children = (
+				495D406A2BFC999400ECFC81 /* MiddleOfTheLinkedList.swift */,
+			);
+			path = "876. Middle of the Linked List";
+			sourceTree = "<group>";
+		};
+		495D406C2BFC99C600ECFC81 /* 206. Reverse Linked List */ = {
+			isa = PBXGroup;
+			children = (
+				495D406D2BFC99D300ECFC81 /* ReverseLinkedList.swift */,
+			);
+			path = "206. Reverse Linked List";
+			sourceTree = "<group>";
+		};
+		495D406F2BFC9A1B00ECFC81 /* 21. Merge Two Sorted Lists */ = {
+			isa = PBXGroup;
+			children = (
+				495D40702BFC9A2600ECFC81 /* MergeTwoSortedLists.swift */,
+			);
+			path = "21. Merge Two Sorted Lists";
+			sourceTree = "<group>";
+		};
+		495D40722BFC9A9700ECFC81 /* 392. Is Subsequence */ = {
+			isa = PBXGroup;
+			children = (
+				495D40732BFC9AA000ECFC81 /* IsSubsequence.swift */,
+			);
+			path = "392. Is Subsequence";
+			sourceTree = "<group>";
+		};
+		495D40752BFC9AD700ECFC81 /* 205. Isomorphic Strings */ = {
+			isa = PBXGroup;
+			children = (
+				495D40762BFC9ADE00ECFC81 /* IsomorphicStrings.swift */,
+			);
+			path = "205. Isomorphic Strings";
+			sourceTree = "<group>";
+		};
+		495D40782BFC9B4700ECFC81 /* 724. Find Pivot Index */ = {
+			isa = PBXGroup;
+			children = (
+				495D40792BFC9B6000ECFC81 /* FindPivotIndex.swift */,
+			);
+			path = "724. Find Pivot Index";
+			sourceTree = "<group>";
+		};
+		495D407B2BFC9B7D00ECFC81 /* 1480. Running Sum of 1d Array */ = {
+			isa = PBXGroup;
+			children = (
+				495D407C2BFC9B8A00ECFC81 /* RunningSumOf1dArray.swift */,
+			);
+			path = "1480. Running Sum of 1d Array";
+			sourceTree = "<group>";
+		};
+		495D41012BFCF0BE00ECFC81 /* 1071. Greatest Common Divisor of Strings */ = {
+			isa = PBXGroup;
+			children = (
+				495D41022BFCF0D700ECFC81 /* GreatestCommonDivisorOfStrings.swift */,
+			);
+			path = "1071. Greatest Common Divisor of Strings";
+			sourceTree = "<group>";
+		};
+		499762D72BFF5D07009D6EF5 /* 283. Move Zeroes */ = {
+			isa = PBXGroup;
+			children = (
+				499762D82BFF5D19009D6EF5 /* MoveZeroes.swift */,
+			);
+			path = "283. Move Zeroes";
+			sourceTree = "<group>";
+		};
+		499762DB2BFF6AAD009D6EF5 /* 643. Maximum Average Subarray I */ = {
+			isa = PBXGroup;
+			children = (
+				499762DC2BFF6AC0009D6EF5 /* MaximumAverageSubarrayI.swift */,
+			);
+			path = "643. Maximum Average Subarray I";
+			sourceTree = "<group>";
+		};
+		499762E12BFF7DC1009D6EF5 /* 1768. Merge Strings Alternately */ = {
+			isa = PBXGroup;
+			children = (
+				499762E22BFF7DCB009D6EF5 /* MergeStringsAlternately.swift */,
+			);
+			path = "1768. Merge Strings Alternately";
+			sourceTree = "<group>";
+		};
+		499762EA2BFF8031009D6EF5 /* LeetCode75 */ = {
+			isa = PBXGroup;
+			children = (
+				495D406C2BFC99C600ECFC81 /* 206. Reverse Linked List */,
+				499762D72BFF5D07009D6EF5 /* 283. Move Zeroes */,
+				49AF933E2BFE1C1A0037C895 /* 345. Reverse Vowels of a String */,
+				495D40722BFC9A9700ECFC81 /* 392. Is Subsequence */,
+				49AF933A2BFE0BFF0037C895 /* 605. Can Place Flowers */,
+				499762DB2BFF6AAD009D6EF5 /* 643. Maximum Average Subarray I */,
+				495D40782BFC9B4700ECFC81 /* 724. Find Pivot Index */,
+				495D41012BFCF0BE00ECFC81 /* 1071. Greatest Common Divisor of Strings */,
+				49E8F4C92C0354020036243E /* 1207. Unique Number of Occurrences */,
+				49AF93362BFE04D00037C895 /* 1431. Kids With the Greatest Number of Candies */,
+				49F57A652C007D0E00F8E675 /* 1732. Find the Highest Altitude */,
+				499762E12BFF7DC1009D6EF5 /* 1768. Merge Strings Alternately */,
+				49F57A692C008C8C00F8E675 /* 2215. Find the Difference of Two Arrays */,
+				499762EB2BFF8031009D6EF5 /* main.swift */,
+			);
+			path = LeetCode75;
+			sourceTree = "<group>";
+		};
+		49AF93362BFE04D00037C895 /* 1431. Kids With the Greatest Number of Candies */ = {
+			isa = PBXGroup;
+			children = (
+				49AF93372BFE04E60037C895 /* KidsWithTheGreatestNumberOfCandies.swift */,
+			);
+			path = "1431. Kids With the Greatest Number of Candies";
+			sourceTree = "<group>";
+		};
+		49AF933A2BFE0BFF0037C895 /* 605. Can Place Flowers */ = {
+			isa = PBXGroup;
+			children = (
+				49AF933B2BFE0C0E0037C895 /* CanPlaceFlowers.swift */,
+			);
+			path = "605. Can Place Flowers";
+			sourceTree = "<group>";
+		};
+		49AF933E2BFE1C1A0037C895 /* 345. Reverse Vowels of a String */ = {
+			isa = PBXGroup;
+			children = (
+				49AF933F2BFE1C2D0037C895 /* ReverseVowelsOfString.swift */,
+			);
+			path = "345. Reverse Vowels of a String";
+			sourceTree = "<group>";
+		};
+		49E8F4C92C0354020036243E /* 1207. Unique Number of Occurrences */ = {
+			isa = PBXGroup;
+			children = (
+				49E8F4CA2C0354130036243E /* UniqueNumberOfOccurrences.swift */,
+			);
+			path = "1207. Unique Number of Occurrences";
+			sourceTree = "<group>";
+		};
+		49F57A652C007D0E00F8E675 /* 1732. Find the Highest Altitude */ = {
+			isa = PBXGroup;
+			children = (
+				49F57A662C007D2000F8E675 /* FindTheHighestAltitude.swift */,
+			);
+			path = "1732. Find the Highest Altitude";
+			sourceTree = "<group>";
+		};
+		49F57A692C008C8C00F8E675 /* 2215. Find the Difference of Two Arrays */ = {
+			isa = PBXGroup;
+			children = (
+				49F57A6A2C008CA000F8E675 /* FindTheDifferenceOfTwoArrays.swift */,
+			);
+			path = "2215. Find the Difference of Two Arrays";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		494A7B5128B91461008CDBFE /* LeetCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 494A7B5928B91461008CDBFE /* Build configuration list for PBXNativeTarget "LeetCode" */;
+			buildPhases = (
+				494A7B4E28B91461008CDBFE /* Sources */,
+				494A7B4F28B91461008CDBFE /* Frameworks */,
+				494A7B5028B91461008CDBFE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeetCode;
+			productName = LeetCode;
+			productReference = 494A7B5228B91461008CDBFE /* LeetCode */;
+			productType = "com.apple.product-type.tool";
+		};
+		494A7B6028B91557008CDBFE /* LeetCode_UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 494A7B6528B91557008CDBFE /* Build configuration list for PBXNativeTarget "LeetCode_UnitTests" */;
+			buildPhases = (
+				494A7B5D28B91557008CDBFE /* Sources */,
+				494A7B5E28B91557008CDBFE /* Frameworks */,
+				494A7B5F28B91557008CDBFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeetCode_UnitTests;
+			productName = Tests;
+			productReference = 494A7B6128B91557008CDBFE /* LeetCode_UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		499762E82BFF8031009D6EF5 /* LeetCode75 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 499762ED2BFF8031009D6EF5 /* Build configuration list for PBXNativeTarget "LeetCode75" */;
+			buildPhases = (
+				499762E52BFF8031009D6EF5 /* Sources */,
+				499762E62BFF8031009D6EF5 /* Frameworks */,
+				499762E72BFF8031009D6EF5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeetCode75;
+			productName = LeetCode75;
+			productReference = 499762E92BFF8031009D6EF5 /* LeetCode75 */;
+			productType = "com.apple.product-type.tool";
+		};
+		499762F32BFF809E009D6EF5 /* LeetCode75_UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 499762F82BFF809E009D6EF5 /* Build configuration list for PBXNativeTarget "LeetCode75_UnitTests" */;
+			buildPhases = (
+				499762F02BFF809E009D6EF5 /* Sources */,
+				499762F12BFF809E009D6EF5 /* Frameworks */,
+				499762F22BFF809E009D6EF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeetCode75_UnitTests;
+			productName = LeetCode75_UnitTests;
+			productReference = 499762F42BFF809E009D6EF5 /* LeetCode75_UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		494A7B4A28B91461008CDBFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					494A7B5128B91461008CDBFE = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					494A7B6028B91557008CDBFE = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					499762E82BFF8031009D6EF5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					499762F32BFF809E009D6EF5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 494A7B4D28B91461008CDBFE /* Build configuration list for PBXProject "LeetCode" */;
+			compatibilityVersion = "Xcode 15.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 494A7B4928B91461008CDBFE;
+			productRefGroup = 494A7B5328B91461008CDBFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				494A7B5128B91461008CDBFE /* LeetCode */,
+				494A7B6028B91557008CDBFE /* LeetCode_UnitTests */,
+				499762E82BFF8031009D6EF5 /* LeetCode75 */,
+				499762F32BFF809E009D6EF5 /* LeetCode75_UnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		494A7B5F28B91557008CDBFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499762F22BFF809E009D6EF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		494A7B4E28B91461008CDBFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495D40492BFC94DC00ECFC81 /* BenchTimer.swift in Sources */,
+				495D40652BFC992500ECFC81 /* BestTimeToBuyAndSellStock.swift in Sources */,
+				495D40772BFC9ADE00ECFC81 /* IsomorphicStrings.swift in Sources */,
+				495D404F2BFC965F00ECFC81 /* Node.swift in Sources */,
+				494A7B5628B91461008CDBFE /* main.swift in Sources */,
+				495D40532BFC969F00ECFC81 /* FirstBadVersion.swift in Sources */,
+				495D405C2BFC97AF00ECFC81 /* BinaryTreeLevelOrderTraversal.swift in Sources */,
+				495D40562BFC970200ECFC81 /* BinarySearch.swift in Sources */,
+				495D404B2BFC95E400ECFC81 /* ListNode.swift in Sources */,
+				495D406B2BFC999400ECFC81 /* MiddleOfTheLinkedList.swift in Sources */,
+				495D404D2BFC960B00ECFC81 /* TreeNode.swift in Sources */,
+				495D40622BFC98B900ECFC81 /* LongestPalindrome.swift in Sources */,
+				495D407D2BFC9B8A00ECFC81 /* RunningSumOf1dArray.swift in Sources */,
+				495D405F2BFC986700ECFC81 /* NAryTreePreorderTraversal.swift in Sources */,
+				495D40682BFC995D00ECFC81 /* LinkedListCycleII.swift in Sources */,
+				495D40712BFC9A2600ECFC81 /* MergeTwoSortedLists.swift in Sources */,
+				495D40592BFC977100ECFC81 /* LargestTimeForGivenDigits.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494A7B5D28B91557008CDBFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495D40FC2BFCBBB900ECFC81 /* RunningSumOf1dArray.swift in Sources */,
+				494A7B6C28B919C9008CDBFE /* main.swift in Sources */,
+				495D40F82BFCBBAB00ECFC81 /* BinarySearch.swift in Sources */,
+				495D40F12BFCBB8200ECFC81 /* LinkedListCycleII.swift in Sources */,
+				495D40F02BFCBB7900ECFC81 /* BestTimeToBuyAndSellStock.swift in Sources */,
+				495D40EE2BFCBB7000ECFC81 /* MergeTwoSortedLists.swift in Sources */,
+				494A7B6428B91557008CDBFE /* LeetCode.swift in Sources */,
+				495D40F42BFCBB8C00ECFC81 /* FirstBadVersion.swift in Sources */,
+				495D40F62BFCBBA500ECFC81 /* LongestPalindrome.swift in Sources */,
+				495D40FA2BFCBBB200ECFC81 /* MiddleOfTheLinkedList.swift in Sources */,
+				495D40EF2BFCBB7400ECFC81 /* BinaryTreeLevelOrderTraversal.swift in Sources */,
+				495D40FD2BFCBBBE00ECFC81 /* Node.swift in Sources */,
+				495D40FE2BFCBBBE00ECFC81 /* BenchTimer.swift in Sources */,
+				495D40FF2BFCBBBE00ECFC81 /* TreeNode.swift in Sources */,
+				495D41002BFCBBBE00ECFC81 /* ListNode.swift in Sources */,
+				495D40F22BFCBB8500ECFC81 /* IsomorphicStrings.swift in Sources */,
+				495D40F72BFCBBA800ECFC81 /* NAryTreePreorderTraversal.swift in Sources */,
+				495D40FB2BFCBBB600ECFC81 /* LargestTimeForGivenDigits.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499762E52BFF8031009D6EF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4997631F2BFF8591009D6EF5 /* ReverseLinkedList.swift in Sources */,
+				49F57A672C007D2000F8E675 /* FindTheHighestAltitude.swift in Sources */,
+				499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */,
+				499763282BFF85AA009D6EF5 /* MaximumAverageSubarrayI.swift in Sources */,
+				499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */,
+				49F57A6B2C008CA000F8E675 /* FindTheDifferenceOfTwoArrays.swift in Sources */,
+				499763182BFF8181009D6EF5 /* Node.swift in Sources */,
+				4997632C2BFF85C9009D6EF5 /* GreatestCommonDivisorOfStrings.swift in Sources */,
+				499763302BFF85D4009D6EF5 /* MergeStringsAlternately.swift in Sources */,
+				499763192BFF8181009D6EF5 /* ListNode.swift in Sources */,
+				499763262BFF85A5009D6EF5 /* CanPlaceFlowers.swift in Sources */,
+				499763212BFF8597009D6EF5 /* MoveZeroes.swift in Sources */,
+				499763322BFF85D7009D6EF5 /* main.swift in Sources */,
+				49E8F4CB2C0354130036243E /* UniqueNumberOfOccurrences.swift in Sources */,
+				4997632A2BFF85AE009D6EF5 /* FindPivotIndex.swift in Sources */,
+				499763252BFF85A1009D6EF5 /* IsSubsequence.swift in Sources */,
+				499763232BFF859C009D6EF5 /* ReverseVowelsOfString.swift in Sources */,
+				4997632E2BFF85CE009D6EF5 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499762F02BFF809E009D6EF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4997631E2BFF8590009D6EF5 /* ReverseLinkedList.swift in Sources */,
+				49F57A6C2C008CA000F8E675 /* FindTheDifferenceOfTwoArrays.swift in Sources */,
+				4997631A2BFF8181009D6EF5 /* BenchTimer.swift in Sources */,
+				499763292BFF85AA009D6EF5 /* MaximumAverageSubarrayI.swift in Sources */,
+				4997631B2BFF8181009D6EF5 /* TreeNode.swift in Sources */,
+				4997631C2BFF8181009D6EF5 /* Node.swift in Sources */,
+				4997632D2BFF85CA009D6EF5 /* GreatestCommonDivisorOfStrings.swift in Sources */,
+				499763312BFF85D4009D6EF5 /* MergeStringsAlternately.swift in Sources */,
+				4997631D2BFF8181009D6EF5 /* ListNode.swift in Sources */,
+				49E8F4CC2C0354130036243E /* UniqueNumberOfOccurrences.swift in Sources */,
+				499763272BFF85A6009D6EF5 /* CanPlaceFlowers.swift in Sources */,
+				499763202BFF8597009D6EF5 /* MoveZeroes.swift in Sources */,
+				499763332BFF85D8009D6EF5 /* main.swift in Sources */,
+				4997632B2BFF85AF009D6EF5 /* FindPivotIndex.swift in Sources */,
+				49F57A682C007D2000F8E675 /* FindTheHighestAltitude.swift in Sources */,
+				499763372BFF88A7009D6EF5 /* LeetCode75.swift in Sources */,
+				499763242BFF85A0009D6EF5 /* IsSubsequence.swift in Sources */,
+				499763222BFF859B009D6EF5 /* ReverseVowelsOfString.swift in Sources */,
+				4997632F2BFF85CE009D6EF5 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		494A7B5728B91461008CDBFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(EMBEDDED_CONTENT_CONTAINS_SWIFT)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		494A7B5828B91461008CDBFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(EMBEDDED_CONTENT_CONTAINS_SWIFT)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		494A7B5A28B91461008CDBFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "Shared/Helpers/BenchTimer.swift Shared/Helpers/Node.swift Shared/Helpers/TreeNode.swift Shared/Helpers Shared/Helpers/ListNode.swift";
+				DEVELOPMENT_TEAM = 277JX9R2RP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		494A7B5B28B91461008CDBFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "Shared/Helpers/BenchTimer.swift Shared/Helpers/Node.swift Shared/Helpers/TreeNode.swift Shared/Helpers Shared/Helpers/ListNode.swift";
+				DEVELOPMENT_TEAM = 277JX9R2RP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		494A7B6628B91557008CDBFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 277JX9R2RP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mayer-inc.Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		494A7B6728B91557008CDBFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 277JX9R2RP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mayer-inc.Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		499762EE2BFF8031009D6EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "Shared/Helpers/BenchTimer.swift Shared/Helpers/Node.swift Shared/Helpers/TreeNode.swift Shared/Helpers Shared/Helpers/ListNode.swift";
+				DEVELOPMENT_TEAM = 277JX9R2RP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		499762EF2BFF8031009D6EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "Shared/Helpers/BenchTimer.swift Shared/Helpers/Node.swift Shared/Helpers/TreeNode.swift Shared/Helpers Shared/Helpers/ListNode.swift";
+				DEVELOPMENT_TEAM = 277JX9R2RP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		499762F92BFF809E009D6EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 277JX9R2RP;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mayer-inc.LeetCode75-UnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		499762FA2BFF809E009D6EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 277JX9R2RP;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mayer-inc.LeetCode75-UnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		494A7B4D28B91461008CDBFE /* Build configuration list for PBXProject "LeetCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494A7B5728B91461008CDBFE /* Debug */,
+				494A7B5828B91461008CDBFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		494A7B5928B91461008CDBFE /* Build configuration list for PBXNativeTarget "LeetCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494A7B5A28B91461008CDBFE /* Debug */,
+				494A7B5B28B91461008CDBFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		494A7B6528B91557008CDBFE /* Build configuration list for PBXNativeTarget "LeetCode_UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494A7B6628B91557008CDBFE /* Debug */,
+				494A7B6728B91557008CDBFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		499762ED2BFF8031009D6EF5 /* Build configuration list for PBXNativeTarget "LeetCode75" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499762EE2BFF8031009D6EF5 /* Debug */,
+				499762EF2BFF8031009D6EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		499762F82BFF809E009D6EF5 /* Build configuration list for PBXNativeTarget "LeetCode75_UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499762F92BFF809E009D6EF5 /* Debug */,
+				499762FA2BFF809E009D6EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 494A7B4A28B91461008CDBFE /* Project object */;
+}
