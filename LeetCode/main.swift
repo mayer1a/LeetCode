@@ -28,5 +28,19 @@ final class Solution {
         return iterative ? solution.levelOrder_iteratively(root) : solution.levelOrder_recursively(root)
     }
 
+    // MARK: - 121. Best Time to Buy and Sell Stock
+
+    func bestTimeToBuyAndSellStock(_ prices: [Int]) -> Int {
+        let solution = BestTimeToBuyAndSellStock_Solution()
+        return solution.maxProfit(prices)
+    }
+
+    // MARK: - 142. Linked List Cycle II
+
+    func linkedListCycleII(_ head: ListNode?) -> ListNode? {
+        let solution = LinkedListCycleII_Solution()
+        return solution.detectCycle(head)
+    }
+
 }
 
