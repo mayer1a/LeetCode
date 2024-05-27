@@ -1,0 +1,33 @@
+# File with a list of labels and config options to match and apply the label.
+# The key is the name of the label in your repository that you want to add (eg: "merge conflict", "needs-updating") and the value is a match object.
+
+Feature:
+- all:
+  - head-branch: ['^feature', 'feature']
+  - changed-files:
+    - any-glob-to-any-file: ['Shared/**', 'LeetCode/**', 'LeetCode75/**', 'UnitTests/**']
+
+Bugfix:
+- all:
+  - head-branch: ['^bugfix', 'bugfix']
+  - changed-files:
+    - any-glob-to-any-file: ['Shared/**', 'LeetCode/**', 'LeetCode75/**', 'UnitTests/**']
+
+Release:
+- base-branch: 'main'
+
+LeetCode:
+- all:
+  - changed-files:
+    - any-glob-to-any-file: ['LeetCode/**', 'UnitTests/LeetCode.swift', 'UnitTests/LeetCode.xctestplan']
+    - all-globs-to-all-files: ['!Shared/**', '!LeetCode75/**']
+
+LeetCode75:
+- all:
+  - changed-files:
+    - any-glob-to-any-file: ['LeetCode75/**', 'UnitTests/LeetCode75.swift', 'UnitTests/LeetCode75.xctestplan']
+    - all-globs-to-all-files: ['!Shared/**', '!LeetCode/**']
+
+Core:
+- changed-files:
+  - any-glob-to-any-file: ['*', '.github/**']
