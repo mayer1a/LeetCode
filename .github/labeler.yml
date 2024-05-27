@@ -1,0 +1,68 @@
+# File with a list of labels and config options to match and apply the label.
+# The key is the name of the label in your repository that you want to add (eg: "merge conflict", "needs-updating") and the value is a match object.
+
+# Feature
+
+Feature:
+ - head-branch: ['^feature', 'feature']
+ - changed-files:
+   - any-glob-to-any-file: ['Shared/**', '*']
+   - all-globs-to-any-file: ['LeetCode/**', 'LeetCode75/**']
+   
+Feature LeetCode:
+ - head-branch: ['^feature', 'feature']
+ - changed-files:
+   - any-glob-to-any-file: ['LeetCode/**']
+   - all-globs-to-all-files: '!Shared/**'
+   - all-globs-to-all-files: '!LeetCode75/**'
+
+Feature LeetCode75:
+ - head-branch: ['^feature', 'feature']
+ - changed-files:
+   - any-glob-to-any-file: ['LeetCode75/**']
+   - all-globs-to-all-files: '!Shared/**'
+   - all-globs-to-all-files: '!LeetCode/**'
+
+# Bugfix
+
+Bugfix:
+ - head-branch: ['^bugfix', 'bugfix']
+ - changed-files:
+   - any-glob-to-any-file: ['Shared/**', '*']
+   - all-globs-to-any-file: ['LeetCode/**', 'LeetCode75/**']
+   
+Bugfix LeetCode:
+ - head-branch: ['^bugfix', 'bugfix']
+ - changed-files:
+   - any-glob-to-any-file: ['LeetCode/**']
+   - all-globs-to-all-files: '!Shared/**'
+   - all-globs-to-all-files: '!LeetCode75/**'
+
+Bugfix LeetCode75:
+ - head-branch: ['^bugfix', 'bugfix']
+ - changed-files:
+   - any-glob-to-any-file: ['LeetCode75/**']
+   - all-globs-to-all-files: '!Shared/**'
+   - all-globs-to-all-files: '!LeetCode/**'
+
+# Release
+
+Release:
+ - base-branch: 'main'
+ - changed-files:
+   - any-glob-to-any-file: ['Shared/**', '*']
+   - all-globs-to-any-file: ['LeetCode/**', 'LeetCode75/**']
+   
+Release LeetCode:
+ - base-branch: 'main'
+ - changed-files:
+   - any-glob-to-any-file: ['LeetCode/**']
+   - all-globs-to-all-files: '!Shared/**'
+   - all-globs-to-all-files: '!LeetCode75/**'
+
+Release LeetCode75:
+ - base-branch: 'main'
+ - changed-files:
+   - any-glob-to-any-file: ['LeetCode75/**']
+   - all-globs-to-all-files: '!Shared/**'
+   - all-globs-to-all-files: '!LeetCode/**'
