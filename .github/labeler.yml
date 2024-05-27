@@ -31,3 +31,11 @@ LeetCode75:
 Core:
 - changed-files:
   - any-glob-to-any-file: ['*', '.github/**']
+
+# To clean fail labels when all is OK
+
+Build Fail:
+- base-branch: '_all-globs-to-all-files.all-globs-to-all-files'
+
+Test Fail:
+- base-branch: '_all-globs-to-all-files.all-globs-to-all-files'
