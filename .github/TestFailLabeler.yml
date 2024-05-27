@@ -1,0 +1,6 @@
+# File with a list of labels and config options to match and apply the label.
+# The key is the name of the label in your repository that you want to add (eg: "merge conflict", "needs-updating") and the value is a match object.
+
+Test Fail:
+- changed-files:
+  - any-glob-to-any-file: '**'
