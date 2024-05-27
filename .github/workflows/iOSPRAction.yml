@@ -18,6 +18,7 @@ jobs:
         uses: actions/labeler@v5
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          sync-labels: true
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set Schemes

@@ -6,63 +6,26 @@
 Feature:
  - head-branch: ['^feature', 'feature']
  - changed-files:
-   - any-glob-to-any-file: ['Shared/**', '*']
-   - all-globs-to-any-file: ['LeetCode/**', 'LeetCode75/**']
-   
-Feature LeetCode:
- - head-branch: ['^feature', 'feature']
- - changed-files:
-   - any-glob-to-any-file: ['LeetCode/**']
-   - all-globs-to-all-files: '!Shared/**'
-   - all-globs-to-all-files: '!LeetCode75/**'
-
-Feature LeetCode75:
- - head-branch: ['^feature', 'feature']
- - changed-files:
-   - any-glob-to-any-file: ['LeetCode75/**']
-   - all-globs-to-all-files: '!Shared/**'
-   - all-globs-to-all-files: '!LeetCode/**'
-
-# Bugfix
+   - any-glob-to-any-file: ['Shared/**', 'LeetCode/**', 'LeetCode75/**']
 
 Bugfix:
  - head-branch: ['^bugfix', 'bugfix']
  - changed-files:
-   - any-glob-to-any-file: ['Shared/**', '*']
-   - all-globs-to-any-file: ['LeetCode/**', 'LeetCode75/**']
-   
-Bugfix LeetCode:
- - head-branch: ['^bugfix', 'bugfix']
- - changed-files:
-   - any-glob-to-any-file: ['LeetCode/**']
-   - all-globs-to-all-files: '!Shared/**'
-   - all-globs-to-all-files: '!LeetCode75/**'
-
-Bugfix LeetCode75:
- - head-branch: ['^bugfix', 'bugfix']
- - changed-files:
-   - any-glob-to-any-file: ['LeetCode75/**']
-   - all-globs-to-all-files: '!Shared/**'
-   - all-globs-to-all-files: '!LeetCode/**'
-
-# Release
+     - any-glob-to-any-file: ['Shared/**', 'LeetCode/**', 'LeetCode75/**']
 
 Release:
  - base-branch: 'main'
- - changed-files:
-   - any-glob-to-any-file: ['Shared/**', '*']
-   - all-globs-to-any-file: ['LeetCode/**', 'LeetCode75/**']
-   
-Release LeetCode:
- - base-branch: 'main'
- - changed-files:
-   - any-glob-to-any-file: ['LeetCode/**']
-   - all-globs-to-all-files: '!Shared/**'
-   - all-globs-to-all-files: '!LeetCode75/**'
 
-Release LeetCode75:
- - base-branch: 'main'
+LeetCode:
  - changed-files:
-   - any-glob-to-any-file: ['LeetCode75/**']
-   - all-globs-to-all-files: '!Shared/**'
-   - all-globs-to-all-files: '!LeetCode/**'
+   - all:
+     - any-glob-to-any-file: ['LeetCode/**']
+     - all-globs-to-all-files: '!Shared/**'
+     - all-globs-to-all-files: '!LeetCode75/**'
+
+LeetCode75:
+ - changed-files:
+   - all:
+     - any-glob-to-any-file: ['LeetCode75/**']
+     - all-globs-to-all-files: '!Shared/**'
+     - all-globs-to-all-files: '!LeetCode/**'
