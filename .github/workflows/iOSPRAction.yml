@@ -4,6 +4,10 @@ on:
   pull_request:
     branches: [ "main", "develop" ]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
     name: Build and Test default
@@ -19,6 +23,10 @@ jobs:
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           sync-labels: true
+      - name: Test labeler 6
+        run: |
+          echo ${{ contains(steps.label-the-PR.outputs.all-labels, 'Core') }} $contains(steps.label-the-PR.outputs.all-labels, 'Core') contains(steps.label-the-PR.outputs.all-labels, 'Core')
+        if: ${{ contains(steps.label-the-PR.outputs.all-labels, 'Core') }}
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set Schemes
