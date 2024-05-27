@@ -66,6 +66,13 @@ jobs:
             file_to_build=`echo $file_to_build | awk '{$1=$1;print}'`
             xcodebuild build-for-testing -scheme "$scheme" -$filetype_parameter "$file_to_build" -destination "platform=$platform,name=$device,arch=arm64"
           done
+      - name: Add Build Fail label
+        uses: actions/labeler@v5
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: .github/BuildFailLabeler.yml
+          sync-labels: true
+        if: ${{ failure() }}
       - name: Unit Test
         env:
           schemes: ${{ 'schemes' }}
@@ -87,3 +94,10 @@ jobs:
             file_to_build=`echo $file_to_build | awk '{$1=$1; print}'`
             xcodebuild test-without-building -scheme "$scheme" -$filetype_parameter "$file_to_build" -destination "platform=$platform,name=$device,arch=arm64"
           done
+      - name: Add Test Fail Label
+        uses: actions/labeler@v5
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: .github/TestFailLabeler.yml
+          sync-labels: true
+        if: ${{ failure() }}
