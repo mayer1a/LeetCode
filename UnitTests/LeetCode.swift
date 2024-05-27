@@ -72,5 +72,75 @@ final class UnitTests: XCTestCase {
 
         XCTAssertEqual(solution.binaryTreeLevelOrderTraversal(case1, iterative: false), case1Result)
     }
+    
+    // MARK: - 121. Best Time to Buy and Sell Stock
+
+    func testBestTimeToBuyAndSellStock() throws {
+        let case1 = [7,1,5,3,6,4]
+        let case2 = [7,6,4,3,1]
+
+        let case1Result = 5
+        let case2Result = 0
+
+        XCTAssertEqual(solution.bestTimeToBuyAndSellStock(case1), case1Result)
+        XCTAssertEqual(solution.bestTimeToBuyAndSellStock(case2), case2Result)
+    }
+
+    // MARK: - 142. Linked List Cycle II
+
+    func testLinkedListCycleII() throws {
+        let nnCycle = ListNode(5)
+        let nCycle = ListNode(4, nnCycle)
+        let sCycle = ListNode(3, nCycle)
+        nnCycle.next = sCycle
+        let case1: ListNode? = ListNode(1, ListNode(2, sCycle))
+
+        let case1Result = 3
+
+        XCTAssertEqual(solution.linkedListCycleII(case1)?.val, case1Result)
+    }
+
+    // MARK: - 205. Isomorphic Strings
+
+    func testIsomorphicString() throws {
+        let case1 = ("egg", "add")
+        let case2 = ("foo", "bar")
+        let case3 = ("paper", "title")
+        let case4 = ("a", "a")
+        let case5 = ("badc", "baba")
+
+        let case1Result = true
+        let case2Result = false
+        let case3Result = true
+        let case4Result = true
+        let case5Result = false
+
+        XCTAssertEqual(solution.isomorphicString(case1.0, case1.1), case1Result)
+        XCTAssertEqual(solution.isomorphicString(case2.0, case2.1), case2Result)
+        XCTAssertEqual(solution.isomorphicString(case3.0, case3.1), case3Result)
+        XCTAssertEqual(solution.isomorphicString(case4.0, case4.1), case4Result)
+        XCTAssertEqual(solution.isomorphicString(case5.0, case5.1), case5Result)
+
+        XCTAssertEqual(solution.isomorphicString(case1.0, case1.1, alternativeSolution: true),
+                       case1Result)
+        XCTAssertEqual(solution.isomorphicString(case2.0, case2.1, alternativeSolution: true),
+                       case2Result)
+        XCTAssertEqual(solution.isomorphicString(case3.0, case3.1, alternativeSolution: true),
+                       case3Result)
+        XCTAssertEqual(solution.isomorphicString(case4.0, case4.1, alternativeSolution: true),
+                       case4Result)
+        XCTAssertEqual(solution.isomorphicString(case5.0, case5.1, alternativeSolution: true),
+                       case5Result)
+    }
+
+    // MARK: - 278. First Bad Version
+
+    func testFirstBadVersion() throws {
+        let case1 = 8
+
+        let case1Result = 5
+
+        XCTAssertEqual(solution.firstBadVersion(case1), case1Result)
+    }
 
 }

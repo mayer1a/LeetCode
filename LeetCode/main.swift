@@ -28,5 +28,33 @@ final class Solution {
         return iterative ? solution.levelOrder_iteratively(root) : solution.levelOrder_recursively(root)
     }
 
+    // MARK: - 121. Best Time to Buy and Sell Stock
+
+    func bestTimeToBuyAndSellStock(_ prices: [Int]) -> Int {
+        let solution = BestTimeToBuyAndSellStock_Solution()
+        return solution.maxProfit(prices)
+    }
+
+    // MARK: - 142. Linked List Cycle II
+
+    func linkedListCycleII(_ head: ListNode?) -> ListNode? {
+        let solution = LinkedListCycleII_Solution()
+        return solution.detectCycle(head)
+    }
+
+    // MARK: - 205. Isomorphic Strings
+
+    func isomorphicString(_ s: String, _ t: String, alternativeSolution: Bool = false) -> Bool {
+        let solution = IsomorphicStrings_Solution()
+        return alternativeSolution ? solution.isIsomorphic_v2(s, t) : solution.isIsomorphic_v1(s, t)
+    }
+
+    // MARK: - 278. First Bad Version
+
+    func firstBadVersion(_ n: Int) -> Int {
+        let solution = FirstBadVersion_Solution()
+        return solution.firstBadVersion(n)
+    }
+
 }
 
