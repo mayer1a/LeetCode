@@ -143,4 +143,68 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.firstBadVersion(case1), case1Result)
     }
 
+    // MARK: - 409. Longest Palindrome
+
+    func testLongestPalindrome() throws {
+        let case1 = "abccccdd"
+        let case2 = "a"
+        let case3 = "aaaaabccccddd"
+        let case4 = """
+            civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth
+            """
+
+        let case1Result = 7
+        let case2Result = 1
+        let case3Result = 11
+        let case4Result = 983
+
+        XCTAssertEqual(solution.longestPalindrome(case1), case1Result)
+        XCTAssertEqual(solution.longestPalindrome(case2), case2Result)
+        XCTAssertEqual(solution.longestPalindrome(case3), case3Result)
+        XCTAssertEqual(solution.longestPalindrome(case4), case4Result)
+    }
+
+    // MARK: - 589. N-ary Tree Preorder Traversal
+
+    func testTreePreorderTraversal() throws {
+        let case1 = Node(1, children: [
+            Node(3, children: [
+                Node(5), Node(6)
+            ]),
+            Node(2),
+            Node(4)
+        ])
+        let case2 = Node(1, children: [
+            Node(2),
+            Node(3, children: [
+                Node(6),
+                Node(7, children: [
+                    Node(11, children: [
+                        Node(14)
+                    ])
+                ])
+            ]),
+            Node(4, children: [
+                Node(8, children: [
+                    Node(12)
+                ])
+            ]),
+            Node(5, children: [
+                Node(9, children: [
+                    Node(13)
+                ]),
+                Node(10)
+            ]),
+        ])
+
+        let case1Result = [1, 3, 5, 6, 2, 4]
+        let case2Result = [1, 2, 3, 6, 7, 11, 14, 4, 8, 12, 5, 9, 13, 10]
+
+        XCTAssertEqual(solution.treePreorderTraversal(case1), case1Result)
+        XCTAssertEqual(solution.treePreorderTraversal(case1, iterative: false), case1Result)
+
+        XCTAssertEqual(solution.treePreorderTraversal(case2), case2Result)
+        XCTAssertEqual(solution.treePreorderTraversal(case2, iterative: false), case2Result)
+    }
+
 }
