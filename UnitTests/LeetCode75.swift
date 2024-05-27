@@ -5,8 +5,6 @@
 //  Created by Artem Mayer on 23.05.2024.
 //
 
-import Foundation
-
 import XCTest
 @testable import LeetCode
 
