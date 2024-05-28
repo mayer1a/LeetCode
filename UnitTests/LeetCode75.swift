@@ -283,4 +283,67 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.kidsWithTheGreatestNumberOfCandies(case3.0, case3.1), case3Result)
     }
 
+    // MARK: - 1732. Find the Highest Altitude
+
+    func testFindTheHighestAltitude() throws {
+        let case1 = [-5, 1, 5, 0, -7]
+        let case2 = [-4, -3, -2, -1, 4, 3, 2]
+
+        let case1Result = 1
+        let case2Result = 0
+
+        XCTAssertEqual(solution.findTheHighestAltitude(case1), case1Result)
+        XCTAssertEqual(solution.findTheHighestAltitude(case2), case2Result)
+    }
+
+    // MARK: - 1768. Merge Strings Alternately
+
+    func testMergeStringsAlternately() throws {
+        let case1 = ("abc", "pqr")
+        let case2 = ("ab", "pqrs")
+        let case3 = ("abcd", "pq")
+
+        let case1Result = "apbqcr"
+        let case2Result = "apbqrs"
+        let case3Result = "apbqcd"
+
+        XCTAssertEqual(solution.mergeStringsAlternately(case1.0, case1.1), case1Result)
+        XCTAssertEqual(solution.mergeStringsAlternately(case2.0, case2.1), case2Result)
+        XCTAssertEqual(solution.mergeStringsAlternately(case3.0, case3.1), case3Result)
+    }
+
+    // MARK: - 2215. Find the Difference of Two Arrays
+
+    func testFindTheDifferenceOfTwoArrays() throws {
+        let case1 = ([1, 2, 3], [2, 4, 6])
+        let case2 = ([1, 2, 3, 3], [1, 1, 2, 2])
+
+        let case1Result = [Set<Int>([1, 3]), Set<Int>([4, 6])]
+        let case2Result = [Set<Int>([3]), Set<Int>([])]
+
+        let _answer1v1 = solution.findTheDifferenceOfTwoArrays(case1.0, case1.1, version: .v1BruteForce)
+        let answer1v1 = [Set<Int>(_answer1v1[0]), Set<Int>(_answer1v1[1])]
+        let _answer2v1 = solution.findTheDifferenceOfTwoArrays(case2.0, case2.1, version: .v1BruteForce)
+        let answer2v1 = [Set<Int>(_answer2v1[0]), Set<Int>(_answer2v1[1])]
+
+        let _answer1v2 = solution.findTheDifferenceOfTwoArrays(case1.0, case1.1, version: .v1BruteForce)
+        let answer1v2 = [Set<Int>(_answer1v2[0]), Set<Int>(_answer1v2[1])]
+        let _answer2v2 = solution.findTheDifferenceOfTwoArrays(case2.0, case2.1, version: .v1BruteForce)
+        let answer2v2 = [Set<Int>(_answer2v2[0]), Set<Int>(_answer2v2[1])]
+
+        let _answer1v3 = solution.findTheDifferenceOfTwoArrays(case1.0, case1.1, version: .v1BruteForce)
+        let answer1v3 = [Set<Int>(_answer1v3[0]), Set<Int>(_answer1v3[1])]
+        let _answer2v3 = solution.findTheDifferenceOfTwoArrays(case2.0, case2.1, version: .v1BruteForce)
+        let answer2v3 = [Set<Int>(_answer2v3[0]), Set<Int>(_answer2v3[1])]
+
+        XCTAssertEqual(answer1v1, case1Result)
+        XCTAssertEqual(answer2v1, case2Result)
+
+        XCTAssertEqual(answer1v2, case1Result)
+        XCTAssertEqual(answer2v2, case2Result)
+
+        XCTAssertEqual(answer1v3, case1Result)
+        XCTAssertEqual(answer2v3, case2Result)
+    }
+
 }
