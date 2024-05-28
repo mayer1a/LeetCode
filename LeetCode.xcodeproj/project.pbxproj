@@ -46,6 +46,10 @@
 		49E202572C04E623005D75E9 /* NAryTreePreorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E202522C04E623005D75E9 /* NAryTreePreorderTraversal.swift */; };
 		49E202582C04E623005D75E9 /* LongestPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E202542C04E623005D75E9 /* LongestPalindrome.swift */; };
 		49E202592C04E623005D75E9 /* LongestPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E202542C04E623005D75E9 /* LongestPalindrome.swift */; };
+		49EC4CBC2C06082900D68CF9 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CB82C06082900D68CF9 /* BinarySearch.swift */; };
+		49EC4CBD2C06082900D68CF9 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CB82C06082900D68CF9 /* BinarySearch.swift */; };
+		49EC4CBE2C06082900D68CF9 /* MiddleOfTheLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CBA2C06082900D68CF9 /* MiddleOfTheLinkedList.swift */; };
+		49EC4CBF2C06082900D68CF9 /* MiddleOfTheLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CBA2C06082900D68CF9 /* MiddleOfTheLinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,6 +96,8 @@
 		49E2024D2C03ABB4005D75E9 /* LeetCode75.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LeetCode75.xctestplan; sourceTree = "<group>"; };
 		49E202522C04E623005D75E9 /* NAryTreePreorderTraversal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NAryTreePreorderTraversal.swift; sourceTree = "<group>"; };
 		49E202542C04E623005D75E9 /* LongestPalindrome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongestPalindrome.swift; sourceTree = "<group>"; };
+		49EC4CB82C06082900D68CF9 /* BinarySearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		49EC4CBA2C06082900D68CF9 /* MiddleOfTheLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleOfTheLinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,8 @@
 				495D40512BFC967A00ECFC81 /* 278. First Bad Version */,
 				49E202552C04E623005D75E9 /* 409. Longest Palindrome */,
 				49E202532C04E623005D75E9 /* 589. N-ary Tree Preorder Traversal */,
+				49EC4CB92C06082900D68CF9 /* 704. Binary Search */,
+				49EC4CBB2C06082900D68CF9 /* 876. Middle of the Linked List */,
 				494A7B5528B91461008CDBFE /* main.swift */,
 			);
 			path = LeetCode;
@@ -264,6 +272,22 @@
 				49E202542C04E623005D75E9 /* LongestPalindrome.swift */,
 			);
 			path = "409. Longest Palindrome";
+			sourceTree = "<group>";
+		};
+		49EC4CB92C06082900D68CF9 /* 704. Binary Search */ = {
+			isa = PBXGroup;
+			children = (
+				49EC4CB82C06082900D68CF9 /* BinarySearch.swift */,
+			);
+			path = "704. Binary Search";
+			sourceTree = "<group>";
+		};
+		49EC4CBB2C06082900D68CF9 /* 876. Middle of the Linked List */ = {
+			isa = PBXGroup;
+			children = (
+				49EC4CBA2C06082900D68CF9 /* MiddleOfTheLinkedList.swift */,
+			);
+			path = "876. Middle of the Linked List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,11 +433,13 @@
 				495D40652BFC992500ECFC81 /* BestTimeToBuyAndSellStock.swift in Sources */,
 				495D40772BFC9ADE00ECFC81 /* IsomorphicStrings.swift in Sources */,
 				495D404F2BFC965F00ECFC81 /* Node.swift in Sources */,
+				49EC4CBC2C06082900D68CF9 /* BinarySearch.swift in Sources */,
 				494A7B5628B91461008CDBFE /* main.swift in Sources */,
 				495D40532BFC969F00ECFC81 /* FirstBadVersion.swift in Sources */,
 				495D405C2BFC97AF00ECFC81 /* BinaryTreeLevelOrderTraversal.swift in Sources */,
 				495D404B2BFC95E400ECFC81 /* ListNode.swift in Sources */,
 				495D404D2BFC960B00ECFC81 /* TreeNode.swift in Sources */,
+				49EC4CBE2C06082900D68CF9 /* MiddleOfTheLinkedList.swift in Sources */,
 				495D40682BFC995D00ECFC81 /* LinkedListCycleII.swift in Sources */,
 				495D40712BFC9A2600ECFC81 /* MergeTwoSortedLists.swift in Sources */,
 				49E202582C04E623005D75E9 /* LongestPalindrome.swift in Sources */,
@@ -439,6 +465,8 @@
 				495D40FF2BFCBBBE00ECFC81 /* TreeNode.swift in Sources */,
 				495D41002BFCBBBE00ECFC81 /* ListNode.swift in Sources */,
 				495D40F22BFCBB8500ECFC81 /* IsomorphicStrings.swift in Sources */,
+				49EC4CBF2C06082900D68CF9 /* MiddleOfTheLinkedList.swift in Sources */,
+				49EC4CBD2C06082900D68CF9 /* BinarySearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

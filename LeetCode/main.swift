@@ -70,5 +70,19 @@ final class Solution {
         return iterative ? solution.preorder_iteratively(root) : solution.preorder_recursive(root)
     }
 
+    // MARK: - 704. Binary Search
+
+    func binarySearch(_ nums: [Int], _ target: Int) -> Int {
+        let solution = BinarySearch_Solution()
+        return solution.search(nums, target)
+    }
+
+    // MARK: - 876. Middle of the Linked List
+
+    func middleNodeOfTheLinkedList(_ head: ListNode?) -> ListNode? {
+        let solution = MiddleOfTheLinkedList_Solution()
+        return solution.middleNode(head)
+    }
+
 }
 
