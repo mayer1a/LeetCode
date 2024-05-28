@@ -166,4 +166,45 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.canPlaceFlowers(case11.0, case11.1, alt: true), case11Result)
     }
 
+    // MARK: - 643. Maximum Average Subarray I
+
+    func testMaximumAverageSubarrayI() throws {
+        let case1 = ([1, 12, -5, -6, 50, 3], 4)
+        let case2 = ([5], 1)
+
+        let case1Result = 12.75
+        let case2Result = 5.0
+
+        XCTAssertEqual(solution.maximumAverageSubarrayI(case1.0, case1.1), case1Result, accuracy: 0.00001)
+        XCTAssertEqual(solution.maximumAverageSubarrayI(case2.0, case2.1), case2Result, accuracy: 0.00001)
+    }
+
+    // MARK: - 724. Find Pivot Index
+
+    func testFindPivotIndex() throws {
+        let case1 = [1, 7, 3, 6, 5, 6]
+        let case2 = [1, 2, 3]
+        let case3 = [2, 1, -1]
+        let case4 = [4]
+        let case5 = [-1, -1, -1, 1, 1, 1]
+        let case6 = [-1, -1, 0, 1, 1, 0]
+        let case7 = [1, 1, 0, 1, 1, 0]
+
+        let case1Result = 3
+        let case2Result = -1
+        let case3Result = 0
+        let case4Result = 0
+        let case5Result = -1
+        let case6Result = 5
+        let case7Result = 2
+
+        XCTAssertEqual(solution.findPivotIndex(case1), case1Result)
+        XCTAssertEqual(solution.findPivotIndex(case2), case2Result)
+        XCTAssertEqual(solution.findPivotIndex(case3), case3Result)
+        XCTAssertEqual(solution.findPivotIndex(case4), case4Result)
+        XCTAssertEqual(solution.findPivotIndex(case5), case5Result)
+        XCTAssertEqual(solution.findPivotIndex(case6), case6Result)
+        XCTAssertEqual(solution.findPivotIndex(case7), case7Result)
+    }
+
 }
