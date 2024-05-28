@@ -27,5 +27,34 @@ final class Solution {
         }
     }
 
+    // MARK: - 345. Reverse Vowels of a String
+
+    func reverseVowelsOfString(_ s: String) -> String {
+        let solution = ReverseVowelsOfString_Solution()
+        return solution.reverseVowels(s)
+    }
+
+    // MARK: - 392. Is Subsequence
+
+    func isSubsequence(_ s: String, _ t: String, alt: Bool = false) -> Bool {
+        let solution = IsSubsequence_Solution()
+        if alt {
+            return solution.isSubsequence_v2(s, t)
+        } else {
+            return solution.isSubsequence_v1(s, t)
+        }
+    }
+
+    // MARK: - 605. Can Place Flowers
+
+    func canPlaceFlowers(_ flowerbed: [Int], _ n: Int, alt: Bool = false) -> Bool {
+        let solution = CanPlaceFlowers_Solution()
+        if alt {
+            return solution.canPlaceFlowers_v2(flowerbed, n)
+        } else {
+            return solution.canPlaceFlowers_v1(flowerbed, n)
+        }
+    }
+
 }
 

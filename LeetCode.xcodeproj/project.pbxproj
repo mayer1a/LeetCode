@@ -58,6 +58,12 @@
 		49EC4CCD2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CC82C060CAA00D68CF9 /* ReverseLinkedList.swift */; };
 		49EC4CCE2C060CAA00D68CF9 /* MoveZeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CCA2C060CAA00D68CF9 /* MoveZeroes.swift */; };
 		49EC4CCF2C060CAA00D68CF9 /* MoveZeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CCA2C060CAA00D68CF9 /* MoveZeroes.swift */; };
+		49EC4CD62C060E0D00D68CF9 /* IsSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CD02C060E0D00D68CF9 /* IsSubsequence.swift */; };
+		49EC4CD72C060E0D00D68CF9 /* IsSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CD02C060E0D00D68CF9 /* IsSubsequence.swift */; };
+		49EC4CD82C060E0D00D68CF9 /* CanPlaceFlowers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CD22C060E0D00D68CF9 /* CanPlaceFlowers.swift */; };
+		49EC4CD92C060E0D00D68CF9 /* CanPlaceFlowers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CD22C060E0D00D68CF9 /* CanPlaceFlowers.swift */; };
+		49EC4CDA2C060E0D00D68CF9 /* ReverseVowelsOfString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CD42C060E0D00D68CF9 /* ReverseVowelsOfString.swift */; };
+		49EC4CDB2C060E0D00D68CF9 /* ReverseVowelsOfString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CD42C060E0D00D68CF9 /* ReverseVowelsOfString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -110,6 +116,9 @@
 		49EC4CC22C06096800D68CF9 /* RunningSumOf1dArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunningSumOf1dArray.swift; sourceTree = "<group>"; };
 		49EC4CC82C060CAA00D68CF9 /* ReverseLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseLinkedList.swift; sourceTree = "<group>"; };
 		49EC4CCA2C060CAA00D68CF9 /* MoveZeroes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveZeroes.swift; sourceTree = "<group>"; };
+		49EC4CD02C060E0D00D68CF9 /* IsSubsequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsSubsequence.swift; sourceTree = "<group>"; };
+		49EC4CD22C060E0D00D68CF9 /* CanPlaceFlowers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanPlaceFlowers.swift; sourceTree = "<group>"; };
+		49EC4CD42C060E0D00D68CF9 /* ReverseVowelsOfString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseVowelsOfString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +278,9 @@
 			children = (
 				49EC4CC92C060CAA00D68CF9 /* 206. Reverse Linked List */,
 				49EC4CCB2C060CAA00D68CF9 /* 283. Move Zeroes */,
+				49EC4CD52C060E0D00D68CF9 /* 345. Reverse Vowels of a String */,
+				49EC4CD12C060E0D00D68CF9 /* 392. Is Subsequence */,
+				49EC4CD32C060E0D00D68CF9 /* 605. Can Place Flowers */,
 				499762EB2BFF8031009D6EF5 /* main.swift */,
 			);
 			path = LeetCode75;
@@ -336,6 +348,30 @@
 				49EC4CCA2C060CAA00D68CF9 /* MoveZeroes.swift */,
 			);
 			path = "283. Move Zeroes";
+			sourceTree = "<group>";
+		};
+		49EC4CD12C060E0D00D68CF9 /* 392. Is Subsequence */ = {
+			isa = PBXGroup;
+			children = (
+				49EC4CD02C060E0D00D68CF9 /* IsSubsequence.swift */,
+			);
+			path = "392. Is Subsequence";
+			sourceTree = "<group>";
+		};
+		49EC4CD32C060E0D00D68CF9 /* 605. Can Place Flowers */ = {
+			isa = PBXGroup;
+			children = (
+				49EC4CD22C060E0D00D68CF9 /* CanPlaceFlowers.swift */,
+			);
+			path = "605. Can Place Flowers";
+			sourceTree = "<group>";
+		};
+		49EC4CD52C060E0D00D68CF9 /* 345. Reverse Vowels of a String */ = {
+			isa = PBXGroup;
+			children = (
+				49EC4CD42C060E0D00D68CF9 /* ReverseVowelsOfString.swift */,
+			);
+			path = "345. Reverse Vowels of a String";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -530,9 +566,12 @@
 				499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */,
 				499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */,
 				499763182BFF8181009D6EF5 /* Node.swift in Sources */,
+				49EC4CDA2C060E0D00D68CF9 /* ReverseVowelsOfString.swift in Sources */,
 				49EC4CCC2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */,
+				49EC4CD62C060E0D00D68CF9 /* IsSubsequence.swift in Sources */,
 				499763192BFF8181009D6EF5 /* ListNode.swift in Sources */,
 				499763322BFF85D7009D6EF5 /* main.swift in Sources */,
+				49EC4CD82C060E0D00D68CF9 /* CanPlaceFlowers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,8 +581,11 @@
 			files = (
 				4997631A2BFF8181009D6EF5 /* BenchTimer.swift in Sources */,
 				4997631B2BFF8181009D6EF5 /* TreeNode.swift in Sources */,
+				49EC4CD72C060E0D00D68CF9 /* IsSubsequence.swift in Sources */,
 				49EC4CCF2C060CAA00D68CF9 /* MoveZeroes.swift in Sources */,
 				4997631C2BFF8181009D6EF5 /* Node.swift in Sources */,
+				49EC4CD92C060E0D00D68CF9 /* CanPlaceFlowers.swift in Sources */,
+				49EC4CDB2C060E0D00D68CF9 /* ReverseVowelsOfString.swift in Sources */,
 				4997631D2BFF8181009D6EF5 /* ListNode.swift in Sources */,
 				49EC4CCD2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */,
 				499763332BFF85D8009D6EF5 /* main.swift in Sources */,

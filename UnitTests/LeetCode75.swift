@@ -74,4 +74,96 @@ final class UnitTests: XCTestCase {
         }
     }
 
+    // MARK: - 345. Reverse Vowels of a String
+
+    func testReverseVowelsOfString() throws {
+        let case1 = "hello"
+        let case2 = "leetcode"
+        let case3 = "aA"
+
+        let case1Result = "holle"
+        let case2Result = "leotcede"
+        let case3Result = "Aa"
+
+        XCTAssertEqual(solution.reverseVowelsOfString(case1), case1Result)
+        XCTAssertEqual(solution.reverseVowelsOfString(case2), case2Result)
+        XCTAssertEqual(solution.reverseVowelsOfString(case3), case3Result)
+    }
+
+    // MARK: - 392. Is Subsequence
+
+    func testIsSubsequence() throws {
+        let case1 = ("abc", "ahbgdc")
+        let case2 = ("acb", "ahbgdc")
+        let case3 = ("", "")
+        let case4 = ("abc", "")
+
+        let case1Result = true
+        let case2Result = false
+        let case3Result = true
+        let case4Result = false
+
+        XCTAssertEqual(solution.isSubsequence(case1.0, case1.1), case1Result)
+        XCTAssertEqual(solution.isSubsequence(case2.0, case2.1), case2Result)
+        XCTAssertEqual(solution.isSubsequence(case3.0, case3.1), case3Result)
+        XCTAssertEqual(solution.isSubsequence(case4.0, case4.1), case4Result)
+
+        XCTAssertEqual(solution.isSubsequence(case1.0, case1.1, alt: true), case1Result)
+        XCTAssertEqual(solution.isSubsequence(case2.0, case2.1, alt: true), case2Result)
+        XCTAssertEqual(solution.isSubsequence(case3.0, case3.1, alt: true), case3Result)
+        XCTAssertEqual(solution.isSubsequence(case4.0, case4.1, alt: true), case4Result)
+    }
+
+    // MARK: - 605. Can Place Flowers
+
+    func testCanPlaceFlowers() throws {
+        let case1 = ([1, 0, 0, 0, 1], 1)
+        let case2 = ([1, 0, 0, 0, 1], 2)
+        let case3 = ([0, 0, 0, 0, 1], 2)
+        let case4 = ([0, 0, 0, 0, 0], 3)
+        let case5 = ([0, 0, 1, 0, 0], 3)
+        let case6 = ([0, 0, 0], 2)
+        let case7 = ([0, 0, 0], 3)
+        let case8 = ([0, 0], 1)
+        let case9 = ([0, 0], 2)
+        let case10 = ([0], 1)
+        let case11 = ([1], 0)
+
+        let case1Result = true
+        let case2Result = false
+        let case3Result = true
+        let case4Result = true
+        let case5Result = false
+        let case6Result = true
+        let case7Result = false
+        let case8Result = true
+        let case9Result = false
+        let case10Result = true
+        let case11Result = true
+
+        XCTAssertEqual(solution.canPlaceFlowers(case1.0, case1.1), case1Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case2.0, case2.1), case2Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case3.0, case3.1), case3Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case4.0, case4.1), case4Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case5.0, case5.1), case5Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case6.0, case6.1), case6Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case7.0, case7.1), case7Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case8.0, case8.1), case8Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case9.0, case9.1), case9Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case10.0, case10.1), case10Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case11.0, case11.1), case11Result)
+
+        XCTAssertEqual(solution.canPlaceFlowers(case1.0, case1.1, alt: true), case1Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case2.0, case2.1, alt: true), case2Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case3.0, case3.1, alt: true), case3Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case4.0, case4.1, alt: true), case4Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case5.0, case5.1, alt: true), case5Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case6.0, case6.1, alt: true), case6Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case7.0, case7.1, alt: true), case7Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case8.0, case8.1, alt: true), case8Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case9.0, case9.1, alt: true), case9Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case10.0, case10.1, alt: true), case10Result)
+        XCTAssertEqual(solution.canPlaceFlowers(case11.0, case11.1, alt: true), case11Result)
+    }
+
 }
