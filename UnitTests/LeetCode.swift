@@ -207,4 +207,45 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.treePreorderTraversal(case2, iterative: false), case2Result)
     }
 
+    // MARK: - 704. Binary Search
+
+    func testBinarySearch() throws {
+        let case1 = ([-1,0,3,5,9,12], 9)
+        let case2 = ([-1,0,3,5,9,12], 2)
+        let case3 = ([-2, -1, 0, 2, 3, 5, 7, 9], 9)
+        let case4 = ([-2, -1, 0, 2, 3, 5, 7, 9], 7)
+        let case5 = ([-2, -1, 0, 2, 3, 5, 7, 9], -1)
+        let case6 = ([-2, -1, 0, 2, 3, 5, 7, 9], -2)
+
+        let case1Result = 4
+        let case2Result = -1
+        let case3Result = 7
+        let case4Result = 6
+        let case5Result = 1
+        let case6Result = 0
+
+        XCTAssertEqual(solution.binarySearch(case1.0, case1.1), case1Result)
+        XCTAssertEqual(solution.binarySearch(case2.0, case2.1), case2Result)
+        XCTAssertEqual(solution.binarySearch(case3.0, case3.1), case3Result)
+        XCTAssertEqual(solution.binarySearch(case4.0, case4.1), case4Result)
+        XCTAssertEqual(solution.binarySearch(case5.0, case5.1), case5Result)
+        XCTAssertEqual(solution.binarySearch(case6.0, case6.1), case6Result)
+    }
+
+    // MARK: - 876. Middle of the Linked List
+
+    func testMiddleNodeOfTheLinkedList() throws {
+        let case1 = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
+        let case2 = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5, ListNode(6))))))
+        let case3 = ListNode(5)
+
+        let case1Result = ListNode(3, ListNode(4, ListNode(5)))
+        let case2Result = ListNode(4, ListNode(5, ListNode(6)))
+        let case3Result = ListNode(5)
+
+        XCTAssertEqual(solution.middleNodeOfTheLinkedList(case1), case1Result)
+        XCTAssertEqual(solution.middleNodeOfTheLinkedList(case2), case2Result)
+        XCTAssertEqual(solution.middleNodeOfTheLinkedList(case3), case3Result)
+    }
+
 }
