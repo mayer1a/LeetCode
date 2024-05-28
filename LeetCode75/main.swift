@@ -70,5 +70,34 @@ final class Solution {
         return solution.pivotIndex(nums)
     }
 
+    // MARK: - 1071. Greatest Common Divisor of Strings
+
+    func greatestCommonDivisorOfStrings(_ str1: String, _ str2: String, alt: Bool = false) -> String {
+        let solution = GreatestCommonDivisorOfStrings_Solution()
+        if alt {
+            return solution.gcdOfStrings_v1(str1, str2)
+        } else {
+            return solution.gcdOfStrings_v2(str1, str2)
+        }
+    }
+
+    // MARK: - 1207. Unique Number of Occurrences
+
+    func uniqueNumberOfOccurrences(_ arr: [Int], alt: Bool = false) -> Bool {
+        let solution = UniqueNumberOfOccurrences_Solution()
+        if alt {
+            return solution.uniqueOccurrences_v2(arr)
+        } else {
+            return solution.uniqueOccurrences_v1(arr)
+        }
+    }
+
+    // MARK: - 1431. Kids With the Greatest Number of Candies
+
+    func kidsWithTheGreatestNumberOfCandies(_ candies: [Int], _ extraCandies: Int) -> [Bool] {
+        let solution = KidsWithTheGreatestNumberOfCandies_Solution()
+        return solution.kidsWithCandies(candies, extraCandies)
+    }
+
 }
 
