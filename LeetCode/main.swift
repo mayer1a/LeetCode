@@ -84,5 +84,19 @@ final class Solution {
         return solution.middleNode(head)
     }
 
+    // MARK: - 949. Largest Time for Given Digits
+
+    func largestTimeForGivenDigits(_ arr: [Int]) -> String {
+        let solution = LargestTimeForGivenDigits_Solution()
+        return solution.largestTimeFromDigits(arr)
+    }
+
+    // MARK: - 1480. Running Sum of 1d Array
+
+    func runningSumOf1dArray(_ nums: [Int]) -> [Int] {
+        let solution = RunningSumOf1dArray_Solution()
+        return solution.runningSum(nums)
+    }
+
 }
 
