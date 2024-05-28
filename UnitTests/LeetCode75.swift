@@ -207,4 +207,80 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.findPivotIndex(case7), case7Result)
     }
 
+    // MARK: - 1071. Greatest Common Divisor of Strings
+
+    func testGreatestCommonDivisorOfStrings() throws {
+        let case1 = ("ABABAB", "ABAB")
+        let case2 = ("ABABABAB", "ABAB")
+        let case3 = ("ABAB", "ABABAB")
+        let case4 = ("ABAB", "ABABABAB")
+        let case5 = ("ABCABC", "ABC")
+        let case6 = ("ABC", "ABCABC")
+        let case7 = ("LEET", "CODE")
+        let case8 = ("ABCDEF", "ABC")
+
+        let case1Result = "AB"
+        let case2Result = "ABAB"
+        let case3Result = "AB"
+        let case4Result = "ABAB"
+        let case5Result = "ABC"
+        let case6Result = "ABC"
+        let case7Result = ""
+        let case8Result = ""
+
+        XCTAssertEqual(solution.greatestCommonDivisorOfStrings(case1.0, case1.1), case1Result)
+        XCTAssertEqual(solution.greatestCommonDivisorOfStrings(case2.0, case2.1), case2Result)
+        XCTAssertEqual(solution.greatestCommonDivisorOfStrings(case3.0, case3.1), case3Result)
+        XCTAssertEqual(solution.greatestCommonDivisorOfStrings(case4.0, case4.1), case4Result)
+        XCTAssertEqual(solution.greatestCommonDivisorOfStrings(case5.0, case5.1), case5Result)
+        XCTAssertEqual(solution.greatestCommonDivisorOfStrings(case6.0, case6.1), case6Result)
+        XCTAssertEqual(solution.greatestCommonDivisorOfStrings(case7.0, case7.1), case7Result)
+        XCTAssertEqual(solution.greatestCommonDivisorOfStrings(case8.0, case8.1), case8Result)
+
+        XCTAssertEqual(solution.greatestCommonDivisorOfStrings(case1.0, case1.1, alt: true), case1Result)
+        XCTAssertEqual(solution.greatestCommonDivisorOfStrings(case2.0, case2.1, alt: true), case2Result)
+        XCTAssertEqual(solution.greatestCommonDivisorOfStrings(case3.0, case3.1, alt: true), case3Result)
+        XCTAssertEqual(solution.greatestCommonDivisorOfStrings(case4.0, case4.1, alt: true), case4Result)
+        XCTAssertEqual(solution.greatestCommonDivisorOfStrings(case5.0, case5.1, alt: true), case5Result)
+        XCTAssertEqual(solution.greatestCommonDivisorOfStrings(case6.0, case6.1, alt: true), case6Result)
+        XCTAssertEqual(solution.greatestCommonDivisorOfStrings(case7.0, case7.1, alt: true), case7Result)
+        XCTAssertEqual(solution.greatestCommonDivisorOfStrings(case8.0, case8.1, alt: true), case8Result)
+    }
+
+    // MARK: - 1207. Unique Number of Occurrences
+
+    func testUniqueNumberOfOccurrences() throws {
+        let case1 = [1, 2, 2, 1, 1, 3]
+        let case2 = [1, 2]
+        let case3 = [-3, 0, 1, -3, 1, 1, 1, -3, 10, 0]
+
+        let case1Result = true
+        let case2Result = false
+        let case3Result = true
+
+        XCTAssertEqual(solution.uniqueNumberOfOccurrences(case1), case1Result)
+        XCTAssertEqual(solution.uniqueNumberOfOccurrences(case2), case2Result)
+        XCTAssertEqual(solution.uniqueNumberOfOccurrences(case3), case3Result)
+
+        XCTAssertEqual(solution.uniqueNumberOfOccurrences(case1, alt: true), case1Result)
+        XCTAssertEqual(solution.uniqueNumberOfOccurrences(case2, alt: true), case2Result)
+        XCTAssertEqual(solution.uniqueNumberOfOccurrences(case3, alt: true), case3Result)
+    }
+
+    // MARK: - 1431. Kids With the Greatest Number of Candies
+
+    func testKidsWithTheGreatestNumberOfCandies() throws {
+        let case1 = ([2, 3, 5, 1, 3], 3)
+        let case2 = ([4, 2, 1, 1, 2], 1)
+        let case3 = ([12, 1, 12], 10)
+
+        let case1Result = [true, true ,true ,false, true]
+        let case2Result = [true, false ,false ,false, false]
+        let case3Result = [true, false ,true]
+
+        XCTAssertEqual(solution.kidsWithTheGreatestNumberOfCandies(case1.0, case1.1), case1Result)
+        XCTAssertEqual(solution.kidsWithTheGreatestNumberOfCandies(case2.0, case2.1), case2Result)
+        XCTAssertEqual(solution.kidsWithTheGreatestNumberOfCandies(case3.0, case3.1), case3Result)
+    }
+
 }
