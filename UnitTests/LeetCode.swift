@@ -248,4 +248,39 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.middleNodeOfTheLinkedList(case3), case3Result)
     }
 
+    // MARK: - 949. Largest Time for Given Digits
+
+    func testLargestTimeForGivenDigits() throws {
+        let case1 = [1, 2, 3, 4]
+        let case2 = [5,5,5,5]
+        let case3 = [5,5,2,3]
+        let case4 = [1,1,4,3]
+
+        let case1Result = "23:41"
+        let case2Result = ""
+        let case3Result = "23:55"
+        let case4Result = "14:31"
+
+        XCTAssertEqual(solution.largestTimeForGivenDigits(case1), case1Result)
+        XCTAssertEqual(solution.largestTimeForGivenDigits(case2), case2Result)
+        XCTAssertEqual(solution.largestTimeForGivenDigits(case3), case3Result)
+        XCTAssertEqual(solution.largestTimeForGivenDigits(case4), case4Result)
+    }
+
+    // MARK: - 1480. Running Sum of 1d Array
+
+    func testRunningSumOf1dArray() throws {
+        let case1 = [1, 2, 3, 4]
+        let case2 = [1,1,1,1,1]
+        let case3 = [3,1,2,10,1]
+
+        let case1Result = [1,3,6,10]
+        let case2Result = [1,2,3,4,5]
+        let case3Result = [3,4,6,16,17]
+
+        XCTAssertEqual(solution.runningSumOf1dArray(case1), case1Result)
+        XCTAssertEqual(solution.runningSumOf1dArray(case2), case2Result)
+        XCTAssertEqual(solution.runningSumOf1dArray(case3), case3Result)
+    }
+
 }
