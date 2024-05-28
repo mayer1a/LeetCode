@@ -64,6 +64,10 @@
 		49EC4CD92C060E0D00D68CF9 /* CanPlaceFlowers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CD22C060E0D00D68CF9 /* CanPlaceFlowers.swift */; };
 		49EC4CDA2C060E0D00D68CF9 /* ReverseVowelsOfString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CD42C060E0D00D68CF9 /* ReverseVowelsOfString.swift */; };
 		49EC4CDB2C060E0D00D68CF9 /* ReverseVowelsOfString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CD42C060E0D00D68CF9 /* ReverseVowelsOfString.swift */; };
+		49EC4CE02C060F1F00D68CF9 /* FindPivotIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CDC2C060F1F00D68CF9 /* FindPivotIndex.swift */; };
+		49EC4CE12C060F1F00D68CF9 /* FindPivotIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CDC2C060F1F00D68CF9 /* FindPivotIndex.swift */; };
+		49EC4CE22C060F1F00D68CF9 /* MaximumAverageSubarrayI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CDE2C060F1F00D68CF9 /* MaximumAverageSubarrayI.swift */; };
+		49EC4CE32C060F1F00D68CF9 /* MaximumAverageSubarrayI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CDE2C060F1F00D68CF9 /* MaximumAverageSubarrayI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -119,6 +123,8 @@
 		49EC4CD02C060E0D00D68CF9 /* IsSubsequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsSubsequence.swift; sourceTree = "<group>"; };
 		49EC4CD22C060E0D00D68CF9 /* CanPlaceFlowers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanPlaceFlowers.swift; sourceTree = "<group>"; };
 		49EC4CD42C060E0D00D68CF9 /* ReverseVowelsOfString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseVowelsOfString.swift; sourceTree = "<group>"; };
+		49EC4CDC2C060F1F00D68CF9 /* FindPivotIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPivotIndex.swift; sourceTree = "<group>"; };
+		49EC4CDE2C060F1F00D68CF9 /* MaximumAverageSubarrayI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaximumAverageSubarrayI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +287,8 @@
 				49EC4CD52C060E0D00D68CF9 /* 345. Reverse Vowels of a String */,
 				49EC4CD12C060E0D00D68CF9 /* 392. Is Subsequence */,
 				49EC4CD32C060E0D00D68CF9 /* 605. Can Place Flowers */,
+				49EC4CDF2C060F1F00D68CF9 /* 643. Maximum Average Subarray I */,
+				49EC4CDD2C060F1F00D68CF9 /* 724. Find Pivot Index */,
 				499762EB2BFF8031009D6EF5 /* main.swift */,
 			);
 			path = LeetCode75;
@@ -372,6 +380,22 @@
 				49EC4CD42C060E0D00D68CF9 /* ReverseVowelsOfString.swift */,
 			);
 			path = "345. Reverse Vowels of a String";
+			sourceTree = "<group>";
+		};
+		49EC4CDD2C060F1F00D68CF9 /* 724. Find Pivot Index */ = {
+			isa = PBXGroup;
+			children = (
+				49EC4CDC2C060F1F00D68CF9 /* FindPivotIndex.swift */,
+			);
+			path = "724. Find Pivot Index";
+			sourceTree = "<group>";
+		};
+		49EC4CDF2C060F1F00D68CF9 /* 643. Maximum Average Subarray I */ = {
+			isa = PBXGroup;
+			children = (
+				49EC4CDE2C060F1F00D68CF9 /* MaximumAverageSubarrayI.swift */,
+			);
+			path = "643. Maximum Average Subarray I";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -563,6 +587,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49EC4CCE2C060CAA00D68CF9 /* MoveZeroes.swift in Sources */,
+				49EC4CE02C060F1F00D68CF9 /* FindPivotIndex.swift in Sources */,
 				499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */,
 				499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */,
 				499763182BFF8181009D6EF5 /* Node.swift in Sources */,
@@ -572,6 +597,7 @@
 				499763192BFF8181009D6EF5 /* ListNode.swift in Sources */,
 				499763322BFF85D7009D6EF5 /* main.swift in Sources */,
 				49EC4CD82C060E0D00D68CF9 /* CanPlaceFlowers.swift in Sources */,
+				49EC4CE22C060F1F00D68CF9 /* MaximumAverageSubarrayI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,11 +611,13 @@
 				49EC4CCF2C060CAA00D68CF9 /* MoveZeroes.swift in Sources */,
 				4997631C2BFF8181009D6EF5 /* Node.swift in Sources */,
 				49EC4CD92C060E0D00D68CF9 /* CanPlaceFlowers.swift in Sources */,
+				49EC4CE12C060F1F00D68CF9 /* FindPivotIndex.swift in Sources */,
 				49EC4CDB2C060E0D00D68CF9 /* ReverseVowelsOfString.swift in Sources */,
 				4997631D2BFF8181009D6EF5 /* ListNode.swift in Sources */,
 				49EC4CCD2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */,
 				499763332BFF85D8009D6EF5 /* main.swift in Sources */,
 				499763372BFF88A7009D6EF5 /* LeetCode75.swift in Sources */,
+				49EC4CE32C060F1F00D68CF9 /* MaximumAverageSubarrayI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

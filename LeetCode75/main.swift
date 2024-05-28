@@ -56,5 +56,19 @@ final class Solution {
         }
     }
 
+    // MARK: - 643. Maximum Average Subarray I
+
+    func maximumAverageSubarrayI(_ nums: [Int], _ k: Int) -> Double {
+        let solution = MaximumAverageSubarrayI_Solution()
+        return solution.findMaxAverage(nums, k)
+    }
+
+    // MARK: - 724. Find Pivot Index
+
+    func findPivotIndex(_ nums: [Int]) -> Int {
+        let solution = FindPivotIndex_Solution()
+        return solution.pivotIndex(nums)
+    }
+
 }
 
