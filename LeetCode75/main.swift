@@ -99,5 +99,28 @@ final class Solution {
         return solution.kidsWithCandies(candies, extraCandies)
     }
 
+    // MARK: - 1732. Find the Highest Altitude
+
+    func findTheHighestAltitude(_ gain: [Int]) -> Int {
+        let solution = FindTheHighestAltitude_Solution()
+        return solution.largestAltitude(gain)
+    }
+
+    // MARK: - 1768. Merge Strings Alternately
+
+    func mergeStringsAlternately(_ word1: String, _ word2: String) -> String {
+        let solution = MergeStringsAlternately_Solution()
+        return solution.mergeAlternately(word1, word2)
+    }
+
+    // MARK: - 2215. Find the Difference of Two Arrays
+
+    func findTheDifferenceOfTwoArrays(_ nums1: [Int], _ nums2: [Int],
+                                      version: FindTheDifferenceOfTwoArrays_Solution.Version) -> [[Int]] {
+        
+        let solution = FindTheDifferenceOfTwoArrays_Solution()
+        return solution.findDifference(nums1, nums2, version: version)
+    }
+
 }
 

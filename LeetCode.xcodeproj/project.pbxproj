@@ -74,6 +74,12 @@
 		49EC4CED2C06102E00D68CF9 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CE62C06102E00D68CF9 /* KidsWithTheGreatestNumberOfCandies.swift */; };
 		49EC4CEE2C06102E00D68CF9 /* GreatestCommonDivisorOfStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CE82C06102E00D68CF9 /* GreatestCommonDivisorOfStrings.swift */; };
 		49EC4CEF2C06102E00D68CF9 /* GreatestCommonDivisorOfStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CE82C06102E00D68CF9 /* GreatestCommonDivisorOfStrings.swift */; };
+		49EC4CF62C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CF02C06115C00D68CF9 /* MergeStringsAlternately.swift */; };
+		49EC4CF72C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CF02C06115C00D68CF9 /* MergeStringsAlternately.swift */; };
+		49EC4CF82C06115C00D68CF9 /* FindTheHighestAltitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CF22C06115C00D68CF9 /* FindTheHighestAltitude.swift */; };
+		49EC4CF92C06115C00D68CF9 /* FindTheHighestAltitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CF22C06115C00D68CF9 /* FindTheHighestAltitude.swift */; };
+		49EC4CFA2C06115C00D68CF9 /* FindTheDifferenceOfTwoArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CF42C06115C00D68CF9 /* FindTheDifferenceOfTwoArrays.swift */; };
+		49EC4CFB2C06115C00D68CF9 /* FindTheDifferenceOfTwoArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC4CF42C06115C00D68CF9 /* FindTheDifferenceOfTwoArrays.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -134,6 +140,9 @@
 		49EC4CE42C06102E00D68CF9 /* UniqueNumberOfOccurrences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniqueNumberOfOccurrences.swift; sourceTree = "<group>"; };
 		49EC4CE62C06102E00D68CF9 /* KidsWithTheGreatestNumberOfCandies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KidsWithTheGreatestNumberOfCandies.swift; sourceTree = "<group>"; };
 		49EC4CE82C06102E00D68CF9 /* GreatestCommonDivisorOfStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreatestCommonDivisorOfStrings.swift; sourceTree = "<group>"; };
+		49EC4CF02C06115C00D68CF9 /* MergeStringsAlternately.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeStringsAlternately.swift; sourceTree = "<group>"; };
+		49EC4CF22C06115C00D68CF9 /* FindTheHighestAltitude.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindTheHighestAltitude.swift; sourceTree = "<group>"; };
+		49EC4CF42C06115C00D68CF9 /* FindTheDifferenceOfTwoArrays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindTheDifferenceOfTwoArrays.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +310,9 @@
 				49EC4CE92C06102E00D68CF9 /* 1071. Greatest Common Divisor of Strings */,
 				49EC4CE52C06102E00D68CF9 /* 1207. Unique Number of Occurrences */,
 				49EC4CE72C06102E00D68CF9 /* 1431. Kids With the Greatest Number of Candies */,
+				49EC4CF32C06115C00D68CF9 /* 1732. Find the Highest Altitude */,
+				49EC4CF12C06115C00D68CF9 /* 1768. Merge Strings Alternately */,
+				49EC4CF52C06115C00D68CF9 /* 2215. Find the Difference of Two Arrays */,
 				499762EB2BFF8031009D6EF5 /* main.swift */,
 			);
 			path = LeetCode75;
@@ -432,6 +444,30 @@
 				49EC4CE82C06102E00D68CF9 /* GreatestCommonDivisorOfStrings.swift */,
 			);
 			path = "1071. Greatest Common Divisor of Strings";
+			sourceTree = "<group>";
+		};
+		49EC4CF12C06115C00D68CF9 /* 1768. Merge Strings Alternately */ = {
+			isa = PBXGroup;
+			children = (
+				49EC4CF02C06115C00D68CF9 /* MergeStringsAlternately.swift */,
+			);
+			path = "1768. Merge Strings Alternately";
+			sourceTree = "<group>";
+		};
+		49EC4CF32C06115C00D68CF9 /* 1732. Find the Highest Altitude */ = {
+			isa = PBXGroup;
+			children = (
+				49EC4CF22C06115C00D68CF9 /* FindTheHighestAltitude.swift */,
+			);
+			path = "1732. Find the Highest Altitude";
+			sourceTree = "<group>";
+		};
+		49EC4CF52C06115C00D68CF9 /* 2215. Find the Difference of Two Arrays */ = {
+			isa = PBXGroup;
+			children = (
+				49EC4CF42C06115C00D68CF9 /* FindTheDifferenceOfTwoArrays.swift */,
+			);
+			path = "2215. Find the Difference of Two Arrays";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -623,16 +659,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				49EC4CCE2C060CAA00D68CF9 /* MoveZeroes.swift in Sources */,
+				49EC4CFA2C06115C00D68CF9 /* FindTheDifferenceOfTwoArrays.swift in Sources */,
 				49EC4CE02C060F1F00D68CF9 /* FindPivotIndex.swift in Sources */,
 				499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */,
 				499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */,
 				499763182BFF8181009D6EF5 /* Node.swift in Sources */,
 				49EC4CDA2C060E0D00D68CF9 /* ReverseVowelsOfString.swift in Sources */,
 				49EC4CCC2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */,
+				49EC4CF62C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
 				49EC4CD62C060E0D00D68CF9 /* IsSubsequence.swift in Sources */,
 				499763192BFF8181009D6EF5 /* ListNode.swift in Sources */,
 				49EC4CEE2C06102E00D68CF9 /* GreatestCommonDivisorOfStrings.swift in Sources */,
 				49EC4CEC2C06102E00D68CF9 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */,
+				49EC4CF82C06115C00D68CF9 /* FindTheHighestAltitude.swift in Sources */,
 				499763322BFF85D7009D6EF5 /* main.swift in Sources */,
 				49EC4CD82C060E0D00D68CF9 /* CanPlaceFlowers.swift in Sources */,
 				49EC4CEA2C06102E00D68CF9 /* UniqueNumberOfOccurrences.swift in Sources */,
@@ -654,8 +693,11 @@
 				49EC4CE12C060F1F00D68CF9 /* FindPivotIndex.swift in Sources */,
 				49EC4CEB2C06102E00D68CF9 /* UniqueNumberOfOccurrences.swift in Sources */,
 				49EC4CDB2C060E0D00D68CF9 /* ReverseVowelsOfString.swift in Sources */,
+				49EC4CFB2C06115C00D68CF9 /* FindTheDifferenceOfTwoArrays.swift in Sources */,
 				4997631D2BFF8181009D6EF5 /* ListNode.swift in Sources */,
+				49EC4CF92C06115C00D68CF9 /* FindTheHighestAltitude.swift in Sources */,
 				49EC4CCD2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */,
+				49EC4CF72C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
 				499763332BFF85D8009D6EF5 /* main.swift in Sources */,
 				49EC4CED2C06102E00D68CF9 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */,
 				499763372BFF88A7009D6EF5 /* LeetCode75.swift in Sources */,
