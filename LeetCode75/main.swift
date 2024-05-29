@@ -70,6 +70,11 @@ final class Solution {
         return solution.pivotIndex(nums)
     }
 
+    // MARK: - 933. Number of Recent Calls
+    func numberOfRecentCalls(_ t: Int) -> Int {
+        NumberOfRecentCalls_Solution.shared.ping(t)
+    }
+
     // MARK: - 1071. Greatest Common Divisor of Strings
 
     func greatestCommonDivisorOfStrings(_ str1: String, _ str2: String, alt: Bool = false) -> String {

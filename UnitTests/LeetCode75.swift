@@ -207,6 +207,24 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.findPivotIndex(case7), case7Result)
     }
 
+    // MARK: - 933. Number of Recent Calls
+    func testNumberOfRecentCalls() throws {
+        let case1 = 1
+        let case2 = 100
+        let case3 = 3001
+        let case4 = 3002
+
+        let case1Result = 1
+        let case2Result = 2
+        let case3Result = 3
+        let case4Result = 3
+
+        XCTAssertEqual(solution.numberOfRecentCalls(case1), case1Result)
+        XCTAssertEqual(solution.numberOfRecentCalls(case2), case2Result)
+        XCTAssertEqual(solution.numberOfRecentCalls(case3), case3Result)
+        XCTAssertEqual(solution.numberOfRecentCalls(case4), case4Result)
+    }
+
     // MARK: - 1071. Greatest Common Divisor of Strings
 
     func testGreatestCommonDivisorOfStrings() throws {

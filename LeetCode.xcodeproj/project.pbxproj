@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		490BD57E2C071DB7003AE043 /* NumberOfRecentCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BD57D2C071DB7003AE043 /* NumberOfRecentCalls.swift */; };
+		490BD57F2C071DB7003AE043 /* NumberOfRecentCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BD57D2C071DB7003AE043 /* NumberOfRecentCalls.swift */; };
 		494A7B5628B91461008CDBFE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B5528B91461008CDBFE /* main.swift */; };
 		494A7B6C28B919C9008CDBFE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B5528B91461008CDBFE /* main.swift */; };
 		495D40492BFC94DC00ECFC81 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
@@ -104,6 +106,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		490BD57D2C071DB7003AE043 /* NumberOfRecentCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfRecentCalls.swift; sourceTree = "<group>"; };
 		494A7B5228B91461008CDBFE /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		494A7B5528B91461008CDBFE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		494A7B6128B91557008CDBFE /* LeetCode_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +180,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		490BD57C2C071DA5003AE043 /* 933. Number of Recent Calls */ = {
+			isa = PBXGroup;
+			children = (
+				490BD57D2C071DB7003AE043 /* NumberOfRecentCalls.swift */,
+			);
+			path = "933. Number of Recent Calls";
+			sourceTree = "<group>";
+		};
 		491085842BFF893D006F73CC /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +318,7 @@
 				49EC4CD32C060E0D00D68CF9 /* 605. Can Place Flowers */,
 				49EC4CDF2C060F1F00D68CF9 /* 643. Maximum Average Subarray I */,
 				49EC4CDD2C060F1F00D68CF9 /* 724. Find Pivot Index */,
+				490BD57C2C071DA5003AE043 /* 933. Number of Recent Calls */,
 				49EC4CE92C06102E00D68CF9 /* 1071. Greatest Common Divisor of Strings */,
 				49EC4CE52C06102E00D68CF9 /* 1207. Unique Number of Occurrences */,
 				49EC4CE72C06102E00D68CF9 /* 1431. Kids With the Greatest Number of Candies */,
@@ -660,6 +672,7 @@
 			files = (
 				49EC4CCE2C060CAA00D68CF9 /* MoveZeroes.swift in Sources */,
 				49EC4CFA2C06115C00D68CF9 /* FindTheDifferenceOfTwoArrays.swift in Sources */,
+				490BD57E2C071DB7003AE043 /* NumberOfRecentCalls.swift in Sources */,
 				49EC4CE02C060F1F00D68CF9 /* FindPivotIndex.swift in Sources */,
 				499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */,
 				499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */,
@@ -697,6 +710,7 @@
 				4997631D2BFF8181009D6EF5 /* ListNode.swift in Sources */,
 				49EC4CF92C06115C00D68CF9 /* FindTheHighestAltitude.swift in Sources */,
 				49EC4CCD2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */,
+				490BD57F2C071DB7003AE043 /* NumberOfRecentCalls.swift in Sources */,
 				49EC4CF72C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
 				499763332BFF85D8009D6EF5 /* main.swift in Sources */,
 				49EC4CED2C06102E00D68CF9 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */,
