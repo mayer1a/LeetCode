@@ -27,6 +27,57 @@ final class UnitTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    // MARK: - 104. Maximum Depth of Binary Tree
+
+    func testMaximumDepthOfBinaryTree() throws{
+        let case1 = TreeNode(3, .init(9), .init(20, .init(15), .init(7)))
+        let case2 = TreeNode(1, nil, .init(2))
+        let case3: TreeNode? = nil
+        let case4 = {
+            TreeNode(1, // Root
+                     .init(2, // Left
+                        .init(4, // Left
+                              .init(8), // Left
+                              .init(9, // Right
+                                    .init(10, // Left
+                                          .init(19), // Left
+                                          nil), // Right
+                                    .init(12))), // Right
+                        .init(5, // Right
+                              .init(20, // Left
+                                    .init(24, // Left
+                                          .init(30), // Left
+                                          nil), // Right
+                                    nil), // Right
+                              nil)), // Right
+                     .init(3, // Right
+                           .init(6, // Left
+                                 nil, // Left
+                                 .init(31, // Right
+                                       .init(29, // Left
+                                             .init(40, // Left
+                                                   .init(41), // Left
+                                                   nil), // Right
+                                             nil), // Right
+                                       nil)), // Right
+                           .init(7, // Right
+                                 nil, // Left
+                                 .init(32, // Right
+                                       .init(33), // Left
+                                       nil)))) // Right
+        }()
+
+        let case1Result = 3
+        let case2Result = 2
+        let case3Result = 0
+        let case4Result = 7
+
+        XCTAssertEqual(solution.maximumDepthOfBinaryTree(case1), case1Result)
+        XCTAssertEqual(solution.maximumDepthOfBinaryTree(case2), case2Result)
+        XCTAssertEqual(solution.maximumDepthOfBinaryTree(case3), case3Result)
+        XCTAssertEqual(solution.maximumDepthOfBinaryTree(case4), case4Result)
+    }
+
     // MARK: - 206. Reverse Linked List
 
     func testReverseLinkedList() throws {

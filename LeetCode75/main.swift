@@ -9,6 +9,13 @@ import Foundation
 
 final class Solution {
 
+    // MARK: - 104. Maximum Depth of Binary Tree
+    
+    func maximumDepthOfBinaryTree(_ root: TreeNode?) -> Int {
+        let solution = MaximumDepthOfBinaryTree_Solution()
+        return solution.maxDepth(root)
+    }
+
     // MARK: - 206. Reverse Linked List
 
     func reverseLinkedList(_ head: ListNode?, iterative: Bool = true) -> ListNode? {
