@@ -258,6 +258,121 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.findPivotIndex(case7), case7Result)
     }
 
+    // MARK: - 872. Leaf-Similar Trees
+
+    func testLeafSimilarTrees() throws {
+        let case1_1 = TreeNode(3,
+                             .init(5,
+                                   .init(6),
+                                   .init(2,
+                                         .init(7),
+                                         .init(4))),
+                             .init(1,
+                                   .init(9),
+                                   .init(8)))
+        let case1_2 = TreeNode(3,
+                               .init(5,
+                                     .init(6),
+                                     .init(7)),
+                               .init(1,
+                                     .init(4),
+                                     .init(2,
+                                           .init(9),
+                                           .init(8))))
+
+        let case2_1: TreeNode? = nil
+        let case2_2 = TreeNode(8)
+
+        let case3_1 = {
+            TreeNode(1,
+                     .init(2,
+                        .init(4,
+                              .init(8),
+                              .init(9,
+                                    .init(10,
+                                          .init(19),
+                                          nil),
+                                    .init(12))),
+                        .init(5,
+                              .init(20,
+                                    .init(24,
+                                          .init(30),
+                                          nil),
+                                    nil),
+                              nil)),
+                     .init(3,
+                           .init(6,
+                                 nil,
+                                 .init(31,
+                                       .init(29,
+                                             .init(40,
+                                                   .init(41),
+                                                   nil),
+                                             nil),
+                                       nil)),
+                           .init(7,
+                                 nil,
+                                 .init(32,
+                                       .init(33),
+                                       nil))))
+        }()
+        let case3_2 = {
+            TreeNode(1,
+                     .init(2,
+                        .init(4,
+                              .init(8),
+                              .init(9,
+                                    .init(10,
+                                          .init(19),
+                                          nil),
+                                    .init(12))),
+                        .init(5,
+                              .init(20,
+                                    .init(24,
+                                          .init(30),
+                                          nil),
+                                    nil),
+                              nil)),
+                     .init(3,
+                           .init(6,
+                                 nil,
+                                 .init(31,
+                                       .init(29,
+                                             .init(40,
+                                                   .init(90),
+                                                   nil),
+                                             nil),
+                                       nil)),
+                           .init(7,
+                                 nil,
+                                 .init(32,
+                                       .init(33),
+                                       nil))))
+        }()
+
+        let case4_1 = TreeNode(1,
+                               .init(2),
+                               .init(3))
+        let case4_2 = TreeNode(1,
+                               .init(3),
+                               .init(2))
+
+        let case5_1 = case3_1
+        let case5_2 = case3_1
+
+        let case1Result = true
+        let case2Result = false
+        let case3Result = false
+        let case4Result = false
+        let case5Result = true
+
+        XCTAssertEqual(solution.leafSimilarTrees(case1_1, case1_2), case1Result)
+        XCTAssertEqual(solution.leafSimilarTrees(case2_1, case2_2), case2Result)
+        XCTAssertEqual(solution.leafSimilarTrees(case3_1, case3_2), case3Result)
+        XCTAssertEqual(solution.leafSimilarTrees(case4_1, case4_2), case4Result)
+        XCTAssertEqual(solution.leafSimilarTrees(case5_1, case5_2), case5Result)
+    }
+
     // MARK: - 933. Number of Recent Calls
     func testNumberOfRecentCalls() throws {
         let case1 = 1

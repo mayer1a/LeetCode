@@ -77,6 +77,13 @@ final class Solution {
         return solution.pivotIndex(nums)
     }
 
+    // MARK: - 872. Leaf-Similar Trees
+
+    func leafSimilarTrees(_ root1: TreeNode?, _ root2: TreeNode?) -> Bool {
+        let solution = LeafSimilarTrees_Solution()
+        return solution.leafSimilar(root1, root2)
+    }
+
     // MARK: - 933. Number of Recent Calls
     func numberOfRecentCalls(_ t: Int) -> Int {
         NumberOfRecentCalls_Solution.shared.ping(t)
