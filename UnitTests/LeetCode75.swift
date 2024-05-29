@@ -27,6 +27,57 @@ final class UnitTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    // MARK: - 104. Maximum Depth of Binary Tree
+
+    func testMaximumDepthOfBinaryTree() throws{
+        let case1 = TreeNode(3, .init(9), .init(20, .init(15), .init(7)))
+        let case2 = TreeNode(1, nil, .init(2))
+        let case3: TreeNode? = nil
+        let case4 = {
+            TreeNode(1, // Root
+                     .init(2, // Left
+                        .init(4, // Left
+                              .init(8), // Left
+                              .init(9, // Right
+                                    .init(10, // Left
+                                          .init(19), // Left
+                                          nil), // Right
+                                    .init(12))), // Right
+                        .init(5, // Right
+                              .init(20, // Left
+                                    .init(24, // Left
+                                          .init(30), // Left
+                                          nil), // Right
+                                    nil), // Right
+                              nil)), // Right
+                     .init(3, // Right
+                           .init(6, // Left
+                                 nil, // Left
+                                 .init(31, // Right
+                                       .init(29, // Left
+                                             .init(40, // Left
+                                                   .init(41), // Left
+                                                   nil), // Right
+                                             nil), // Right
+                                       nil)), // Right
+                           .init(7, // Right
+                                 nil, // Left
+                                 .init(32, // Right
+                                       .init(33), // Left
+                                       nil)))) // Right
+        }()
+
+        let case1Result = 3
+        let case2Result = 2
+        let case3Result = 0
+        let case4Result = 7
+
+        XCTAssertEqual(solution.maximumDepthOfBinaryTree(case1), case1Result)
+        XCTAssertEqual(solution.maximumDepthOfBinaryTree(case2), case2Result)
+        XCTAssertEqual(solution.maximumDepthOfBinaryTree(case3), case3Result)
+        XCTAssertEqual(solution.maximumDepthOfBinaryTree(case4), case4Result)
+    }
+
     // MARK: - 206. Reverse Linked List
 
     func testReverseLinkedList() throws {
@@ -205,6 +256,139 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.findPivotIndex(case5), case5Result)
         XCTAssertEqual(solution.findPivotIndex(case6), case6Result)
         XCTAssertEqual(solution.findPivotIndex(case7), case7Result)
+    }
+
+    // MARK: - 872. Leaf-Similar Trees
+
+    func testLeafSimilarTrees() throws {
+        let case1_1 = TreeNode(3,
+                             .init(5,
+                                   .init(6),
+                                   .init(2,
+                                         .init(7),
+                                         .init(4))),
+                             .init(1,
+                                   .init(9),
+                                   .init(8)))
+        let case1_2 = TreeNode(3,
+                               .init(5,
+                                     .init(6),
+                                     .init(7)),
+                               .init(1,
+                                     .init(4),
+                                     .init(2,
+                                           .init(9),
+                                           .init(8))))
+
+        let case2_1: TreeNode? = nil
+        let case2_2 = TreeNode(8)
+
+        let case3_1 = {
+            TreeNode(1,
+                     .init(2,
+                        .init(4,
+                              .init(8),
+                              .init(9,
+                                    .init(10,
+                                          .init(19),
+                                          nil),
+                                    .init(12))),
+                        .init(5,
+                              .init(20,
+                                    .init(24,
+                                          .init(30),
+                                          nil),
+                                    nil),
+                              nil)),
+                     .init(3,
+                           .init(6,
+                                 nil,
+                                 .init(31,
+                                       .init(29,
+                                             .init(40,
+                                                   .init(41),
+                                                   nil),
+                                             nil),
+                                       nil)),
+                           .init(7,
+                                 nil,
+                                 .init(32,
+                                       .init(33),
+                                       nil))))
+        }()
+        let case3_2 = {
+            TreeNode(1,
+                     .init(2,
+                        .init(4,
+                              .init(8),
+                              .init(9,
+                                    .init(10,
+                                          .init(19),
+                                          nil),
+                                    .init(12))),
+                        .init(5,
+                              .init(20,
+                                    .init(24,
+                                          .init(30),
+                                          nil),
+                                    nil),
+                              nil)),
+                     .init(3,
+                           .init(6,
+                                 nil,
+                                 .init(31,
+                                       .init(29,
+                                             .init(40,
+                                                   .init(90),
+                                                   nil),
+                                             nil),
+                                       nil)),
+                           .init(7,
+                                 nil,
+                                 .init(32,
+                                       .init(33),
+                                       nil))))
+        }()
+
+        let case4_1 = TreeNode(1,
+                               .init(2),
+                               .init(3))
+        let case4_2 = TreeNode(1,
+                               .init(3),
+                               .init(2))
+
+        let case5_1 = case3_1
+        let case5_2 = case3_1
+
+        let case1Result = true
+        let case2Result = false
+        let case3Result = false
+        let case4Result = false
+        let case5Result = true
+
+        XCTAssertEqual(solution.leafSimilarTrees(case1_1, case1_2), case1Result)
+        XCTAssertEqual(solution.leafSimilarTrees(case2_1, case2_2), case2Result)
+        XCTAssertEqual(solution.leafSimilarTrees(case3_1, case3_2), case3Result)
+        XCTAssertEqual(solution.leafSimilarTrees(case4_1, case4_2), case4Result)
+        XCTAssertEqual(solution.leafSimilarTrees(case5_1, case5_2), case5Result)
+    }
+
+    // MARK: - 933. Number of Recent Calls
+    func testNumberOfRecentCalls() throws {
+        let case1 = 1
+        let case2 = 100
+        let case3 = 3001
+        let case4 = 3002
+
+        let case1Result = 1
+        let case2Result = 2
+        let case3Result = 3
+        let case4Result = 3
+
+        XCTAssertEqual(solution.numberOfRecentCalls(case1), case1Result)
+        XCTAssertEqual(solution.numberOfRecentCalls(case2), case2Result)
+        XCTAssertEqual(solution.numberOfRecentCalls(case3), case3Result)
+        XCTAssertEqual(solution.numberOfRecentCalls(case4), case4Result)
     }
 
     // MARK: - 1071. Greatest Common Divisor of Strings

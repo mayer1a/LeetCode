@@ -9,6 +9,13 @@ import Foundation
 
 final class Solution {
 
+    // MARK: - 104. Maximum Depth of Binary Tree
+    
+    func maximumDepthOfBinaryTree(_ root: TreeNode?) -> Int {
+        let solution = MaximumDepthOfBinaryTree_Solution()
+        return solution.maxDepth(root)
+    }
+
     // MARK: - 206. Reverse Linked List
 
     func reverseLinkedList(_ head: ListNode?, iterative: Bool = true) -> ListNode? {
@@ -68,6 +75,18 @@ final class Solution {
     func findPivotIndex(_ nums: [Int]) -> Int {
         let solution = FindPivotIndex_Solution()
         return solution.pivotIndex(nums)
+    }
+
+    // MARK: - 872. Leaf-Similar Trees
+
+    func leafSimilarTrees(_ root1: TreeNode?, _ root2: TreeNode?) -> Bool {
+        let solution = LeafSimilarTrees_Solution()
+        return solution.leafSimilar(root1, root2)
+    }
+
+    // MARK: - 933. Number of Recent Calls
+    func numberOfRecentCalls(_ t: Int) -> Int {
+        NumberOfRecentCalls_Solution.shared.ping(t)
     }
 
     // MARK: - 1071. Greatest Common Divisor of Strings
