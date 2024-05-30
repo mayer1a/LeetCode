@@ -36,10 +36,10 @@ import Foundation
 ///
 /// ** Constraints: **
 /// ```
-/// 1 <= t <= 109
+/// 1 <= t <= 10⁹
 /// Each test case will call ping with strictly increasing values of t.
-/// At most 104 calls will be made to ping.
-// ```
+/// At most 10⁴ calls will be made to ping.
+/// ```
 final class NumberOfRecentCalls_Solution {
 
     static let shared = NumberOfRecentCalls_Solution()

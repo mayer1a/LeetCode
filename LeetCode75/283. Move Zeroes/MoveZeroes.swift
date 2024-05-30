@@ -9,9 +9,9 @@ import Foundation
 
 // MARK: - 283. Move Zeroes
 
-///Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+/// Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 ///
-///Note that you must do this in-place without making a copy of the array.
+/// Note that you must do this in-place without making a copy of the array.
 ///
 ///
 /// **Example 1:**
@@ -19,6 +19,7 @@ import Foundation
 /// Input: nums = [0,1,0,3,12]
 /// Output: [1,3,12,0,0]
 /// ```
+///
 /// **Example 2:**
 /// ```
 /// Input: nums = [0]
@@ -27,8 +28,8 @@ import Foundation
 ///
 /// **Constraints:**
 /// ```
-/// 1 <= nums.length <= 104
-/// -231 <= nums[i] <= 231 - 1
+/// 1 <= nums.length <= 10⁴
+/// -2³¹ <= nums[i] <= 2³¹ - 1
 /// ```
 final class MoveZeroes_Solution {
 

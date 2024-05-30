@@ -10,8 +10,10 @@ import Foundation
 // MARK: - 704. Binary Search (Array, Binary Search)
 
 /// Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums.
+///
 /// If target exists, then return its index. Otherwise, return -1.
 /// You must write an algorithm with O(log n) runtime complexity.
+///
 ///
 /// **Example 1:**
 /// ```
@@ -29,8 +31,8 @@ import Foundation
 ///
 /// **Constraints:**
 /// ```
-/// 1 <= nums.length <= 104
-/// -104 < nums[i], target < 104
+/// 1 <= nums.length <= 10⁴
+/// -10⁴ < nums[i], target < 10⁴
 /// All the integers in nums are unique.
 /// nums is sorted in ascending order.
 /// ```
