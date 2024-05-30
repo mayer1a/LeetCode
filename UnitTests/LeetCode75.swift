@@ -230,6 +230,50 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.maximumAverageSubarrayI(case2.0, case2.1), case2Result, accuracy: 0.00001)
     }
 
+    // MARK: - 700. Search in a Binary Search Tree
+
+    func testSearchInBinarySearchTree() throws {
+        let case1SubTree = TreeNode(2, .init(1), .init(3))
+        let tree1 = TreeNode(4, case1SubTree, .init(7))
+        let case4SubTree = TreeNode(7)
+        let tree2 = TreeNode(8,
+                             .init(3,
+                                   .init(1),
+                                   .init(6,
+                                         .init(4),
+                                         case4SubTree)),
+                             .init(10,
+                                   nil,
+                                   .init(14,
+                                         .init(13),
+                                         nil)))
+        let tree3: TreeNode? = nil
+
+        let case1 = (tree1, 2)
+        let case2 = (tree1, 5)
+        let case3 = (tree2, 2)
+        let case4 = (tree2, 7)
+        let case5 = (tree3, 1)
+
+        let case1Result = case1SubTree
+        let case2Result: TreeNode? = nil
+        let case3Result: TreeNode? = nil
+        let case4Result = case4SubTree
+        let case5Result: TreeNode? = nil
+
+        XCTAssertIdentical(solution.searchInBinarySearchTree(case1.0, case1.1), case1Result)
+        XCTAssertIdentical(solution.searchInBinarySearchTree(case2.0, case2.1), case2Result)
+        XCTAssertIdentical(solution.searchInBinarySearchTree(case3.0, case3.1), case3Result)
+        XCTAssertIdentical(solution.searchInBinarySearchTree(case4.0, case4.1), case4Result)
+        XCTAssertIdentical(solution.searchInBinarySearchTree(case5.0, case5.1), case5Result)
+
+        XCTAssertIdentical(solution.searchInBinarySearchTree(case1.0, case1.1, alt: true), case1Result)
+        XCTAssertIdentical(solution.searchInBinarySearchTree(case2.0, case2.1, alt: true), case2Result)
+        XCTAssertIdentical(solution.searchInBinarySearchTree(case3.0, case3.1, alt: true), case3Result)
+        XCTAssertIdentical(solution.searchInBinarySearchTree(case4.0, case4.1, alt: true), case4Result)
+        XCTAssertIdentical(solution.searchInBinarySearchTree(case5.0, case5.1, alt: true), case5Result)
+    }
+
     // MARK: - 724. Find Pivot Index
 
     func testFindPivotIndex() throws {

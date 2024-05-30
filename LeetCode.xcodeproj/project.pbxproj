@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		490119302C087DD0009ADEC2 /* SearchInBinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901192F2C087DD0009ADEC2 /* SearchInBinarySearchTree.swift */; };
+		490119312C087DD0009ADEC2 /* SearchInBinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901192F2C087DD0009ADEC2 /* SearchInBinarySearchTree.swift */; };
 		490BD57E2C071DB7003AE043 /* NumberOfRecentCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BD57D2C071DB7003AE043 /* NumberOfRecentCalls.swift */; };
 		490BD57F2C071DB7003AE043 /* NumberOfRecentCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BD57D2C071DB7003AE043 /* NumberOfRecentCalls.swift */; };
 		490BD5822C0721AC003AE043 /* MaximumDepthOfBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BD5812C0721AC003AE043 /* MaximumDepthOfBinaryTree.swift */; };
@@ -110,6 +112,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4901192F2C087DD0009ADEC2 /* SearchInBinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInBinarySearchTree.swift; sourceTree = "<group>"; };
 		490BD57D2C071DB7003AE043 /* NumberOfRecentCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfRecentCalls.swift; sourceTree = "<group>"; };
 		490BD5812C0721AC003AE043 /* MaximumDepthOfBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumDepthOfBinaryTree.swift; sourceTree = "<group>"; };
 		490BD5852C072CD1003AE043 /* LeafSimilarTrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafSimilarTrees.swift; sourceTree = "<group>"; };
@@ -186,6 +189,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4901192E2C087DBD009ADEC2 /* 700. Search in a Binary Search Tree */ = {
+			isa = PBXGroup;
+			children = (
+				4901192F2C087DD0009ADEC2 /* SearchInBinarySearchTree.swift */,
+			);
+			path = "700. Search in a Binary Search Tree";
+			sourceTree = "<group>";
+		};
 		490BD57C2C071DA5003AE043 /* 933. Number of Recent Calls */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,6 +351,7 @@
 				49EC4CD12C060E0D00D68CF9 /* 392. Is Subsequence */,
 				49EC4CD32C060E0D00D68CF9 /* 605. Can Place Flowers */,
 				49EC4CDF2C060F1F00D68CF9 /* 643. Maximum Average Subarray I */,
+				4901192E2C087DBD009ADEC2 /* 700. Search in a Binary Search Tree */,
 				49EC4CDD2C060F1F00D68CF9 /* 724. Find Pivot Index */,
 				490BD5842C072CBE003AE043 /* 872. Leaf-Similar Trees */,
 				490BD57C2C071DA5003AE043 /* 933. Number of Recent Calls */,
@@ -699,6 +711,7 @@
 				490BD57E2C071DB7003AE043 /* NumberOfRecentCalls.swift in Sources */,
 				49EC4CE02C060F1F00D68CF9 /* FindPivotIndex.swift in Sources */,
 				499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */,
+				490119302C087DD0009ADEC2 /* SearchInBinarySearchTree.swift in Sources */,
 				490BD5862C072CD1003AE043 /* LeafSimilarTrees.swift in Sources */,
 				499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */,
 				499763182BFF8181009D6EF5 /* Node.swift in Sources */,
@@ -734,6 +747,7 @@
 				490BD5872C072CD1003AE043 /* LeafSimilarTrees.swift in Sources */,
 				49EC4CDB2C060E0D00D68CF9 /* ReverseVowelsOfString.swift in Sources */,
 				49EC4CFB2C06115C00D68CF9 /* FindTheDifferenceOfTwoArrays.swift in Sources */,
+				490119312C087DD0009ADEC2 /* SearchInBinarySearchTree.swift in Sources */,
 				4997631D2BFF8181009D6EF5 /* ListNode.swift in Sources */,
 				49EC4CF92C06115C00D68CF9 /* FindTheHighestAltitude.swift in Sources */,
 				49EC4CCD2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */,

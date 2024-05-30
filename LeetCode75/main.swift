@@ -70,6 +70,17 @@ final class Solution {
         return solution.findMaxAverage(nums, k)
     }
 
+    // MARK: - 700. Search in a Binary Search Tree
+
+    func searchInBinarySearchTree(_ root: TreeNode?, _ val: Int, alt: Bool = false) -> TreeNode? {
+        let solution = SearchInBinarySearchTree_Solution()
+        if alt {
+            return solution.searchBST_v2(root, val)
+        } else {
+            return solution.searchBST_v1(root, val)
+        }
+    }
+
     // MARK: - 724. Find Pivot Index
 
     func findPivotIndex(_ nums: [Int]) -> Int {
