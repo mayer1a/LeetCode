@@ -141,6 +141,35 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.reverseVowelsOfString(case3), case3Result)
     }
 
+    // MARK: - 374. Guess Number Higher or Lower
+
+    func testGuessNumberHigherOrLower_v1() throws {
+        let case1 = (100, 67)
+        let case2 = (100, 49)
+        let case3 = (1, 1)
+        let case4 = (100, 100)
+        let case5 = (1_000_000_000, 999_999_999)
+
+        // v1Linear
+        XCTAssertEqual(solution.guessNumberHigherOrLower(case1.0, pickedNum: case1.1, version: .v1Linear), case1.1)
+        XCTAssertEqual(solution.guessNumberHigherOrLower(case2.0, pickedNum: case2.1, version: .v1Linear), case2.1)
+        XCTAssertEqual(solution.guessNumberHigherOrLower(case3.0, pickedNum: case3.1, version: .v1Linear), case3.1)
+        XCTAssertEqual(solution.guessNumberHigherOrLower(case4.0, pickedNum: case4.1, version: .v1Linear), case4.1)
+        XCTAssertEqual(solution.guessNumberHigherOrLower(case5.0, pickedNum: case5.1, version: .v1Linear), case5.1)
+        // v2Linear
+        XCTAssertEqual(solution.guessNumberHigherOrLower(case1.0, pickedNum: case1.1, version: .v2Linear), case1.1)
+        XCTAssertEqual(solution.guessNumberHigherOrLower(case2.0, pickedNum: case2.1, version: .v2Linear), case2.1)
+        XCTAssertEqual(solution.guessNumberHigherOrLower(case3.0, pickedNum: case3.1, version: .v2Linear), case3.1)
+        XCTAssertEqual(solution.guessNumberHigherOrLower(case4.0, pickedNum: case4.1, version: .v2Linear), case4.1)
+        XCTAssertEqual(solution.guessNumberHigherOrLower(case5.0, pickedNum: case5.1, version: .v2Linear), case5.1)
+        // v3Recursive
+        XCTAssertEqual(solution.guessNumberHigherOrLower(case1.0, pickedNum: case1.1, version: .v3Recursive), case1.1)
+        XCTAssertEqual(solution.guessNumberHigherOrLower(case2.0, pickedNum: case2.1, version: .v3Recursive), case2.1)
+        XCTAssertEqual(solution.guessNumberHigherOrLower(case3.0, pickedNum: case3.1, version: .v3Recursive), case3.1)
+        XCTAssertEqual(solution.guessNumberHigherOrLower(case4.0, pickedNum: case4.1, version: .v3Recursive), case4.1)
+        XCTAssertEqual(solution.guessNumberHigherOrLower(case5.0, pickedNum: case5.1, version: .v3Recursive), case5.1)
+    }
+
     // MARK: - 392. Is Subsequence
 
     func testIsSubsequence() throws {

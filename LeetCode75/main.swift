@@ -41,6 +41,15 @@ final class Solution {
         return solution.reverseVowels(s)
     }
 
+    // MARK: - 374. Guess Number Higher or Lower
+
+    func guessNumberHigherOrLower(_ n: Int, pickedNum: Int,
+                                  version: GuessNumberHigherOrLower_Solution.Version) -> Int {
+
+        let solution = GuessNumberHigherOrLower_Solution(pickedNumber: pickedNum)
+        return solution.guessNumber(n, version)
+    }
+
     // MARK: - 392. Is Subsequence
 
     func isSubsequence(_ s: String, _ t: String, alt: Bool = false) -> Bool {
