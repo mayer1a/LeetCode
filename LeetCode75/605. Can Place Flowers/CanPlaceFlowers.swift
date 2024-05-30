@@ -28,7 +28,7 @@ import Foundation
 ///
 /// **Constraints:**
 /// ```
-/// 1 <= flowerbed.length <= 2 * 104
+/// 1 <= flowerbed.length <= 2 * 10⁴
 /// flowerbed[i] is 0 or 1.
 /// There are no two adjacent flowers in flowerbed.
 /// 0 <= n <= flowerbed.length

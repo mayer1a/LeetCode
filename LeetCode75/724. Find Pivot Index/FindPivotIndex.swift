@@ -48,7 +48,7 @@ import Foundation
 ///
 /// **Constraints:**
 /// ```
-/// 1 <= nums.length <= 104
+/// 1 <= nums.length <= 10⁴
 /// -1000 <= nums[i] <= 1000
 /// ```
 final class FindPivotIndex_Solution {

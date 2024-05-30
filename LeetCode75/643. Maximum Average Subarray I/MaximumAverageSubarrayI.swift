@@ -31,8 +31,8 @@ import Foundation
 /// **Constraints:**
 /// ```
 /// n == nums.length
-/// 1 <= k <= n <= 105
-/// -104 <= nums[i] <= 104
+/// 1 <= k <= n <= 10⁵
+/// -10⁴ <= nums[i] <= 10⁴
 /// ```
 final class MaximumAverageSubarrayI_Solution {
 

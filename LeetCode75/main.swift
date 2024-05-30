@@ -41,6 +41,15 @@ final class Solution {
         return solution.reverseVowels(s)
     }
 
+    // MARK: - 374. Guess Number Higher or Lower
+
+    func guessNumberHigherOrLower(_ n: Int, pickedNum: Int,
+                                  version: GuessNumberHigherOrLower_Solution.Version) -> Int {
+
+        let solution = GuessNumberHigherOrLower_Solution(pickedNumber: pickedNum)
+        return solution.guessNumber(n, version)
+    }
+
     // MARK: - 392. Is Subsequence
 
     func isSubsequence(_ s: String, _ t: String, alt: Bool = false) -> Bool {
@@ -68,6 +77,17 @@ final class Solution {
     func maximumAverageSubarrayI(_ nums: [Int], _ k: Int) -> Double {
         let solution = MaximumAverageSubarrayI_Solution()
         return solution.findMaxAverage(nums, k)
+    }
+
+    // MARK: - 700. Search in a Binary Search Tree
+
+    func searchInBinarySearchTree(_ root: TreeNode?, _ val: Int, alt: Bool = false) -> TreeNode? {
+        let solution = SearchInBinarySearchTree_Solution()
+        if alt {
+            return solution.searchBST_v2(root, val)
+        } else {
+            return solution.searchBST_v1(root, val)
+        }
     }
 
     // MARK: - 724. Find Pivot Index
