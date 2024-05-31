@@ -504,6 +504,25 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.greatestCommonDivisorOfStrings(case8.0, case8.1, alt: true), case8Result)
     }
 
+    // MARK: - 1137. N-th Tribonacci Number
+
+    func testNthTribonacciNumber() throws {
+        let case1 = 4
+        let case2 = 25
+        let case3 = 30
+        let case4 = 36
+
+        let case1Result = 4
+        let case2Result = 1389537
+        let case3Result = 29249425
+        let case4Result = 1132436852
+
+        XCTAssertEqual(solution.nthTribonacciNumber(case1), case1Result)
+        XCTAssertEqual(solution.nthTribonacciNumber(case2), case2Result)
+        XCTAssertEqual(solution.nthTribonacciNumber(case3), case3Result)
+        XCTAssertEqual(solution.nthTribonacciNumber(case4), case4Result)
+    }
+
     // MARK: - 1207. Unique Number of Occurrences
 
     func testUniqueNumberOfOccurrences() throws {

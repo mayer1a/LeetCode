@@ -120,6 +120,13 @@ final class Solution {
         }
     }
 
+    // MARK: - 1137. N-th Tribonacci Number
+
+    func nthTribonacciNumber(_ n: Int) -> Int {
+        let solution = NthTribonacciNumber_Solution()
+        return solution.tribonacci(n)
+    }
+
     // MARK: - 1207. Unique Number of Occurrences
 
     func uniqueNumberOfOccurrences(_ arr: [Int], alt: Bool = false) -> Bool {

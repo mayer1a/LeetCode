@@ -48,6 +48,8 @@
 		499763322BFF85D7009D6EF5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499762EB2BFF8031009D6EF5 /* main.swift */; };
 		499763332BFF85D8009D6EF5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499762EB2BFF8031009D6EF5 /* main.swift */; };
 		499763372BFF88A7009D6EF5 /* LeetCode75.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499763112BFF811C009D6EF5 /* LeetCode75.swift */; };
+		49B331292C09AE6600BC47D8 /* NthTribonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B331282C09AE6600BC47D8 /* NthTribonacciNumber.swift */; };
+		49B3312A2C09AE6600BC47D8 /* NthTribonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B331282C09AE6600BC47D8 /* NthTribonacciNumber.swift */; };
 		49DA51162C08B1D30062A064 /* GuessNumberHigherOrLower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA51152C08B1D30062A064 /* GuessNumberHigherOrLower.swift */; };
 		49DA51172C08B1D30062A064 /* GuessNumberHigherOrLower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA51152C08B1D30062A064 /* GuessNumberHigherOrLower.swift */; };
 		49E2024E2C03ABB4005D75E9 /* LeetCode75.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 49E2024D2C03ABB4005D75E9 /* LeetCode75.xctestplan */; };
@@ -136,6 +138,7 @@
 		499762EB2BFF8031009D6EF5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		499762F42BFF809E009D6EF5 /* LeetCode75_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode75_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		499763112BFF811C009D6EF5 /* LeetCode75.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode75.swift; sourceTree = "<group>"; };
+		49B331282C09AE6600BC47D8 /* NthTribonacciNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NthTribonacciNumber.swift; sourceTree = "<group>"; };
 		49C7A34E2C03A823000CE31E /* LeetCode.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = LeetCode.xctestplan; sourceTree = "<group>"; };
 		49DA51152C08B1D30062A064 /* GuessNumberHigherOrLower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberHigherOrLower.swift; sourceTree = "<group>"; };
 		49E2024D2C03ABB4005D75E9 /* LeetCode75.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LeetCode75.xctestplan; sourceTree = "<group>"; };
@@ -360,6 +363,7 @@
 				490BD5842C072CBE003AE043 /* 872. Leaf-Similar Trees */,
 				490BD57C2C071DA5003AE043 /* 933. Number of Recent Calls */,
 				49EC4CE92C06102E00D68CF9 /* 1071. Greatest Common Divisor of Strings */,
+				49B331272C09AE5500BC47D8 /* 1137. N-th Tribonacci Number */,
 				49EC4CE52C06102E00D68CF9 /* 1207. Unique Number of Occurrences */,
 				49EC4CE72C06102E00D68CF9 /* 1431. Kids With the Greatest Number of Candies */,
 				49EC4CF32C06115C00D68CF9 /* 1732. Find the Highest Altitude */,
@@ -368,6 +372,14 @@
 				499762EB2BFF8031009D6EF5 /* main.swift */,
 			);
 			path = LeetCode75;
+			sourceTree = "<group>";
+		};
+		49B331272C09AE5500BC47D8 /* 1137. N-th Tribonacci Number */ = {
+			isa = PBXGroup;
+			children = (
+				49B331282C09AE6600BC47D8 /* NthTribonacciNumber.swift */,
+			);
+			path = "1137. N-th Tribonacci Number";
 			sourceTree = "<group>";
 		};
 		49DA51142C08B1BF0062A064 /* 374. Guess Number Higher or Lower */ = {
@@ -731,6 +743,7 @@
 				49EC4CCC2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */,
 				49EC4CF62C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
 				49EC4CD62C060E0D00D68CF9 /* IsSubsequence.swift in Sources */,
+				49B331292C09AE6600BC47D8 /* NthTribonacciNumber.swift in Sources */,
 				499763192BFF8181009D6EF5 /* ListNode.swift in Sources */,
 				49EC4CEE2C06102E00D68CF9 /* GreatestCommonDivisorOfStrings.swift in Sources */,
 				49EC4CEC2C06102E00D68CF9 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */,
@@ -767,6 +780,7 @@
 				490BD5832C0721AC003AE043 /* MaximumDepthOfBinaryTree.swift in Sources */,
 				490BD57F2C071DB7003AE043 /* NumberOfRecentCalls.swift in Sources */,
 				49DA51172C08B1D30062A064 /* GuessNumberHigherOrLower.swift in Sources */,
+				49B3312A2C09AE6600BC47D8 /* NthTribonacciNumber.swift in Sources */,
 				49EC4CF72C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
 				499763332BFF85D8009D6EF5 /* main.swift in Sources */,
 				49EC4CED2C06102E00D68CF9 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */,
