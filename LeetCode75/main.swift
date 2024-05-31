@@ -97,6 +97,13 @@ final class Solution {
         return solution.pivotIndex(nums)
     }
 
+    // MARK: - 746. Min Cost Climbing Stairs
+
+    func minCostClimbingStairs(_ costs: [Int]) -> Int {
+        let solution = MinCostClimbingStairs_Solution()
+        return solution.minCostClimbingStairs(costs)
+    }
+
     // MARK: - 872. Leaf-Similar Trees
 
     func leafSimilarTrees(_ root1: TreeNode?, _ root2: TreeNode?) -> Bool {
