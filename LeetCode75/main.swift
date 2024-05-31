@@ -97,6 +97,13 @@ final class Solution {
         return solution.pivotIndex(nums)
     }
 
+    // MARK: - 746. Min Cost Climbing Stairs
+
+    func minCostClimbingStairs(_ costs: [Int]) -> Int {
+        let solution = MinCostClimbingStairs_Solution()
+        return solution.minCostClimbingStairs(costs)
+    }
+
     // MARK: - 872. Leaf-Similar Trees
 
     func leafSimilarTrees(_ root1: TreeNode?, _ root2: TreeNode?) -> Bool {
@@ -118,6 +125,13 @@ final class Solution {
         } else {
             return solution.gcdOfStrings_v2(str1, str2)
         }
+    }
+
+    // MARK: - 1137. N-th Tribonacci Number
+
+    func nthTribonacciNumber(_ n: Int) -> Int {
+        let solution = NthTribonacciNumber_Solution()
+        return solution.tribonacci(n)
     }
 
     // MARK: - 1207. Unique Number of Occurrences
