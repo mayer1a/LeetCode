@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "494A7B5128B91461008CDBFE"
-               BuildableName = "LeetCode"
-               BlueprintName = "LeetCode"
+               BuildableName = "LeetCode100"
+               BlueprintName = "LeetCode100"
                ReferencedContainer = "container:LeetCode.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -30,7 +30,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:UnitTests/LeetCode.xctestplan"
+            reference = "container:UnitTests/LeetCode100.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -51,8 +51,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "494A7B5128B91461008CDBFE"
-            BuildableName = "LeetCode"
-            BlueprintName = "LeetCode"
+            BuildableName = "LeetCode100"
+            BlueprintName = "LeetCode100"
             ReferencedContainer = "container:LeetCode.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -68,8 +68,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "494A7B5128B91461008CDBFE"
-            BuildableName = "LeetCode"
-            BlueprintName = "LeetCode"
+            BuildableName = "LeetCode100"
+            BlueprintName = "LeetCode100"
             ReferencedContainer = "container:LeetCode.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

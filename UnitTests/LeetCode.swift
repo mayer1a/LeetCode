@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import LeetCode
+@testable import LeetCode100
 
 final class UnitTests: XCTestCase {
 

@@ -64,6 +64,7 @@ jobs:
               else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"
             fi
             file_to_build=`echo $file_to_build | awk '{$1=$1;print}'`
+            xcodebuild build -scheme "$scheme" -$filetype_parameter "$file_to_build" -destination "platform=$platform,name=$device,arch=arm64"
             xcodebuild build-for-testing -scheme "$scheme" -$filetype_parameter "$file_to_build" -destination "platform=$platform,name=$device,arch=arm64"
           done
       - name: Add Build Fail label

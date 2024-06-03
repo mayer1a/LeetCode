@@ -43,6 +43,7 @@
 		497399172C0DBA1A003031AA /* CountingBits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497399152C0DBA1A003031AA /* CountingBits.swift */; };
 		4973991A2C0E0DFC003031AA /* SingleNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497399192C0E0DFC003031AA /* SingleNumber.swift */; };
 		4973991B2C0E0DFC003031AA /* SingleNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497399192C0E0DFC003031AA /* SingleNumber.swift */; };
+		4973991D2C0E1873003031AA /* LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B6328B91557008CDBFE /* LeetCode.swift */; };
 		499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
 		499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
 		499763182BFF8181009D6EF5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404E2BFC965F00ECFC81 /* Node.swift */; };
@@ -59,7 +60,6 @@
 		49DA51162C08B1D30062A064 /* GuessNumberHigherOrLower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA51152C08B1D30062A064 /* GuessNumberHigherOrLower.swift */; };
 		49DA51172C08B1D30062A064 /* GuessNumberHigherOrLower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA51152C08B1D30062A064 /* GuessNumberHigherOrLower.swift */; };
 		49E2024E2C03ABB4005D75E9 /* LeetCode75.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 49E2024D2C03ABB4005D75E9 /* LeetCode75.xctestplan */; };
-		49E202502C046FE8005D75E9 /* LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B6328B91557008CDBFE /* LeetCode.swift */; };
 		49E202562C04E623005D75E9 /* NAryTreePreorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E202522C04E623005D75E9 /* NAryTreePreorderTraversal.swift */; };
 		49E202572C04E623005D75E9 /* NAryTreePreorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E202522C04E623005D75E9 /* NAryTreePreorderTraversal.swift */; };
 		49E202582C04E623005D75E9 /* LongestPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E202542C04E623005D75E9 /* LongestPalindrome.swift */; };
@@ -127,9 +127,9 @@
 		490BD5812C0721AC003AE043 /* MaximumDepthOfBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumDepthOfBinaryTree.swift; sourceTree = "<group>"; };
 		490BD5852C072CD1003AE043 /* LeafSimilarTrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafSimilarTrees.swift; sourceTree = "<group>"; };
 		4912C7AC2C09CBBA00DEB016 /* MinCostClimbingStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinCostClimbingStairs.swift; sourceTree = "<group>"; };
-		494A7B5228B91461008CDBFE /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
+		494A7B5228B91461008CDBFE /* LeetCode100 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode100; sourceTree = BUILT_PRODUCTS_DIR; };
 		494A7B5528B91461008CDBFE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		494A7B6128B91557008CDBFE /* LeetCode_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		494A7B6128B91557008CDBFE /* LeetCode100_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode100_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		494A7B6328B91557008CDBFE /* LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode.swift; sourceTree = "<group>"; };
 		495D40482BFC94DC00ECFC81 /* BenchTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchTimer.swift; sourceTree = "<group>"; };
 		495D404A2BFC95E400ECFC81 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 		499762F42BFF809E009D6EF5 /* LeetCode75_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode75_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		499763112BFF811C009D6EF5 /* LeetCode75.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode75.swift; sourceTree = "<group>"; };
 		49B331282C09AE6600BC47D8 /* NthTribonacciNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NthTribonacciNumber.swift; sourceTree = "<group>"; };
-		49C7A34E2C03A823000CE31E /* LeetCode.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = LeetCode.xctestplan; sourceTree = "<group>"; };
+		49C7A34E2C03A823000CE31E /* LeetCode100.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = LeetCode100.xctestplan; sourceTree = "<group>"; };
 		49DA51152C08B1D30062A064 /* GuessNumberHigherOrLower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberHigherOrLower.swift; sourceTree = "<group>"; };
 		49E2024D2C03ABB4005D75E9 /* LeetCode75.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LeetCode75.xctestplan; sourceTree = "<group>"; };
 		49E202522C04E623005D75E9 /* NAryTreePreorderTraversal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NAryTreePreorderTraversal.swift; sourceTree = "<group>"; };
@@ -256,7 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				491085842BFF893D006F73CC /* Shared */,
-				494A7B5428B91461008CDBFE /* LeetCode */,
+				494A7B5428B91461008CDBFE /* LeetCode100 */,
 				499762EA2BFF8031009D6EF5 /* LeetCode75 */,
 				494A7B5328B91461008CDBFE /* Products */,
 				494A7B6228B91557008CDBFE /* UnitTests */,
@@ -266,15 +266,15 @@
 		494A7B5328B91461008CDBFE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				494A7B5228B91461008CDBFE /* LeetCode */,
-				494A7B6128B91557008CDBFE /* LeetCode_UnitTests.xctest */,
+				494A7B5228B91461008CDBFE /* LeetCode100 */,
+				494A7B6128B91557008CDBFE /* LeetCode100_UnitTests.xctest */,
 				499762E92BFF8031009D6EF5 /* LeetCode75 */,
 				499762F42BFF809E009D6EF5 /* LeetCode75_UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		494A7B5428B91461008CDBFE /* LeetCode */ = {
+		494A7B5428B91461008CDBFE /* LeetCode100 */ = {
 			isa = PBXGroup;
 			children = (
 				495D406F2BFC9A1B00ECFC81 /* 21. Merge Two Sorted Lists */,
@@ -291,14 +291,14 @@
 				49EC4CC32C06096800D68CF9 /* 1480. Running Sum of 1d Array */,
 				494A7B5528B91461008CDBFE /* main.swift */,
 			);
-			path = LeetCode;
+			path = LeetCode100;
 			sourceTree = "<group>";
 		};
 		494A7B6228B91557008CDBFE /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
 				49E2024D2C03ABB4005D75E9 /* LeetCode75.xctestplan */,
-				49C7A34E2C03A823000CE31E /* LeetCode.xctestplan */,
+				49C7A34E2C03A823000CE31E /* LeetCode100.xctestplan */,
 				494A7B6328B91557008CDBFE /* LeetCode.swift */,
 				499763112BFF811C009D6EF5 /* LeetCode75.swift */,
 			);
@@ -581,9 +581,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		494A7B5128B91461008CDBFE /* LeetCode */ = {
+		494A7B5128B91461008CDBFE /* LeetCode100 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 494A7B5928B91461008CDBFE /* Build configuration list for PBXNativeTarget "LeetCode" */;
+			buildConfigurationList = 494A7B5928B91461008CDBFE /* Build configuration list for PBXNativeTarget "LeetCode100" */;
 			buildPhases = (
 				494A7B4E28B91461008CDBFE /* Sources */,
 				494A7B4F28B91461008CDBFE /* Frameworks */,
@@ -593,14 +593,14 @@
 			);
 			dependencies = (
 			);
-			name = LeetCode;
+			name = LeetCode100;
 			productName = LeetCode;
-			productReference = 494A7B5228B91461008CDBFE /* LeetCode */;
+			productReference = 494A7B5228B91461008CDBFE /* LeetCode100 */;
 			productType = "com.apple.product-type.tool";
 		};
-		494A7B6028B91557008CDBFE /* LeetCode_UnitTests */ = {
+		494A7B6028B91557008CDBFE /* LeetCode100_UnitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 494A7B6528B91557008CDBFE /* Build configuration list for PBXNativeTarget "LeetCode_UnitTests" */;
+			buildConfigurationList = 494A7B6528B91557008CDBFE /* Build configuration list for PBXNativeTarget "LeetCode100_UnitTests" */;
 			buildPhases = (
 				494A7B5D28B91557008CDBFE /* Sources */,
 				494A7B5E28B91557008CDBFE /* Frameworks */,
@@ -610,9 +610,9 @@
 			);
 			dependencies = (
 			);
-			name = LeetCode_UnitTests;
+			name = LeetCode100_UnitTests;
 			productName = Tests;
-			productReference = 494A7B6128B91557008CDBFE /* LeetCode_UnitTests.xctest */;
+			productReference = 494A7B6128B91557008CDBFE /* LeetCode100_UnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		499762E82BFF8031009D6EF5 /* LeetCode75 */ = {
@@ -686,8 +686,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				494A7B5128B91461008CDBFE /* LeetCode */,
-				494A7B6028B91557008CDBFE /* LeetCode_UnitTests */,
+				494A7B5128B91461008CDBFE /* LeetCode100 */,
+				494A7B6028B91557008CDBFE /* LeetCode100_UnitTests */,
 				499762E82BFF8031009D6EF5 /* LeetCode75 */,
 				499762F32BFF809E009D6EF5 /* LeetCode75_UnitTests */,
 			);
@@ -743,7 +743,6 @@
 			files = (
 				494A7B6C28B919C9008CDBFE /* main.swift in Sources */,
 				495D40F12BFCBB8200ECFC81 /* LinkedListCycleII.swift in Sources */,
-				49E202502C046FE8005D75E9 /* LeetCode.swift in Sources */,
 				495D40F02BFCBB7900ECFC81 /* BestTimeToBuyAndSellStock.swift in Sources */,
 				495D40EE2BFCBB7000ECFC81 /* MergeTwoSortedLists.swift in Sources */,
 				495D40F42BFCBB8C00ECFC81 /* FirstBadVersion.swift in Sources */,
@@ -756,6 +755,7 @@
 				495D41002BFCBBBE00ECFC81 /* ListNode.swift in Sources */,
 				49EC4CC72C06096900D68CF9 /* RunningSumOf1dArray.swift in Sources */,
 				495D40F22BFCBB8500ECFC81 /* IsomorphicStrings.swift in Sources */,
+				4973991D2C0E1873003031AA /* LeetCode.swift in Sources */,
 				49EC4CBF2C06082900D68CF9 /* MiddleOfTheLinkedList.swift in Sources */,
 				49EC4CBD2C06082900D68CF9 /* BinarySearch.swift in Sources */,
 				49EC4CC52C06096900D68CF9 /* LargestTimeForGivenDigits.swift in Sources */,
@@ -965,8 +965,10 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mayer-inc.LeetCode";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mayer-inc.LeetCode100";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -981,7 +983,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mayer-inc.LeetCode";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mayer-inc.LeetCode100";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -997,8 +1000,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mayer-inc.LeetCode-UnitTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mayer-inc.LeetCode100-UnitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1014,7 +1018,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mayer-inc.LeetCode-UnitTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mayer-inc.LeetCode100-UnitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -1034,6 +1038,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mayer-inc.LeetCode75";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1054,6 +1059,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mayer-inc.LeetCode75";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1077,7 +1083,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mayer-inc.LeetCode75-UnitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1117,7 +1123,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		494A7B5928B91461008CDBFE /* Build configuration list for PBXNativeTarget "LeetCode" */ = {
+		494A7B5928B91461008CDBFE /* Build configuration list for PBXNativeTarget "LeetCode100" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				494A7B5A28B91461008CDBFE /* Debug */,
@@ -1126,7 +1132,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		494A7B6528B91557008CDBFE /* Build configuration list for PBXNativeTarget "LeetCode_UnitTests" */ = {
+		494A7B6528B91557008CDBFE /* Build configuration list for PBXNativeTarget "LeetCode100_UnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				494A7B6628B91557008CDBFE /* Debug */,
