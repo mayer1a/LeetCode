@@ -16,6 +16,13 @@ final class Solution {
         return solution.maxDepth(root)
     }
 
+    // MARK: - 136. Single Number
+    
+    func singleNumber(_ nums: [Int]) -> Int {
+        let solution = SingleNumber_Solution()
+        return solution.singleNumber(nums)
+    }
+
     // MARK: - 206. Reverse Linked List
 
     func reverseLinkedList(_ head: ListNode?, iterative: Bool = true) -> ListNode? {

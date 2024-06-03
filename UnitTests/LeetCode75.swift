@@ -78,6 +78,28 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.maximumDepthOfBinaryTree(case4), case4Result)
     }
 
+    // MARK: - 136. Single Number
+
+    func testSingleNumber() throws {
+        let case1 = [2, 2, 1]
+        let case2 = [4, 1, 2, 1, 2]
+        let case3 = [6]
+        let case4 = [1, 2, 10, 100, 94, 2, 1, 94, 10, 4, 4, 100, 5]
+        let case5 = [1, 2, 10, 100, 94, 2, 1, 7, 94, 10, 4, 4, 100]
+
+        let case1Result = 1
+        let case2Result = 4
+        let case3Result = 6
+        let case4Result = 5
+        let case5Result = 7
+
+        XCTAssertEqual(solution.singleNumber(case1), case1Result)
+        XCTAssertEqual(solution.singleNumber(case2), case2Result)
+        XCTAssertEqual(solution.singleNumber(case3), case3Result)
+        XCTAssertEqual(solution.singleNumber(case4), case4Result)
+        XCTAssertEqual(solution.singleNumber(case5), case5Result)
+    }
+
     // MARK: - 206. Reverse Linked List
 
     func testReverseLinkedList() throws {

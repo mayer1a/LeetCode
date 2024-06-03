@@ -41,6 +41,8 @@
 		495D41002BFCBBBE00ECFC81 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404A2BFC95E400ECFC81 /* ListNode.swift */; };
 		497399162C0DBA1A003031AA /* CountingBits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497399152C0DBA1A003031AA /* CountingBits.swift */; };
 		497399172C0DBA1A003031AA /* CountingBits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497399152C0DBA1A003031AA /* CountingBits.swift */; };
+		4973991A2C0E0DFC003031AA /* SingleNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497399192C0E0DFC003031AA /* SingleNumber.swift */; };
+		4973991B2C0E0DFC003031AA /* SingleNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497399192C0E0DFC003031AA /* SingleNumber.swift */; };
 		499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
 		499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
 		499763182BFF8181009D6EF5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404E2BFC965F00ECFC81 /* Node.swift */; };
@@ -140,6 +142,7 @@
 		495D40702BFC9A2600ECFC81 /* MergeTwoSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTwoSortedLists.swift; sourceTree = "<group>"; };
 		495D40762BFC9ADE00ECFC81 /* IsomorphicStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsomorphicStrings.swift; sourceTree = "<group>"; };
 		497399152C0DBA1A003031AA /* CountingBits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingBits.swift; sourceTree = "<group>"; };
+		497399192C0E0DFC003031AA /* SingleNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNumber.swift; sourceTree = "<group>"; };
 		499762E92BFF8031009D6EF5 /* LeetCode75 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode75; sourceTree = BUILT_PRODUCTS_DIR; };
 		499762EB2BFF8031009D6EF5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		499762F42BFF809E009D6EF5 /* LeetCode75_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode75_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -369,10 +372,19 @@
 			path = "338. Counting Bits";
 			sourceTree = "<group>";
 		};
+		497399182C0E0DF0003031AA /* 136. Single Number */ = {
+			isa = PBXGroup;
+			children = (
+				497399192C0E0DFC003031AA /* SingleNumber.swift */,
+			);
+			path = "136. Single Number";
+			sourceTree = "<group>";
+		};
 		499762EA2BFF8031009D6EF5 /* LeetCode75 */ = {
 			isa = PBXGroup;
 			children = (
 				490BD5802C07219B003AE043 /* 104. Maximum Depth of Binary Tree */,
+				497399182C0E0DF0003031AA /* 136. Single Number */,
 				49EC4CC92C060CAA00D68CF9 /* 206. Reverse Linked List */,
 				49EC4CCB2C060CAA00D68CF9 /* 283. Move Zeroes */,
 				497399142C0DBA0B003031AA /* 338. Counting Bits */,
@@ -769,6 +781,7 @@
 				49EC4CCC2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */,
 				49EC4CF62C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
 				49EC4CD62C060E0D00D68CF9 /* IsSubsequence.swift in Sources */,
+				4973991A2C0E0DFC003031AA /* SingleNumber.swift in Sources */,
 				49B331292C09AE6600BC47D8 /* NthTribonacciNumber.swift in Sources */,
 				499763192BFF8181009D6EF5 /* ListNode.swift in Sources */,
 				49EC4CEE2C06102E00D68CF9 /* GreatestCommonDivisorOfStrings.swift in Sources */,
@@ -799,6 +812,7 @@
 				490BD5872C072CD1003AE043 /* LeafSimilarTrees.swift in Sources */,
 				49EC4CDB2C060E0D00D68CF9 /* ReverseVowelsOfString.swift in Sources */,
 				49EC4CFB2C06115C00D68CF9 /* FindTheDifferenceOfTwoArrays.swift in Sources */,
+				4973991B2C0E0DFC003031AA /* SingleNumber.swift in Sources */,
 				490119312C087DD0009ADEC2 /* SearchInBinarySearchTree.swift in Sources */,
 				4997631D2BFF8181009D6EF5 /* ListNode.swift in Sources */,
 				49EC4CF92C06115C00D68CF9 /* FindTheHighestAltitude.swift in Sources */,
