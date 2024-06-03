@@ -14,7 +14,7 @@
         {
           "containerPath" : "container:LeetCode.xcodeproj",
           "identifier" : "494A7B5128B91461008CDBFE",
-          "name" : "LeetCode"
+          "name" : "LeetCode100"
         }
       ]
     },
@@ -29,7 +29,7 @@
       "target" : {
         "containerPath" : "container:LeetCode.xcodeproj",
         "identifier" : "494A7B6028B91557008CDBFE",
-        "name" : "LeetCode_UnitTests"
+        "name" : "LeetCode100_UnitTests"
       }
     }
   ],
