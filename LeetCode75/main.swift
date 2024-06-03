@@ -34,6 +34,13 @@ final class Solution {
         }
     }
 
+    // MARK: - 338. Counting Bits
+
+    func countingBits(_ n: Int) -> [Int] {
+        let solution = CountingBits_Solution()
+        return solution.countBits(n)
+    }
+
     // MARK: - 345. Reverse Vowels of a String
 
     func reverseVowelsOfString(_ s: String) -> String {

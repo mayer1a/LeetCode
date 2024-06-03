@@ -39,6 +39,8 @@
 		495D40FE2BFCBBBE00ECFC81 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
 		495D40FF2BFCBBBE00ECFC81 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
 		495D41002BFCBBBE00ECFC81 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404A2BFC95E400ECFC81 /* ListNode.swift */; };
+		497399162C0DBA1A003031AA /* CountingBits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497399152C0DBA1A003031AA /* CountingBits.swift */; };
+		497399172C0DBA1A003031AA /* CountingBits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497399152C0DBA1A003031AA /* CountingBits.swift */; };
 		499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
 		499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
 		499763182BFF8181009D6EF5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404E2BFC965F00ECFC81 /* Node.swift */; };
@@ -137,6 +139,7 @@
 		495D40672BFC995D00ECFC81 /* LinkedListCycleII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListCycleII.swift; sourceTree = "<group>"; };
 		495D40702BFC9A2600ECFC81 /* MergeTwoSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTwoSortedLists.swift; sourceTree = "<group>"; };
 		495D40762BFC9ADE00ECFC81 /* IsomorphicStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsomorphicStrings.swift; sourceTree = "<group>"; };
+		497399152C0DBA1A003031AA /* CountingBits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingBits.swift; sourceTree = "<group>"; };
 		499762E92BFF8031009D6EF5 /* LeetCode75 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode75; sourceTree = BUILT_PRODUCTS_DIR; };
 		499762EB2BFF8031009D6EF5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		499762F42BFF809E009D6EF5 /* LeetCode75_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode75_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -358,12 +361,21 @@
 			path = "205. Isomorphic Strings";
 			sourceTree = "<group>";
 		};
+		497399142C0DBA0B003031AA /* 338. Counting Bits */ = {
+			isa = PBXGroup;
+			children = (
+				497399152C0DBA1A003031AA /* CountingBits.swift */,
+			);
+			path = "338. Counting Bits";
+			sourceTree = "<group>";
+		};
 		499762EA2BFF8031009D6EF5 /* LeetCode75 */ = {
 			isa = PBXGroup;
 			children = (
 				490BD5802C07219B003AE043 /* 104. Maximum Depth of Binary Tree */,
 				49EC4CC92C060CAA00D68CF9 /* 206. Reverse Linked List */,
 				49EC4CCB2C060CAA00D68CF9 /* 283. Move Zeroes */,
+				497399142C0DBA0B003031AA /* 338. Counting Bits */,
 				49EC4CD52C060E0D00D68CF9 /* 345. Reverse Vowels of a String */,
 				49DA51142C08B1BF0062A064 /* 374. Guess Number Higher or Lower */,
 				49EC4CD12C060E0D00D68CF9 /* 392. Is Subsequence */,
@@ -744,6 +756,7 @@
 			files = (
 				49EC4CCE2C060CAA00D68CF9 /* MoveZeroes.swift in Sources */,
 				49EC4CFA2C06115C00D68CF9 /* FindTheDifferenceOfTwoArrays.swift in Sources */,
+				497399162C0DBA1A003031AA /* CountingBits.swift in Sources */,
 				490BD57E2C071DB7003AE043 /* NumberOfRecentCalls.swift in Sources */,
 				49EC4CE02C060F1F00D68CF9 /* FindPivotIndex.swift in Sources */,
 				499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */,
@@ -795,6 +808,7 @@
 				490BD57F2C071DB7003AE043 /* NumberOfRecentCalls.swift in Sources */,
 				49DA51172C08B1D30062A064 /* GuessNumberHigherOrLower.swift in Sources */,
 				49B3312A2C09AE6600BC47D8 /* NthTribonacciNumber.swift in Sources */,
+				497399172C0DBA1A003031AA /* CountingBits.swift in Sources */,
 				49EC4CF72C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
 				499763332BFF85D8009D6EF5 /* main.swift in Sources */,
 				49EC4CED2C06102E00D68CF9 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */,
