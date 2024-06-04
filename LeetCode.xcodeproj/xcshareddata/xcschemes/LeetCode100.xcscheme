@@ -30,7 +30,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:UnitTests/New Group/LeetCode100.xctestplan"
+            reference = "container:UnitTests/LeetCode100/LeetCode100.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
