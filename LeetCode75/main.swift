@@ -23,6 +23,13 @@ final class Solution {
         return solution.singleNumber(nums)
     }
 
+    // MARK: - 151. Reverse Words in a String
+    
+    func reverseWordsInString(_ s: String) -> String {
+        let solution = ReverseWordsInString_Solution()
+        return solution.reverseWords(s)
+    }
+
     // MARK: - 206. Reverse Linked List
 
     func reverseLinkedList(_ head: ListNode?, iterative: Bool = true) -> ListNode? {

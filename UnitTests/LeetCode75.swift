@@ -100,6 +100,22 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.singleNumber(case5), case5Result)
     }
 
+    // MARK: - 151. Reverse Words in a String
+
+    func testReverseWordsInString() throws {
+        let case1 = "the sky is blue "
+        let case2 = "  hello world  "
+        let case3 = "a good   example"
+
+        let case1Result = "blue is sky the"
+        let case2Result = "world hello"
+        let case3Result = "example good a"
+
+        XCTAssertEqual(solution.reverseWordsInString(case1), case1Result)
+        XCTAssertEqual(solution.reverseWordsInString(case2), case2Result)
+        XCTAssertEqual(solution.reverseWordsInString(case3), case3Result)
+    }
+
     // MARK: - 206. Reverse Linked List
 
     func testReverseLinkedList() throws {
