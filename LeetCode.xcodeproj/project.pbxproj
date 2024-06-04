@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		490119302C087DD0009ADEC2 /* SearchInBinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901192F2C087DD0009ADEC2 /* SearchInBinarySearchTree.swift */; };
 		490119312C087DD0009ADEC2 /* SearchInBinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901192F2C087DD0009ADEC2 /* SearchInBinarySearchTree.swift */; };
+		490BB3642C0F441B0026F70C /* MaximizeDistanceToClosestPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BB3632C0F441B0026F70C /* MaximizeDistanceToClosestPerson.swift */; };
+		490BB3652C0F441B0026F70C /* MaximizeDistanceToClosestPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BB3632C0F441B0026F70C /* MaximizeDistanceToClosestPerson.swift */; };
 		490BD57E2C071DB7003AE043 /* NumberOfRecentCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BD57D2C071DB7003AE043 /* NumberOfRecentCalls.swift */; };
 		490BD57F2C071DB7003AE043 /* NumberOfRecentCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BD57D2C071DB7003AE043 /* NumberOfRecentCalls.swift */; };
 		490BD5822C0721AC003AE043 /* MaximumDepthOfBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BD5812C0721AC003AE043 /* MaximumDepthOfBinaryTree.swift */; };
@@ -43,7 +45,7 @@
 		497399172C0DBA1A003031AA /* CountingBits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497399152C0DBA1A003031AA /* CountingBits.swift */; };
 		4973991A2C0E0DFC003031AA /* SingleNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497399192C0E0DFC003031AA /* SingleNumber.swift */; };
 		4973991B2C0E0DFC003031AA /* SingleNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497399192C0E0DFC003031AA /* SingleNumber.swift */; };
-		4973991D2C0E1873003031AA /* LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B6328B91557008CDBFE /* LeetCode.swift */; };
+		4973991D2C0E1873003031AA /* LeetCode100.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B6328B91557008CDBFE /* LeetCode100.swift */; };
 		499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
 		499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
 		499763182BFF8181009D6EF5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404E2BFC965F00ECFC81 /* Node.swift */; };
@@ -127,6 +129,7 @@
 
 /* Begin PBXFileReference section */
 		4901192F2C087DD0009ADEC2 /* SearchInBinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInBinarySearchTree.swift; sourceTree = "<group>"; };
+		490BB3632C0F441B0026F70C /* MaximizeDistanceToClosestPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximizeDistanceToClosestPerson.swift; sourceTree = "<group>"; };
 		490BD57D2C071DB7003AE043 /* NumberOfRecentCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfRecentCalls.swift; sourceTree = "<group>"; };
 		490BD5812C0721AC003AE043 /* MaximumDepthOfBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumDepthOfBinaryTree.swift; sourceTree = "<group>"; };
 		490BD5852C072CD1003AE043 /* LeafSimilarTrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafSimilarTrees.swift; sourceTree = "<group>"; };
@@ -134,7 +137,7 @@
 		494A7B5228B91461008CDBFE /* LeetCode100 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode100; sourceTree = BUILT_PRODUCTS_DIR; };
 		494A7B5528B91461008CDBFE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		494A7B6128B91557008CDBFE /* LeetCode100_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode100_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		494A7B6328B91557008CDBFE /* LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode.swift; sourceTree = "<group>"; };
+		494A7B6328B91557008CDBFE /* LeetCode100.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode100.swift; sourceTree = "<group>"; };
 		495D40482BFC94DC00ECFC81 /* BenchTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchTimer.swift; sourceTree = "<group>"; };
 		495D404A2BFC95E400ECFC81 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		495D404C2BFC960B00ECFC81 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
@@ -218,6 +221,59 @@
 			path = "700. Search in a Binary Search Tree";
 			sourceTree = "<group>";
 		};
+		490BB3622C0F44060026F70C /* 849. Maximize Distance to Closest Person */ = {
+			isa = PBXGroup;
+			children = (
+				490BB3632C0F441B0026F70C /* MaximizeDistanceToClosestPerson.swift */,
+			);
+			path = "849. Maximize Distance to Closest Person";
+			sourceTree = "<group>";
+		};
+		490BB3662C0F44A50026F70C /* Easy */ = {
+			isa = PBXGroup;
+			children = (
+				495D406F2BFC9A1B00ECFC81 /* 21. Merge Two Sorted Lists */,
+				495D405A2BFC979B00ECFC81 /* 102. Binary Tree Level Order Traversal */,
+				495D40632BFC991600ECFC81 /* 121. Best Time to Buy and Sell Stock */,
+				495D40662BFC994E00ECFC81 /* 142. Linked List Cycle II */,
+				495D40752BFC9AD700ECFC81 /* 205. Isomorphic Strings */,
+				495D40512BFC967A00ECFC81 /* 278. First Bad Version */,
+				49E202552C04E623005D75E9 /* 409. Longest Palindrome */,
+				49E202532C04E623005D75E9 /* 589. N-ary Tree Preorder Traversal */,
+				49EC4CB92C06082900D68CF9 /* 704. Binary Search */,
+				49EC4CBB2C06082900D68CF9 /* 876. Middle of the Linked List */,
+				49EC4CC12C06096800D68CF9 /* 949. Largest Time for Given Digits */,
+				49EC4CC32C06096800D68CF9 /* 1480. Running Sum of 1d Array */,
+			);
+			path = Easy;
+			sourceTree = "<group>";
+		};
+		490BB3672C0F44AD0026F70C /* Medium */ = {
+			isa = PBXGroup;
+			children = (
+				490BB3622C0F44060026F70C /* 849. Maximize Distance to Closest Person */,
+			);
+			path = Medium;
+			sourceTree = "<group>";
+		};
+		490BB3682C0F45800026F70C /* LeetCode75 */ = {
+			isa = PBXGroup;
+			children = (
+				49E2024D2C03ABB4005D75E9 /* LeetCode75.xctestplan */,
+				499763112BFF811C009D6EF5 /* LeetCode75.swift */,
+			);
+			path = LeetCode75;
+			sourceTree = "<group>";
+		};
+		490BB3692C0F45880026F70C /* LeetCode100 */ = {
+			isa = PBXGroup;
+			children = (
+				49C7A34E2C03A823000CE31E /* LeetCode100.xctestplan */,
+				494A7B6328B91557008CDBFE /* LeetCode100.swift */,
+			);
+			path = LeetCode100;
+			sourceTree = "<group>";
+		};
 		490BD57C2C071DA5003AE043 /* 933. Number of Recent Calls */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,18 +339,8 @@
 		494A7B5428B91461008CDBFE /* LeetCode100 */ = {
 			isa = PBXGroup;
 			children = (
-				495D406F2BFC9A1B00ECFC81 /* 21. Merge Two Sorted Lists */,
-				495D405A2BFC979B00ECFC81 /* 102. Binary Tree Level Order Traversal */,
-				495D40632BFC991600ECFC81 /* 121. Best Time to Buy and Sell Stock */,
-				495D40662BFC994E00ECFC81 /* 142. Linked List Cycle II */,
-				495D40752BFC9AD700ECFC81 /* 205. Isomorphic Strings */,
-				495D40512BFC967A00ECFC81 /* 278. First Bad Version */,
-				49E202552C04E623005D75E9 /* 409. Longest Palindrome */,
-				49E202532C04E623005D75E9 /* 589. N-ary Tree Preorder Traversal */,
-				49EC4CB92C06082900D68CF9 /* 704. Binary Search */,
-				49EC4CBB2C06082900D68CF9 /* 876. Middle of the Linked List */,
-				49EC4CC12C06096800D68CF9 /* 949. Largest Time for Given Digits */,
-				49EC4CC32C06096800D68CF9 /* 1480. Running Sum of 1d Array */,
+				490BB3662C0F44A50026F70C /* Easy */,
+				490BB3672C0F44AD0026F70C /* Medium */,
 				494A7B5528B91461008CDBFE /* main.swift */,
 			);
 			path = LeetCode100;
@@ -303,10 +349,8 @@
 		494A7B6228B91557008CDBFE /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				49E2024D2C03ABB4005D75E9 /* LeetCode75.xctestplan */,
-				49C7A34E2C03A823000CE31E /* LeetCode100.xctestplan */,
-				494A7B6328B91557008CDBFE /* LeetCode.swift */,
-				499763112BFF811C009D6EF5 /* LeetCode75.swift */,
+				490BB3682C0F45800026F70C /* LeetCode75 */,
+				490BB3692C0F45880026F70C /* LeetCode100 */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -763,6 +807,7 @@
 				495D40772BFC9ADE00ECFC81 /* IsomorphicStrings.swift in Sources */,
 				495D404F2BFC965F00ECFC81 /* Node.swift in Sources */,
 				49EC4CBC2C06082900D68CF9 /* BinarySearch.swift in Sources */,
+				490BB3642C0F441B0026F70C /* MaximizeDistanceToClosestPerson.swift in Sources */,
 				494A7B5628B91461008CDBFE /* main.swift in Sources */,
 				495D40532BFC969F00ECFC81 /* FirstBadVersion.swift in Sources */,
 				495D405C2BFC97AF00ECFC81 /* BinaryTreeLevelOrderTraversal.swift in Sources */,
@@ -792,10 +837,11 @@
 				49E202592C04E623005D75E9 /* LongestPalindrome.swift in Sources */,
 				495D40FE2BFCBBBE00ECFC81 /* BenchTimer.swift in Sources */,
 				495D40FF2BFCBBBE00ECFC81 /* TreeNode.swift in Sources */,
+				490BB3652C0F441B0026F70C /* MaximizeDistanceToClosestPerson.swift in Sources */,
 				495D41002BFCBBBE00ECFC81 /* ListNode.swift in Sources */,
 				49EC4CC72C06096900D68CF9 /* RunningSumOf1dArray.swift in Sources */,
 				495D40F22BFCBB8500ECFC81 /* IsomorphicStrings.swift in Sources */,
-				4973991D2C0E1873003031AA /* LeetCode.swift in Sources */,
+				4973991D2C0E1873003031AA /* LeetCode100.swift in Sources */,
 				49EC4CBF2C06082900D68CF9 /* MiddleOfTheLinkedList.swift in Sources */,
 				49EC4CBD2C06082900D68CF9 /* BinarySearch.swift in Sources */,
 				49EC4CC52C06096900D68CF9 /* LargestTimeForGivenDigits.swift in Sources */,

@@ -232,6 +232,25 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.binarySearch(case6.0, case6.1), case6Result)
     }
 
+    // MARK: - 849. Maximize Distance to Closest Person
+
+    func testMaximizeDistanceToClosestPerson() throws {
+        let case1 = [1,0,0,0,1,0,1]
+        let case2 = [1,0,0,0]
+        let case3 = [1,0,0,1]
+        let case4 = [1,0,1]
+
+        let case1Result = 2
+        let case2Result = 3
+        let case3Result = 1
+        let case4Result = 1
+
+        XCTAssertEqual(solution.maximizeDistanceToClosestPerson(case1), case1Result)
+        XCTAssertEqual(solution.maximizeDistanceToClosestPerson(case2), case2Result)
+        XCTAssertEqual(solution.maximizeDistanceToClosestPerson(case3), case3Result)
+        XCTAssertEqual(solution.maximizeDistanceToClosestPerson(case4), case4Result)
+    }
+
     // MARK: - 876. Middle of the Linked List
 
     func testMiddleNodeOfTheLinkedList() throws {
