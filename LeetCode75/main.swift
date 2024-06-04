@@ -37,6 +37,13 @@ final class Solution {
         return iterative ? solution.reverseList_iterative(head) : solution.reverseList_recursive(head)
     }
 
+    // MARK: - 238. Product of Array Except Self
+    
+    func productOfArrayExceptSelf(_ nums: [Int]) -> [Int] {
+        let solution = ProductOfArrayExceptSelf_Solution()
+        return solution.productExceptSelf(nums)
+    }
+
     // MARK: - 283. Move Zeroes
 
     func moveZeroes(_ nums: inout [Int], alt: Bool = false) {

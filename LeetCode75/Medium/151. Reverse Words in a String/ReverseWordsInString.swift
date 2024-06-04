@@ -40,7 +40,7 @@ import Foundation
 ///
 /// **Constraints:**
 /// ```
-/// 1 <= s.length <= 104
+/// 1 <= s.length <= 10⁴
 /// s contains English letters (upper-case and lower-case), digits, and spaces ' '.
 /// There is at least one word in s.
 /// ```

@@ -140,6 +140,22 @@ final class UnitTests: XCTestCase {
 //        XCTAssertEqual(solution.reverseLinkedList(case4, iterative: false), case4Result)
     }
 
+    // MARK: - 238. Product of Array Except Self
+
+    func testProductOfArrayExceptSelf() throws {
+        let case1 = [1, 2, 3, 4]
+        let case2 = [-1, 1, 0, -3, 3]
+        let case3 = [2, 2, 3, 4]
+
+        let case1Result = [24, 12, 8, 6]
+        let case2Result = [0, 0, 9, 0, 0]
+        let case3Result = [24, 24, 16, 12]
+
+        XCTAssertEqual(solution.productOfArrayExceptSelf(case1), case1Result)
+        XCTAssertEqual(solution.productOfArrayExceptSelf(case2), case2Result)
+        XCTAssertEqual(solution.productOfArrayExceptSelf(case3), case3Result)
+    }
+
     // MARK: - 283. Move Zeroes
 
     func testMoveZeroes() throws {
