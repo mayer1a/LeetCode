@@ -77,6 +77,13 @@ final class Solution {
         return solution.search(nums, target)
     }
 
+    // MARK: - 849. Maximize Distance to Closest Person
+
+    func maximizeDistanceToClosestPerson(_ seats: [Int]) -> Int {
+        let solution = MaximizeDistanceToClosestPerson_Solution()
+        return solution.maxDistToClosest(seats)
+    }
+
     // MARK: - 876. Middle of the Linked List
 
     func middleNodeOfTheLinkedList(_ head: ListNode?) -> ListNode? {
