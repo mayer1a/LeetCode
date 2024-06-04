@@ -57,6 +57,10 @@
 		499763372BFF88A7009D6EF5 /* LeetCode75.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499763112BFF811C009D6EF5 /* LeetCode75.swift */; };
 		49B331292C09AE6600BC47D8 /* NthTribonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B331282C09AE6600BC47D8 /* NthTribonacciNumber.swift */; };
 		49B3312A2C09AE6600BC47D8 /* NthTribonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B331282C09AE6600BC47D8 /* NthTribonacciNumber.swift */; };
+		49B703612C0EFAAF0005B3D4 /* ReverseWordsInString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B703602C0EFAAF0005B3D4 /* ReverseWordsInString.swift */; };
+		49B703622C0EFAAF0005B3D4 /* ReverseWordsInString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B703602C0EFAAF0005B3D4 /* ReverseWordsInString.swift */; };
+		49B703662C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B703652C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift */; };
+		49B703672C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B703652C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift */; };
 		49DA51162C08B1D30062A064 /* GuessNumberHigherOrLower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA51152C08B1D30062A064 /* GuessNumberHigherOrLower.swift */; };
 		49DA51172C08B1D30062A064 /* GuessNumberHigherOrLower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA51152C08B1D30062A064 /* GuessNumberHigherOrLower.swift */; };
 		49E2024E2C03ABB4005D75E9 /* LeetCode75.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 49E2024D2C03ABB4005D75E9 /* LeetCode75.xctestplan */; };
@@ -148,6 +152,8 @@
 		499762F42BFF809E009D6EF5 /* LeetCode75_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode75_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		499763112BFF811C009D6EF5 /* LeetCode75.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode75.swift; sourceTree = "<group>"; };
 		49B331282C09AE6600BC47D8 /* NthTribonacciNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NthTribonacciNumber.swift; sourceTree = "<group>"; };
+		49B703602C0EFAAF0005B3D4 /* ReverseWordsInString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseWordsInString.swift; sourceTree = "<group>"; };
+		49B703652C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExceptSelf.swift; sourceTree = "<group>"; };
 		49C7A34E2C03A823000CE31E /* LeetCode100.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = LeetCode100.xctestplan; sourceTree = "<group>"; };
 		49DA51152C08B1D30062A064 /* GuessNumberHigherOrLower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberHigherOrLower.swift; sourceTree = "<group>"; };
 		49E2024D2C03ABB4005D75E9 /* LeetCode75.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LeetCode75.xctestplan; sourceTree = "<group>"; };
@@ -383,6 +389,24 @@
 		499762EA2BFF8031009D6EF5 /* LeetCode75 */ = {
 			isa = PBXGroup;
 			children = (
+				49B7035D2C0EFA770005B3D4 /* Easy */,
+				49B7035E2C0EFA8A0005B3D4 /* Medium */,
+				499762EB2BFF8031009D6EF5 /* main.swift */,
+			);
+			path = LeetCode75;
+			sourceTree = "<group>";
+		};
+		49B331272C09AE5500BC47D8 /* 1137. N-th Tribonacci Number */ = {
+			isa = PBXGroup;
+			children = (
+				49B331282C09AE6600BC47D8 /* NthTribonacciNumber.swift */,
+			);
+			path = "1137. N-th Tribonacci Number";
+			sourceTree = "<group>";
+		};
+		49B7035D2C0EFA770005B3D4 /* Easy */ = {
+			isa = PBXGroup;
+			children = (
 				490BD5802C07219B003AE043 /* 104. Maximum Depth of Binary Tree */,
 				497399182C0E0DF0003031AA /* 136. Single Number */,
 				49EC4CC92C060CAA00D68CF9 /* 206. Reverse Linked List */,
@@ -405,17 +429,33 @@
 				49EC4CF32C06115C00D68CF9 /* 1732. Find the Highest Altitude */,
 				49EC4CF12C06115C00D68CF9 /* 1768. Merge Strings Alternately */,
 				49EC4CF52C06115C00D68CF9 /* 2215. Find the Difference of Two Arrays */,
-				499762EB2BFF8031009D6EF5 /* main.swift */,
 			);
-			path = LeetCode75;
+			path = Easy;
 			sourceTree = "<group>";
 		};
-		49B331272C09AE5500BC47D8 /* 1137. N-th Tribonacci Number */ = {
+		49B7035E2C0EFA8A0005B3D4 /* Medium */ = {
 			isa = PBXGroup;
 			children = (
-				49B331282C09AE6600BC47D8 /* NthTribonacciNumber.swift */,
+				49B7035F2C0EFA9D0005B3D4 /* 151. Reverse Words in a String */,
+				49B703632C0F106C0005B3D4 /* 238. Product of Array Except Self */,
 			);
-			path = "1137. N-th Tribonacci Number";
+			path = Medium;
+			sourceTree = "<group>";
+		};
+		49B7035F2C0EFA9D0005B3D4 /* 151. Reverse Words in a String */ = {
+			isa = PBXGroup;
+			children = (
+				49B703602C0EFAAF0005B3D4 /* ReverseWordsInString.swift */,
+			);
+			path = "151. Reverse Words in a String";
+			sourceTree = "<group>";
+		};
+		49B703632C0F106C0005B3D4 /* 238. Product of Array Except Self */ = {
+			isa = PBXGroup;
+			children = (
+				49B703652C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift */,
+			);
+			path = "238. Product of Array Except Self";
 			sourceTree = "<group>";
 		};
 		49DA51142C08B1BF0062A064 /* 374. Guess Number Higher or Lower */ = {
@@ -780,6 +820,7 @@
 				49EC4CDA2C060E0D00D68CF9 /* ReverseVowelsOfString.swift in Sources */,
 				49EC4CCC2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */,
 				49EC4CF62C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
+				49B703662C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift in Sources */,
 				49EC4CD62C060E0D00D68CF9 /* IsSubsequence.swift in Sources */,
 				4973991A2C0E0DFC003031AA /* SingleNumber.swift in Sources */,
 				49B331292C09AE6600BC47D8 /* NthTribonacciNumber.swift in Sources */,
@@ -792,6 +833,7 @@
 				49EC4CD82C060E0D00D68CF9 /* CanPlaceFlowers.swift in Sources */,
 				49EC4CEA2C06102E00D68CF9 /* UniqueNumberOfOccurrences.swift in Sources */,
 				490BD5822C0721AC003AE043 /* MaximumDepthOfBinaryTree.swift in Sources */,
+				49B703612C0EFAAF0005B3D4 /* ReverseWordsInString.swift in Sources */,
 				49EC4CE22C060F1F00D68CF9 /* MaximumAverageSubarrayI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -803,6 +845,8 @@
 				4997631A2BFF8181009D6EF5 /* BenchTimer.swift in Sources */,
 				4997631B2BFF8181009D6EF5 /* TreeNode.swift in Sources */,
 				49EC4CD72C060E0D00D68CF9 /* IsSubsequence.swift in Sources */,
+				49B703672C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift in Sources */,
+				49B703622C0EFAAF0005B3D4 /* ReverseWordsInString.swift in Sources */,
 				49EC4CCF2C060CAA00D68CF9 /* MoveZeroes.swift in Sources */,
 				4997631C2BFF8181009D6EF5 /* Node.swift in Sources */,
 				49EC4CD92C060E0D00D68CF9 /* CanPlaceFlowers.swift in Sources */,

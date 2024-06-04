@@ -100,6 +100,22 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.singleNumber(case5), case5Result)
     }
 
+    // MARK: - 151. Reverse Words in a String
+
+    func testReverseWordsInString() throws {
+        let case1 = "the sky is blue "
+        let case2 = "  hello world  "
+        let case3 = "a good   example"
+
+        let case1Result = "blue is sky the"
+        let case2Result = "world hello"
+        let case3Result = "example good a"
+
+        XCTAssertEqual(solution.reverseWordsInString(case1), case1Result)
+        XCTAssertEqual(solution.reverseWordsInString(case2), case2Result)
+        XCTAssertEqual(solution.reverseWordsInString(case3), case3Result)
+    }
+
     // MARK: - 206. Reverse Linked List
 
     func testReverseLinkedList() throws {
@@ -122,6 +138,22 @@ final class UnitTests: XCTestCase {
 //        XCTAssertEqual(solution.reverseLinkedList(case2, iterative: false), case2Result)
 //        XCTAssertEqual(solution.reverseLinkedList(case3, iterative: false), case3Result)
 //        XCTAssertEqual(solution.reverseLinkedList(case4, iterative: false), case4Result)
+    }
+
+    // MARK: - 238. Product of Array Except Self
+
+    func testProductOfArrayExceptSelf() throws {
+        let case1 = [1, 2, 3, 4]
+        let case2 = [-1, 1, 0, -3, 3]
+        let case3 = [2, 2, 3, 4]
+
+        let case1Result = [24, 12, 8, 6]
+        let case2Result = [0, 0, 9, 0, 0]
+        let case3Result = [24, 24, 16, 12]
+
+        XCTAssertEqual(solution.productOfArrayExceptSelf(case1), case1Result)
+        XCTAssertEqual(solution.productOfArrayExceptSelf(case2), case2Result)
+        XCTAssertEqual(solution.productOfArrayExceptSelf(case3), case3Result)
     }
 
     // MARK: - 283. Move Zeroes
