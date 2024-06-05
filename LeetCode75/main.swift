@@ -55,6 +55,13 @@ final class Solution {
         }
     }
 
+    // MARK: - 334. Increasing Triplet Subsequence
+    
+    func increasingTripletSubsequence(_ nums: [Int]) -> Bool {
+        let solution = IncreasingTripletSubsequence_Solution()
+        return solution.increasingTriplet(nums)
+    }
+
     // MARK: - 338. Counting Bits
 
     func countingBits(_ n: Int) -> [Int] {
@@ -87,6 +94,13 @@ final class Solution {
         } else {
             return solution.isSubsequence_v1(s, t)
         }
+    }
+
+    // MARK: - 443. String Compression
+
+    func stringCompression(_ chars: inout [Character]) -> Int {
+        let solution = StringCompression_Solution()
+        return solution.compress(&chars)
     }
 
     // MARK: - 605. Can Place Flowers

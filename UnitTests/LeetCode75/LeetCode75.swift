@@ -179,6 +179,28 @@ final class UnitTests: XCTestCase {
         }
     }
 
+    // MARK: - 334. Increasing Triplet Subsequence
+
+    func testIncreasingTripletSubsequence() throws {
+        let case1 = [1, 2, 3, 4, 5]
+        let case2 = [5, 4, 3, 2, 1]
+        let case3 = [2, 1, 5, 0, 4, 6]
+        let case4 = [4, 1, 8, 2, 3, 0, 4, 6]
+        let case5 = [0, 4, 2, 1, 0, -1, -3]
+
+        let case1Result = true
+        let case2Result = false
+        let case3Result = true
+        let case4Result = true
+        let case5Result = false
+
+        XCTAssertEqual(solution.increasingTripletSubsequence(case1), case1Result)
+        XCTAssertEqual(solution.increasingTripletSubsequence(case2), case2Result)
+        XCTAssertEqual(solution.increasingTripletSubsequence(case3), case3Result)
+        XCTAssertEqual(solution.increasingTripletSubsequence(case4), case4Result)
+        XCTAssertEqual(solution.increasingTripletSubsequence(case5), case5Result)
+    }
+
     // MARK: - 338. Counting Bits
 
     func testCountingBits() throws {
@@ -305,6 +327,27 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.isSubsequence(case2.0, case2.1, alt: true), case2Result)
         XCTAssertEqual(solution.isSubsequence(case3.0, case3.1, alt: true), case3Result)
         XCTAssertEqual(solution.isSubsequence(case4.0, case4.1, alt: true), case4Result)
+    }
+
+    // MARK: - 443. String Compression
+
+    func testStringCompression() throws {
+        var case1: [Character] = ["a", "a", "b", "b", "c", "c", "c"]
+        var case2: [Character] = ["a"]
+        var case3: [Character] = ["a", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
+
+        let case1Result: ([Character], Int) = (["a", "2", "b", "2", "c", "3"], 6)
+        let case2Result: ([Character], Int) = (["a"], 1)
+        let case3Result: ([Character], Int) = (["a", "b", "1", "2"], 4)
+
+        XCTAssertEqual(solution.stringCompression(&case1), case1Result.1)
+        XCTAssertEqual(case1, case1Result.0)
+
+        XCTAssertEqual(solution.stringCompression(&case2), case2Result.1)
+        XCTAssertEqual(case2, case2Result.0)
+
+        XCTAssertEqual(solution.stringCompression(&case3), case3Result.1)
+        XCTAssertEqual(case3, case3Result.0)
     }
 
     // MARK: - 605. Can Place Flowers
