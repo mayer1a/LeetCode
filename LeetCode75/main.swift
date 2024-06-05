@@ -96,6 +96,13 @@ final class Solution {
         }
     }
 
+    // MARK: - 443. String Compression
+
+    func stringCompression(_ chars: inout [Character]) -> Int {
+        let solution = StringCompression_Solution()
+        return solution.compress(&chars)
+    }
+
     // MARK: - 605. Can Place Flowers
 
     func canPlaceFlowers(_ flowerbed: [Int], _ n: Int, alt: Bool = false) -> Bool {

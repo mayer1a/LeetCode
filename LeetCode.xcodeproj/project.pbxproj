@@ -48,6 +48,8 @@
 		4973991D2C0E1873003031AA /* LeetCode100.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B6328B91557008CDBFE /* LeetCode100.swift */; };
 		498B5C4B2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C4A2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift */; };
 		498B5C4C2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C4A2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift */; };
+		498B5C4F2C1062F700B2DC79 /* StringCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C4E2C1062F700B2DC79 /* StringCompression.swift */; };
+		498B5C502C1062F700B2DC79 /* StringCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C4E2C1062F700B2DC79 /* StringCompression.swift */; };
 		499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
 		499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
 		499763182BFF8181009D6EF5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404E2BFC965F00ECFC81 /* Node.swift */; };
@@ -153,6 +155,7 @@
 		497399152C0DBA1A003031AA /* CountingBits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingBits.swift; sourceTree = "<group>"; };
 		497399192C0E0DFC003031AA /* SingleNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNumber.swift; sourceTree = "<group>"; };
 		498B5C4A2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreasingTripletSubsequence.swift; sourceTree = "<group>"; };
+		498B5C4E2C1062F700B2DC79 /* StringCompression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCompression.swift; sourceTree = "<group>"; };
 		499762E92BFF8031009D6EF5 /* LeetCode75 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode75; sourceTree = BUILT_PRODUCTS_DIR; };
 		499762EB2BFF8031009D6EF5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		499762F42BFF809E009D6EF5 /* LeetCode75_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode75_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -441,6 +444,14 @@
 			path = "334. Increasing Triplet Subsequence";
 			sourceTree = "<group>";
 		};
+		498B5C4D2C1062E800B2DC79 /* 443. String Compression */ = {
+			isa = PBXGroup;
+			children = (
+				498B5C4E2C1062F700B2DC79 /* StringCompression.swift */,
+			);
+			path = "443. String Compression";
+			sourceTree = "<group>";
+		};
 		499762EA2BFF8031009D6EF5 /* LeetCode75 */ = {
 			isa = PBXGroup;
 			children = (
@@ -494,6 +505,7 @@
 				49B7035F2C0EFA9D0005B3D4 /* 151. Reverse Words in a String */,
 				49B703632C0F106C0005B3D4 /* 238. Product of Array Except Self */,
 				498B5C492C1061BB00B2DC79 /* 334. Increasing Triplet Subsequence */,
+				498B5C4D2C1062E800B2DC79 /* 443. String Compression */,
 			);
 			path = Medium;
 			sourceTree = "<group>";
@@ -879,6 +891,7 @@
 				49EC4CCC2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */,
 				49EC4CF62C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
 				49B703662C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift in Sources */,
+				498B5C4F2C1062F700B2DC79 /* StringCompression.swift in Sources */,
 				49EC4CD62C060E0D00D68CF9 /* IsSubsequence.swift in Sources */,
 				4973991A2C0E0DFC003031AA /* SingleNumber.swift in Sources */,
 				498B5C4B2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */,
@@ -928,6 +941,7 @@
 				497399172C0DBA1A003031AA /* CountingBits.swift in Sources */,
 				49EC4CF72C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
 				498B5C4C2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */,
+				498B5C502C1062F700B2DC79 /* StringCompression.swift in Sources */,
 				499763332BFF85D8009D6EF5 /* main.swift in Sources */,
 				49EC4CED2C06102E00D68CF9 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */,
 				499763372BFF88A7009D6EF5 /* LeetCode75.swift in Sources */,

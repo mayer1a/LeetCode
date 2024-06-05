@@ -329,6 +329,27 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.isSubsequence(case4.0, case4.1, alt: true), case4Result)
     }
 
+    // MARK: - 443. String Compression
+
+    func testStringCompression() throws {
+        var case1: [Character] = ["a", "a", "b", "b", "c", "c", "c"]
+        var case2: [Character] = ["a"]
+        var case3: [Character] = ["a", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
+
+        let case1Result: ([Character], Int) = (["a", "2", "b", "2", "c", "3"], 6)
+        let case2Result: ([Character], Int) = (["a"], 1)
+        let case3Result: ([Character], Int) = (["a", "b", "1", "2"], 4)
+
+        XCTAssertEqual(solution.stringCompression(&case1), case1Result.1)
+        XCTAssertEqual(case1, case1Result.0)
+
+        XCTAssertEqual(solution.stringCompression(&case2), case2Result.1)
+        XCTAssertEqual(case2, case2Result.0)
+
+        XCTAssertEqual(solution.stringCompression(&case3), case3Result.1)
+        XCTAssertEqual(case3, case3Result.0)
+    }
+
     // MARK: - 605. Can Place Flowers
 
     func testCanPlaceFlowers() throws {
