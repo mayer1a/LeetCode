@@ -286,6 +286,19 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.largestTimeForGivenDigits(case4), case4Result)
     }
 
+    // MARK: - 1002. Find Common Characters
+
+    func testFindCommonCharacters() throws {
+        let case1 = ["bella","label","roller"]
+        let case2 = ["cool","lock","cook"]
+
+        let case1Result = ["e","l","l"].sorted()
+        let case2Result = ["c","o"].sorted()
+
+        XCTAssertEqual(solution.findCommonCharacters(case1).sorted(), case1Result)
+        XCTAssertEqual(solution.findCommonCharacters(case2).sorted(), case2Result)
+    }
+
     // MARK: - 1480. Running Sum of 1d Array
 
     func testRunningSumOf1dArray() throws {

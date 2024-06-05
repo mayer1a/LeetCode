@@ -50,6 +50,8 @@
 		498B5C4C2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C4A2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift */; };
 		498B5C4F2C1062F700B2DC79 /* StringCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C4E2C1062F700B2DC79 /* StringCompression.swift */; };
 		498B5C502C1062F700B2DC79 /* StringCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C4E2C1062F700B2DC79 /* StringCompression.swift */; };
+		498B5C532C107BC600B2DC79 /* FindCommonCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C522C107BC600B2DC79 /* FindCommonCharacters.swift */; };
+		498B5C542C107BC600B2DC79 /* FindCommonCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C522C107BC600B2DC79 /* FindCommonCharacters.swift */; };
 		499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
 		499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
 		499763182BFF8181009D6EF5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404E2BFC965F00ECFC81 /* Node.swift */; };
@@ -156,6 +158,7 @@
 		497399192C0E0DFC003031AA /* SingleNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNumber.swift; sourceTree = "<group>"; };
 		498B5C4A2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreasingTripletSubsequence.swift; sourceTree = "<group>"; };
 		498B5C4E2C1062F700B2DC79 /* StringCompression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCompression.swift; sourceTree = "<group>"; };
+		498B5C522C107BC600B2DC79 /* FindCommonCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCommonCharacters.swift; sourceTree = "<group>"; };
 		499762E92BFF8031009D6EF5 /* LeetCode75 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode75; sourceTree = BUILT_PRODUCTS_DIR; };
 		499762EB2BFF8031009D6EF5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		499762F42BFF809E009D6EF5 /* LeetCode75_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode75_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -249,6 +252,7 @@
 				49EC4CB92C06082900D68CF9 /* 704. Binary Search */,
 				49EC4CBB2C06082900D68CF9 /* 876. Middle of the Linked List */,
 				49EC4CC12C06096800D68CF9 /* 949. Largest Time for Given Digits */,
+				498B5C512C107BB500B2DC79 /* 1002. Find Common Characters */,
 				49EC4CC32C06096800D68CF9 /* 1480. Running Sum of 1d Array */,
 			);
 			path = Easy;
@@ -450,6 +454,14 @@
 				498B5C4E2C1062F700B2DC79 /* StringCompression.swift */,
 			);
 			path = "443. String Compression";
+			sourceTree = "<group>";
+		};
+		498B5C512C107BB500B2DC79 /* 1002. Find Common Characters */ = {
+			isa = PBXGroup;
+			children = (
+				498B5C522C107BC600B2DC79 /* FindCommonCharacters.swift */,
+			);
+			path = "1002. Find Common Characters";
 			sourceTree = "<group>";
 		};
 		499762EA2BFF8031009D6EF5 /* LeetCode75 */ = {
@@ -838,6 +850,7 @@
 				495D404B2BFC95E400ECFC81 /* ListNode.swift in Sources */,
 				495D404D2BFC960B00ECFC81 /* TreeNode.swift in Sources */,
 				49EC4CBE2C06082900D68CF9 /* MiddleOfTheLinkedList.swift in Sources */,
+				498B5C532C107BC600B2DC79 /* FindCommonCharacters.swift in Sources */,
 				495D40682BFC995D00ECFC81 /* LinkedListCycleII.swift in Sources */,
 				495D40712BFC9A2600ECFC81 /* MergeTwoSortedLists.swift in Sources */,
 				49E202582C04E623005D75E9 /* LongestPalindrome.swift in Sources */,
@@ -865,6 +878,7 @@
 				495D41002BFCBBBE00ECFC81 /* ListNode.swift in Sources */,
 				49EC4CC72C06096900D68CF9 /* RunningSumOf1dArray.swift in Sources */,
 				495D40F22BFCBB8500ECFC81 /* IsomorphicStrings.swift in Sources */,
+				498B5C542C107BC600B2DC79 /* FindCommonCharacters.swift in Sources */,
 				4973991D2C0E1873003031AA /* LeetCode100.swift in Sources */,
 				49EC4CBF2C06082900D68CF9 /* MiddleOfTheLinkedList.swift in Sources */,
 				49EC4CBD2C06082900D68CF9 /* BinarySearch.swift in Sources */,

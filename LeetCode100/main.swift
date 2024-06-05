@@ -98,6 +98,13 @@ final class Solution {
         return solution.largestTimeFromDigits(arr)
     }
 
+    // MARK: - 1002. Find Common Characters
+
+    func findCommonCharacters(_ words: [String]) -> [String] {
+        let solution = FindCommonCharacters_Solution()
+        return solution.commonChars(words)
+    }
+
     // MARK: - 1480. Running Sum of 1d Array
 
     func runningSumOf1dArray(_ nums: [Int]) -> [Int] {
