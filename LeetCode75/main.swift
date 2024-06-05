@@ -55,6 +55,13 @@ final class Solution {
         }
     }
 
+    // MARK: - 334. Increasing Triplet Subsequence
+    
+    func increasingTripletSubsequence(_ nums: [Int]) -> Bool {
+        let solution = IncreasingTripletSubsequence_Solution()
+        return solution.increasingTriplet(nums)
+    }
+
     // MARK: - 338. Counting Bits
 
     func countingBits(_ n: Int) -> [Int] {

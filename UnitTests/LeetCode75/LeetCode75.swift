@@ -179,6 +179,28 @@ final class UnitTests: XCTestCase {
         }
     }
 
+    // MARK: - 334. Increasing Triplet Subsequence
+
+    func testIncreasingTripletSubsequence() throws {
+        let case1 = [1, 2, 3, 4, 5]
+        let case2 = [5, 4, 3, 2, 1]
+        let case3 = [2, 1, 5, 0, 4, 6]
+        let case4 = [4, 1, 8, 2, 3, 0, 4, 6]
+        let case5 = [0, 4, 2, 1, 0, -1, -3]
+
+        let case1Result = true
+        let case2Result = false
+        let case3Result = true
+        let case4Result = true
+        let case5Result = false
+
+        XCTAssertEqual(solution.increasingTripletSubsequence(case1), case1Result)
+        XCTAssertEqual(solution.increasingTripletSubsequence(case2), case2Result)
+        XCTAssertEqual(solution.increasingTripletSubsequence(case3), case3Result)
+        XCTAssertEqual(solution.increasingTripletSubsequence(case4), case4Result)
+        XCTAssertEqual(solution.increasingTripletSubsequence(case5), case5Result)
+    }
+
     // MARK: - 338. Counting Bits
 
     func testCountingBits() throws {

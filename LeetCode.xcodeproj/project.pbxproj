@@ -46,6 +46,8 @@
 		4973991A2C0E0DFC003031AA /* SingleNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497399192C0E0DFC003031AA /* SingleNumber.swift */; };
 		4973991B2C0E0DFC003031AA /* SingleNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497399192C0E0DFC003031AA /* SingleNumber.swift */; };
 		4973991D2C0E1873003031AA /* LeetCode100.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B6328B91557008CDBFE /* LeetCode100.swift */; };
+		498B5C4B2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C4A2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift */; };
+		498B5C4C2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C4A2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift */; };
 		499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
 		499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
 		499763182BFF8181009D6EF5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404E2BFC965F00ECFC81 /* Node.swift */; };
@@ -150,6 +152,7 @@
 		495D40762BFC9ADE00ECFC81 /* IsomorphicStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsomorphicStrings.swift; sourceTree = "<group>"; };
 		497399152C0DBA1A003031AA /* CountingBits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingBits.swift; sourceTree = "<group>"; };
 		497399192C0E0DFC003031AA /* SingleNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNumber.swift; sourceTree = "<group>"; };
+		498B5C4A2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreasingTripletSubsequence.swift; sourceTree = "<group>"; };
 		499762E92BFF8031009D6EF5 /* LeetCode75 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode75; sourceTree = BUILT_PRODUCTS_DIR; };
 		499762EB2BFF8031009D6EF5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		499762F42BFF809E009D6EF5 /* LeetCode75_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode75_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -430,6 +433,14 @@
 			path = "136. Single Number";
 			sourceTree = "<group>";
 		};
+		498B5C492C1061BB00B2DC79 /* 334. Increasing Triplet Subsequence */ = {
+			isa = PBXGroup;
+			children = (
+				498B5C4A2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift */,
+			);
+			path = "334. Increasing Triplet Subsequence";
+			sourceTree = "<group>";
+		};
 		499762EA2BFF8031009D6EF5 /* LeetCode75 */ = {
 			isa = PBXGroup;
 			children = (
@@ -482,6 +493,7 @@
 			children = (
 				49B7035F2C0EFA9D0005B3D4 /* 151. Reverse Words in a String */,
 				49B703632C0F106C0005B3D4 /* 238. Product of Array Except Self */,
+				498B5C492C1061BB00B2DC79 /* 334. Increasing Triplet Subsequence */,
 			);
 			path = Medium;
 			sourceTree = "<group>";
@@ -869,6 +881,7 @@
 				49B703662C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift in Sources */,
 				49EC4CD62C060E0D00D68CF9 /* IsSubsequence.swift in Sources */,
 				4973991A2C0E0DFC003031AA /* SingleNumber.swift in Sources */,
+				498B5C4B2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */,
 				49B331292C09AE6600BC47D8 /* NthTribonacciNumber.swift in Sources */,
 				499763192BFF8181009D6EF5 /* ListNode.swift in Sources */,
 				49EC4CEE2C06102E00D68CF9 /* GreatestCommonDivisorOfStrings.swift in Sources */,
@@ -914,6 +927,7 @@
 				49B3312A2C09AE6600BC47D8 /* NthTribonacciNumber.swift in Sources */,
 				497399172C0DBA1A003031AA /* CountingBits.swift in Sources */,
 				49EC4CF72C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
+				498B5C4C2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */,
 				499763332BFF85D8009D6EF5 /* main.swift in Sources */,
 				49EC4CED2C06102E00D68CF9 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */,
 				499763372BFF88A7009D6EF5 /* LeetCode75.swift in Sources */,
