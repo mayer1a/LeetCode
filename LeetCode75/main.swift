@@ -201,6 +201,13 @@ final class Solution {
         return solution.kidsWithCandies(candies, extraCandies)
     }
 
+    // MARK: - 1679. Max Number of K-Sum Pairs
+
+    func maxNumberOfKSumPairs(_ nums: [Int], _ k: Int) -> Int {
+        let solution = MaxNumberOfKSumPairs_Solution()
+        return solution.maxOperations(nums, k)
+    }
+
     // MARK: - 1732. Find the Highest Altitude
 
     func findTheHighestAltitude(_ gain: [Int]) -> Int {

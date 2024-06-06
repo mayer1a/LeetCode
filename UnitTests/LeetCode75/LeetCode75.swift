@@ -799,6 +799,25 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.kidsWithTheGreatestNumberOfCandies(case3.0, case3.1), case3Result)
     }
 
+    // MARK: - 1679. Max Number of K-Sum Pairs
+
+    func testMaxNumberOfKSumPairs() throws {
+        let case1 = _MaxNumberOfKSumPairs.shared.case1
+        let case2 = _MaxNumberOfKSumPairs.shared.case2
+        let case3 = _MaxNumberOfKSumPairs.shared.case3
+        let case4 = _MaxNumberOfKSumPairs.shared.case4
+
+        let case1Result = 2
+        let case2Result = 1
+        let case3Result = 0
+        let case4Result = 4698
+
+        XCTAssertEqual(solution.maxNumberOfKSumPairs(case1.0, case1.1), case1Result)
+        XCTAssertEqual(solution.maxNumberOfKSumPairs(case2.0, case2.1), case2Result)
+        XCTAssertEqual(solution.maxNumberOfKSumPairs(case3.0, case3.1), case3Result)
+        XCTAssertEqual(solution.maxNumberOfKSumPairs(case4.0, case4.1), case4Result)
+    }
+
     // MARK: - 1732. Find the Highest Altitude
 
     func testFindTheHighestAltitude() throws {
