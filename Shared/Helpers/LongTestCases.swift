@@ -7,18 +7,527 @@
 
 import Foundation
 
+// MARK: - 21. Merge Two Sorted Lists
+
+struct _MergeTwoSortedLists {
+
+    /// ((1 -> 2 -> 4), (1 -> 3 -> 4))
+    let case1: (ListNode?, ListNode?) = (ListNode(1, ListNode(2, ListNode(4))), ListNode(1, ListNode(3, ListNode(4))))
+    /// ((Empty List), (Empty List))
+    let case2: (ListNode?, ListNode?) = (nil, nil)
+    /// ((Empty List), (0))
+    let case3: (ListNode?, ListNode?) = (nil, ListNode(0))
+    /// ((1 -> 3 -> 5), (2 -> 4 -> 6 -> 7 -> 8 -> 9 -> 10))
+    let case4: (ListNode?, ListNode?) = {
+        (ListNode(1, ListNode(3, ListNode(5))),
+         ListNode(2, ListNode(4, ListNode(6, ListNode(7, ListNode(8, ListNode(9, ListNode(10))))))))
+    }()
+
+    /// (1 -> 1 -> 2 -> 3 -> 4 -> 4)
+    let case1Result = ListNode(1, ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(4))))))
+    /// (Empty List)
+    let case2Result: ListNode? = nil
+    /// (0)
+    let case3Result = ListNode(0)
+    /// (1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10)
+    let case4Result = {
+        let treeFirstPart = ListNode(4, ListNode(5, ListNode(6, ListNode(7, ListNode(8, ListNode(9, ListNode(10)))))))
+        return ListNode(1, ListNode(2, ListNode(3, treeFirstPart)))
+    }()
+
+}
+
+// MARK: - 102. Binary Tree Level Order Traversal
+
+struct _BinaryTreeLevelOrderTraversal {
+
+    /// [1, 2, 3, 4, 5]
+    /// ![Tree1](https://clck.ru/3B7ftu)
+    let case1 = TreeNode(1,
+                         TreeNode(2,
+                                  TreeNode(4),
+                                  TreeNode(5)),
+                         TreeNode(3))
+
+    /// [[1], [2, 3], [4, 5]]
+    let case1Result = [[1], [2, 3], [4, 5]]
+
+}
+
+// MARK: - 104. Maximum Depth of Binary Tree
+
+struct _MaximumDepthOfBinaryTree {
+
+    /// [3, 9, 20, null, null, 15, 7]
+    /// ![Img1](https://clck.ru/3B7WJ8)
+    let case1 = TreeNode(3, .init(9), .init(20, .init(15), .init(7)))
+    /// [1, null, 2]
+    /// ![Img2](https://clck.ru/3B7WU5)
+    let case2 = TreeNode(1, nil, .init(2))
+    /// **Empty tree**
+    let case3: TreeNode? = nil
+    /// ```swift
+    /// [
+    ///   1, 2, 3, 4, 5, 6, 7,
+    ///   8, 9, 20, nil, nil, 31, nil, 32, 
+    ///   nil, nil, 10, 12, 24, nil, 29, nil, 33, nil,
+    ///   19, nil, nil, nil, 30, nil, 40, nil, nil, nil,
+    ///   nil, nil, nil, nil, 41
+    /// ]
+    /// ```
+    /// ![Img4](https://clck.ru/3B7WVe)
+    let case4 = TreeNode(1,
+                         .init(2,
+                               .init(4,
+                                     .init(8),
+                                     .init(9,
+                                           .init(10,
+                                                 .init(19),
+                                                 nil),
+                                           .init(12))),
+                               .init(5,
+                                     .init(20,
+                                           .init(24,
+                                                 .init(30),
+                                                 nil),
+                                           nil),
+                                     nil)),
+                         .init(3,
+                               .init(6,
+                                     nil,
+                                     .init(31,
+                                           .init(29,
+                                                 .init(40,
+                                                       .init(41),
+                                                       nil),
+                                                 nil),
+                                           nil)),
+                               .init(7,
+                                     nil,
+                                     .init(32,
+                                           .init(33),
+                                           nil))))
+
+}
+
+// MARK: - 142. Linked List Cycle II
+
+struct _LinkedListCycleII {
+
+    init() {
+        let nnCycle = ListNode(5)
+        let nCycle = ListNode(4, nnCycle)
+        let sCycle = ListNode(3, nCycle)
+        nnCycle.next = sCycle
+
+        case1 = ListNode(1, ListNode(2, sCycle))
+        case1Result = 3
+    }
+
+    let case1: ListNode?
+    let case1Result: Int
+
+}
+
+// MARK: - 338. Counting Bits
+
+struct _CountingBits {
+
+    /// [0, 1, 1]
+    let case1Result = [0, 1, 1]
+    /// [0, 1, 1, 2, 1, 2]
+    let case2Result = [0, 1, 1, 2, 1, 2]
+    /// [0]
+    let case3Result = [0]
+    /// [VERY LONG ARRAY]
+    let case4Result = [
+        0, 1, 1, 2, 1, 2, 2, 3, 1, 2, 2, 3, 2, 3, 3, 4, 1, 2, 2, 3, 2, 3, 3, 4, 2, 3, 3, 4, 3, 4, 4, 5, 1, 2, 2, 3,
+        2, 3, 3, 4, 2, 3, 3, 4, 3, 4, 4, 5, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 1, 2, 2, 3, 2, 3, 3, 4,
+        2, 3, 3, 4, 3, 4, 4, 5, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5,
+        4, 5, 5, 6, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 1, 2, 2, 3, 2, 3, 3, 4, 2, 3, 3, 4, 3, 4, 4, 5,
+        2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 3, 4, 4, 5,
+        4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 3, 4, 4, 5, 4, 5, 5, 6,
+        4, 5, 5, 6, 5, 6, 6, 7, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 4, 5, 5, 6, 5, 6, 6, 7, 5, 6, 6, 7,
+        6, 7, 7, 8, 1, 2, 2, 3, 2, 3, 3, 4, 2, 3, 3, 4, 3, 4, 4, 5, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6,
+        2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 2, 3, 3, 4,
+        3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 3, 4, 4, 5, 4, 5, 5, 6,
+        4, 5, 5, 6, 5, 6, 6, 7, 4, 5, 5, 6, 5, 6, 6, 7, 5, 6, 6, 7, 6, 7, 7, 8, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5,
+        4, 5, 5, 6, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7,
+        4, 5, 5, 6, 5, 6, 6, 7, 5, 6, 6, 7, 6, 7, 7, 8, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 4, 5, 5, 6,
+        5, 6, 6, 7, 5, 6, 6, 7, 6, 7, 7, 8, 4, 5, 5, 6, 5, 6, 6, 7, 5, 6, 6, 7, 6, 7, 7, 8, 5, 6, 6, 7, 6, 7, 7, 8,
+        6, 7, 7, 8, 7, 8, 8, 9, 1
+    ]
+    /// [VERY LONG ARRAY]
+    let case5Result = [
+        0, 1, 1, 2, 1, 2, 2, 3, 1, 2, 2, 3, 2, 3, 3, 4, 1, 2, 2, 3, 2, 3, 3, 4, 2, 3, 3, 4, 3, 4, 4, 5, 1, 2, 2, 3,
+        2, 3, 3, 4, 2, 3, 3, 4, 3, 4, 4, 5, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 1, 2, 2, 3, 2, 3, 3, 4,
+        2, 3, 3, 4, 3, 4, 4, 5, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5,
+        4, 5, 5, 6, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 1, 2, 2, 3, 2, 3, 3, 4, 2, 3, 3, 4, 3, 4, 4, 5,
+        2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 3, 4, 4, 5,
+        4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 3, 4, 4, 5, 4, 5, 5, 6,
+        4, 5, 5, 6, 5, 6, 6, 7, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 4, 5, 5, 6, 5, 6, 6, 7, 5, 6, 6, 7,
+        6, 7, 7, 8, 1, 2, 2, 3, 2, 3, 3, 4, 2, 3, 3, 4, 3, 4, 4, 5, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6,
+        2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 2, 3, 3, 4,
+        3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 3, 4, 4, 5, 4, 5, 5, 6,
+        4, 5, 5, 6, 5, 6, 6, 7, 4, 5, 5, 6, 5, 6, 6, 7, 5, 6, 6, 7, 6, 7, 7, 8, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5,
+        4, 5, 5, 6, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7,
+        4, 5, 5, 6, 5, 6, 6, 7, 5, 6, 6, 7, 6, 7, 7, 8, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 4, 5, 5, 6,
+        5, 6, 6, 7, 5, 6, 6, 7, 6, 7, 7, 8, 4, 5, 5, 6, 5, 6, 6, 7, 5, 6, 6, 7, 6, 7, 7, 8, 5, 6, 6, 7, 6, 7, 7, 8,
+        6, 7, 7, 8, 7, 8, 8, 9, 1, 2, 2, 3, 2, 3, 3, 4, 2, 3, 3, 4, 3, 4, 4, 5, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5,
+        4, 5, 5, 6, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7,
+        2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 3, 4, 4, 5,
+        4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 4, 5, 5, 6, 5, 6, 6, 7, 5, 6, 6, 7, 6, 7, 7, 8, 2, 3, 3, 4, 3, 4, 4, 5,
+        3, 4, 4, 5, 4, 5, 5, 6, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6,
+        5, 6, 6, 7, 4, 5, 5, 6, 5, 6, 6, 7, 5, 6, 6, 7, 6, 7, 7, 8, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5
+    ]
+
+}
+
+// MARK: - 409. Longest Palindrome
+
+struct _LongestPalindrome {
+    
+    /// "abccccdd"
+    let case1 = "abccccdd"
+    /// "a"
+    let case2 = "a"
+    /// "aaaaabccccddd"
+    let case3 = "aaaaabccccddd"
+    /// Very long string
+    let case4 = """
+        civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth
+        """
+
+}
+
+// MARK: - 589. N-ary Tree Preorder Traversal
+
+struct _TreePreorderTraversal {
+
+    /// ```swift
+    /// [1, nil, 3, 2, 4, nil, 5, 6]
+    /// ```
+    let case1 = Node(1,
+                     children: [
+                        Node(3, 
+                             children: [
+                                Node(5), Node(6)
+                             ]),
+                        Node(2),
+                        Node(4)
+                     ])
+    /// ```swift
+    /// [
+    ///   1, nil, 2, 3, 4, 5, nil,
+    ///   nil, 6, 7, nil, 8, nil, 9, 10, nil,
+    ///   nil, 11, nil, 12, nil, 13, nil, nil, 14
+    /// ]
+    /// ```
+    let case2 = Node(1,
+                     children: [
+                        Node(2),
+                        Node(3,
+                             children: [
+                                Node(6),
+                                Node(7,
+                                     children: [
+                                        Node(11,
+                                             children: [
+                                                Node(14)
+                                             ])
+                                     ])
+                             ]),
+                        Node(4,
+                             children: [
+                                Node(8,
+                                     children: [
+                                        Node(12)
+                                     ])
+                             ]),
+                        Node(5,
+                             children: [
+                                Node(9,
+                                     children: [
+                                        Node(13)
+                                     ]),
+                                Node(10)
+                             ]),
+                     ])
+
+    let case1Result = [1, 3, 5, 6, 2, 4]
+    let case2Result = [1, 2, 3, 6, 7, 11, 14, 4, 8, 12, 5, 9, 13, 10]
+
+}
+
+// MARK: - 700. Search in a Binary Search Tree
+
+struct _SearchInBinarySearchTree {
+
+    init() {
+        subTree1 = TreeNode(2, .init(1), .init(3))
+        tree1 = TreeNode(4, subTree1, .init(7))
+        subTree2 = TreeNode(7)
+        tree2 = TreeNode(8,
+                         .init(3,
+                               .init(1),
+                               .init(6,
+                                     .init(4),
+                                     subTree2)),
+                         .init(10,
+                               nil,
+                               .init(14,
+                                     .init(13),
+                                     nil)))
+        tree3 = nil
+
+        case1 = (tree1, 2)
+        case2 = (tree1, 5)
+        case3 = (tree2, 2)
+        case4 = (tree2, 7)
+        case5 = (tree3, 1)
+
+        case1Result = subTree1
+        case2Result = nil
+        case3Result = nil
+        case4Result = subTree2
+        case5Result = nil
+    }
+
+    /// ([4, 2, 7, 1, 3, null, null], 2)
+    /// ![Tree1](https://clck.ru/3B7b6e)
+    let case1: (TreeNode?, Int)
+    /// ([4, 2, 7, 1, 3, null, null], 5)
+    /// ![Tree1](https://clck.ru/3B7b6e)
+    let case2: (TreeNode?, Int)
+    /// ([8, 3, 10, 1, 6, null, 14, null, null, 4, 7, 13], 2)
+    /// ![Tree2](https://clck.ru/3B7anv)
+    let case3: (TreeNode?, Int)
+    /// ([8, 3, 10, 1, 6, null, 14, null, null, 4, 7, 13], 7)
+    /// ![Tree2](https://clck.ru/3B7anv)
+    let case4: (TreeNode?, Int)
+    /// (Empty Tree, 2)
+    let case5: (TreeNode?, Int)
+
+    let case1Result: TreeNode?
+    let case2Result: TreeNode?
+    let case3Result: TreeNode?
+    let case4Result: TreeNode?
+    let case5Result: TreeNode?
+
+    private let tree1: TreeNode?
+    private let tree2: TreeNode?
+    private let tree3: TreeNode?
+    private let subTree1: TreeNode?
+    private let subTree2: TreeNode?
+
+}
+
+// MARK: - 746. Min Cost Climbing Stairs
+
+struct _MinCostClimbingStairs {
+
+    /// [10, 15, 20]
+    let case1 = [10, 15, 20]
+    /// [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
+    let case2 = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
+    /// [VERY LONG ARRAY]
+    let case3 = [
+        841, 462, 566, 398, 243, 248, 238, 650, 989, 576, 361, 126, 334, 729, 446, 897, 953, 38, 195, 679, 65,
+        707, 196, 705, 569, 275, 259, 872, 630, 965, 978, 109, 56, 523, 851, 887, 91, 544, 598, 963, 305, 481,
+        959, 560, 454, 883, 50, 216, 732, 572, 511, 156, 177, 831, 122, 667, 548, 978, 771, 880, 922, 777, 990,
+        498, 525, 317, 469, 151, 874, 202, 519, 139, 670, 341, 514, 469, 858, 913, 94, 849, 839, 813, 664, 163,
+        3, 802, 21, 634, 944, 901, 446, 186, 843, 742, 330, 610, 932, 614, 625, 169, 833, 4, 81, 55, 124,
+        294, 71, 24, 929, 534, 621, 543, 417, 534, 427, 327, 179, 90, 341, 949, 368, 692, 646, 290, 488, 145,
+        273, 617, 596, 82, 538, 751, 80, 616, 763, 826, 932, 184, 630, 478, 163, 925, 259, 237, 839, 602, 60,
+        786, 603, 413, 816, 278, 4, 35, 243, 64, 631, 405, 23, 638, 618, 829, 481, 877, 756, 482, 999, 973,
+        718, 157, 262, 752, 931, 882, 741, 40, 77, 535, 542, 879, 607, 879, 321, 46, 210, 116, 244, 830, 591,
+        285, 382, 925, 48, 497, 913, 203, 239, 696, 162, 623, 291, 525, 950, 27, 546, 293, 108, 577, 672, 354,
+        256, 3, 671, 998, 22, 989, 557, 424, 251, 923, 542, 243, 46, 488, 80, 374, 372, 334, 190, 817, 150,
+        742, 362, 196, 75, 193, 162, 645, 859, 758, 433, 903, 199, 289, 175, 303, 475, 818, 213, 576, 181, 668,
+        243, 297, 572, 549, 840, 161, 292, 719, 226, 338, 981, 345, 203, 655, 210, 65, 111, 746, 76, 935, 406,
+        646, 976, 567, 32, 726, 638, 674, 727, 861, 426, 297, 349, 464, 973, 341, 452, 826, 223, 805, 940, 458,
+        468, 967, 107, 345, 987, 553, 407, 916, 103, 324, 367, 864, 74, 946, 712, 596, 105, 194, 79, 634, 855,
+        703, 70, 170, 543, 208, 739, 632, 663, 880, 857, 824, 258, 743, 488, 659, 647, 470, 958, 492, 211, 927,
+        356, 488, 744, 570, 143, 674, 502, 589, 270, 80, 6, 463, 506, 556, 495, 713, 407, 229, 689, 280, 162,
+        454, 757, 565, 267, 575, 417, 948, 607, 269, 852, 938, 560, 24, 222, 580, 604, 800, 628, 487, 485, 615,
+        796, 384, 555, 226, 412, 445, 503, 810, 949, 966, 28, 768, 83, 213, 883, 963, 831, 390, 951, 378, 497,
+        440, 780, 209, 734, 290, 96, 398, 146, 56, 445, 880, 910, 858, 671, 164, 552, 686, 748, 738, 837, 556,
+        710, 787, 343, 137, 298, 685, 909, 828, 499, 816, 538, 604, 652, 7, 272, 729, 529, 343, 443, 593, 992,
+        434, 588, 936, 261, 873, 64, 177, 827, 172, 712, 628, 609, 328, 672, 376, 628, 441, 9, 92, 525, 222,
+        654, 699, 134, 506, 934, 178, 270, 770, 994, 158, 653, 199, 833, 802, 553, 399, 366, 818, 523, 447, 420,
+        957, 669, 267, 118, 535, 971, 180, 469, 768, 184, 321, 712, 167, 867, 12, 660, 283, 813, 498, 192, 740,
+        696, 421, 504, 795, 894, 724, 562, 234, 110, 88, 100, 408, 104, 864, 473, 59, 474, 922, 759, 720, 69,
+        490, 540, 962, 461, 324, 453, 91, 173, 870, 470, 292, 394, 771, 161, 777, 287, 560, 532, 339, 301, 90,
+        411, 387, 59, 67, 828, 775, 882, 677, 9, 393, 128, 910, 630, 396, 77, 321, 642, 568, 817, 222, 902,
+        680, 596, 359, 639, 189, 436, 648, 825, 46, 699, 967, 202, 954, 680, 251, 455, 420, 599, 20, 894, 224,
+        47, 266, 644, 943, 808, 653, 563, 351, 709, 116, 849, 38, 870, 852, 333, 829, 306, 881, 203, 660, 266,
+        540, 510, 748, 840, 821, 199, 250, 253, 279, 672, 472, 707, 921, 582, 713, 900, 137, 70, 912, 51, 250,
+        188, 967, 14, 608, 30, 541, 424, 813, 343, 297, 346, 27, 774, 549, 931, 141, 81, 120, 342, 288, 332,
+        967, 768, 178, 230, 378, 800, 408, 272, 596, 560, 942, 612, 910, 743, 461, 425, 878, 254, 929, 780, 641,
+        657, 279, 160, 184, 585, 651, 204, 353, 454, 536, 185, 550, 428, 125, 889, 436, 906, 99, 942, 355, 666,
+        746, 964, 936, 661, 515, 978, 492, 836, 468, 867, 422, 879, 92, 438, 802, 276, 805, 832, 649, 572, 638,
+        43, 971, 974, 804, 66, 100, 792, 878, 469, 585, 254, 630, 309, 172, 361, 906, 628, 219, 534, 617, 95,
+        190, 541, 93, 477, 933, 328, 984, 117, 678, 746, 296, 232, 240, 532, 643, 901, 982, 342, 918, 884, 62,
+        68, 835, 173, 493, 252, 382, 862, 672, 803, 803, 873, 24, 431, 580, 257, 457, 519, 388, 218, 970, 691,
+        287, 486, 274, 942, 184, 817, 405, 575, 369, 591, 713, 158, 264, 826, 870, 561, 450, 419, 606, 925, 710,
+        758, 151, 533, 405, 946, 285, 86, 346, 685, 153, 834, 625, 745, 925, 281, 805, 99, 891, 122, 102, 874,
+        491, 64, 277, 277, 840, 657, 443, 492, 880, 925, 65, 880, 393, 504, 736, 340, 64, 330, 318, 703, 949,
+        950, 887, 956, 39, 595, 764, 176, 371, 215, 601, 435, 249, 86, 761, 793, 201, 54, 189, 451, 179, 849,
+        760, 689, 539, 453, 450, 404, 852, 709, 313, 529, 666, 545, 399, 808, 290, 848, 129, 352, 846, 2, 266,
+        777, 286, 22, 898, 81, 299, 786, 949, 435, 434, 695, 298, 402, 532, 177, 399, 458, 528, 672, 882, 90,
+        547, 690, 935, 424, 516, 390, 346, 702, 781, 644, 794, 420, 116, 24, 919, 467, 543, 58, 938, 217, 502,
+        169, 457, 723, 122, 158, 188, 109, 868, 311, 708, 8, 893, 853, 376, 359, 223, 654, 895, 877, 709, 940,
+        195, 323, 64, 51, 807, 510, 170, 508, 155, 724, 784, 603, 67, 316, 217, 148, 972, 19, 658, 5, 762,
+        618, 744, 534, 956, 703, 434, 302, 541, 997, 214, 429, 961, 648, 774, 244, 684, 218, 49, 729, 990, 521,
+        948, 317, 847, 76, 566, 415, 874, 399, 613, 816, 613, 467, 191
+    ]
+
+}
+
+// MARK: - 872. Leaf-Similar Trees
+
+struct _LeafSimilarTrees {
+
+    init() {
+        case1_1 = TreeNode(3,
+                           .init(5,
+                                 .init(6),
+                                 .init(2,
+                                       .init(7),
+                                       .init(4))),
+                           .init(1,
+                                 .init(9),
+                                 .init(8)))
+        case1_2 = TreeNode(3,
+                           .init(5,
+                                 .init(6),
+                                 .init(7)),
+                           .init(1,
+                                 .init(4),
+                                 .init(2,
+                                       .init(9),
+                                       .init(8))))
+
+        case2_1 = nil
+        case2_2 = TreeNode(8)
+
+        case3_1 = TreeNode(1,
+                           .init(2,
+                                 .init(4,
+                                       .init(8),
+                                       .init(9,
+                                             .init(10,
+                                                   .init(19),
+                                                   nil),
+                                             .init(12))),
+                                 .init(5,
+                                       .init(20,
+                                             .init(24,
+                                                   .init(30),
+                                                   nil),
+                                             nil),
+                                       nil)),
+                           .init(3,
+                                 .init(6,
+                                       nil,
+                                       .init(31,
+                                             .init(29,
+                                                   .init(40,
+                                                         .init(41),
+                                                         nil),
+                                                   nil),
+                                             nil)),
+                                 .init(7,
+                                       nil,
+                                       .init(32,
+                                             .init(33),
+                                             nil))))
+
+        case3_2 = TreeNode(1,
+                           .init(2,
+                                 .init(4,
+                                       .init(8),
+                                       .init(9,
+                                             .init(10,
+                                                   .init(19),
+                                                   nil),
+                                             .init(12))),
+                                 .init(5,
+                                       .init(20,
+                                             .init(24,
+                                                   .init(30),
+                                                   nil),
+                                             nil),
+                                       nil)),
+                           .init(3,
+                                 .init(6,
+                                       nil,
+                                       .init(31,
+                                             .init(29,
+                                                   .init(40,
+                                                         .init(90),
+                                                         nil),
+                                                   nil),
+                                             nil)),
+                                 .init(7,
+                                       nil,
+                                       .init(32,
+                                             .init(33),
+                                             nil))))
+
+        case4_1 = TreeNode(1,
+                           .init(2),
+                           .init(3))
+        case4_2 = TreeNode(1,
+                           .init(3),
+                           .init(2))
+    }
+
+    /// [3, 5, 1, 6, 2, 9, 8, null, null, 7, 4]
+    /// ![Case1.1](https://clck.ru/3B7e3y)
+    let case1_1: TreeNode?
+    /// [3, 5, 1, 6, 7, 4, 2, null, null, null, null, null, null, 9, 8]
+    /// ![Case1.2](https://clck.ru/3B7e6h)
+    let case1_2: TreeNode?
+    /// [Empty Tree]
+    let case2_1: TreeNode?
+    /// [8]
+    /// ![Case2.2](https://clck.ru/3B7e9e)
+    let case2_2: TreeNode?
+    /// ```swift
+    /// [
+    ///   1, 2, 3, 4, 5, 6, 7,
+    ///   8, 9, 20, null, null, 31, null, 32,
+    ///   null, null, 10, 12, 24, null, 29, null, 33, null,
+    ///   19, null, null, null, 30, null, 40, null, null, null,
+    ///   null, null, null, null, 41
+    /// ]
+    /// ```
+    /// ![Case3.1](https://clck.ru/3B7eB6)
+    let case3_1: TreeNode?
+    /// ```swift
+    /// [
+    ///   1, 2, 3, 4, 5, 6, 7,
+    ///   8, 9, 20, null, null, 31, null, 32,
+    ///   null, null, 10, 12, 24, null, 29, null, 33, null,
+    ///   19, null, null, null, 30, null, 40, null, null, null,
+    ///   null, null, null, null, 90
+    /// ]
+    /// ```
+    /// ![Case3.2](https://clck.ru/3B7eCW)
+    let case3_2: TreeNode?
+    /// [1, 2, 3]
+    /// ![Case4.1](https://clck.ru/3B7eFP)
+    let case4_1: TreeNode?
+    /// [1, 3, 2]
+    /// ![Case4.2](https://clck.ru/3B7eGQ)
+    let case4_2: TreeNode?
+
+}
+
 // MARK: - 1679. Max Number of K-Sum Pairs
 
 struct _MaxNumberOfKSumPairs {
-
-    static var shared: Self {
-        if _shared == nil {
-            _shared = .init()
-        }
-        return _shared!
-    }
-    private static var _shared: Self?
-    private init() {}
 
     /// ([1, 2, 3, 4], 5)
     let case1 = ([1, 2, 3, 4], 5)

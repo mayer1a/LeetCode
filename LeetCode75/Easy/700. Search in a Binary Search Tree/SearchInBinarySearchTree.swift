@@ -15,12 +15,16 @@ import Foundation
 ///
 ///
 /// **Example 1:**
+///
+/// ![Tree1](https://assets.leetcode.com/uploads/2021/01/12/tree1.jpg)
 /// ```
 /// Input: root = [4,2,7,1,3], val = 2
 /// Output: [2,1,3]
 /// ```
 ///
 /// **Example 2:**
+///
+/// ![Tree1](https://assets.leetcode.com/uploads/2021/01/12/tree2.jpg)
 /// ```
 /// Input: root = [4,2,7,1,3], val = 5
 /// Output: []

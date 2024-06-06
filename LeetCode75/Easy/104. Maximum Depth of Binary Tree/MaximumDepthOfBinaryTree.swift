@@ -15,12 +15,16 @@ import Foundation
 ///
 ///
 /// **Example 1:**
+///
+/// ![Img1](https://clck.ru/3B7WJ8)
 /// ```
 /// Input: root = [3,9,20,null,null,15,7]
 /// Output: 3
 /// ```
 ///
 /// **Example 2:**
+///
+/// ![Img2](https://clck.ru/3B7WU5)
 /// ```
 /// Input: root = [1,null,2]
 /// Output: 2
@@ -38,39 +42,4 @@ final class MaximumDepthOfBinaryTree_Solution {
     }
 
 }
-let case1 = TreeNode(3, .init(9), .init(20, .init(15), .init(7)))
-let case2 = TreeNode(1, nil, .init(2))
-let case3: TreeNode? = nil
-let case4 = {
-    TreeNode(1,
-             .init(2,
-                .init(4,
-                      .init(8),
-                      .init(9,
-                            .init(10,
-                                  .init(19),
-                                  nil),
-                            .init(12))),
-                .init(5,
-                      .init(20,
-                            .init(24,
-                                  .init(30),
-                                  nil),
-                            nil),
-                      nil)),
-             .init(3,
-                   .init(6,
-                         nil,
-                         .init(31,
-                               .init(29,
-                                     .init(40,
-                                           .init(41),
-                                           nil),
-                                     nil),
-                               nil)),
-                   .init(7,
-                         nil,
-                         .init(32,
-                               .init(33),
-                               nil))))
-}()
+
