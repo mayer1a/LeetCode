@@ -19,6 +19,14 @@
 		490BD5872C072CD1003AE043 /* LeafSimilarTrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BD5852C072CD1003AE043 /* LeafSimilarTrees.swift */; };
 		4912C7AD2C09CBBA00DEB016 /* MinCostClimbingStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912C7AC2C09CBBA00DEB016 /* MinCostClimbingStairs.swift */; };
 		4912C7AE2C09CBBA00DEB016 /* MinCostClimbingStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912C7AC2C09CBBA00DEB016 /* MinCostClimbingStairs.swift */; };
+		49450F742C117FE90036A167 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F732C117FE90036A167 /* ContainerWithMostWater.swift */; };
+		49450F752C117FE90036A167 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F732C117FE90036A167 /* ContainerWithMostWater.swift */; };
+		49450F782C1182A70036A167 /* MaxNumberOfKSumPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F772C1182A70036A167 /* MaxNumberOfKSumPairs.swift */; };
+		49450F792C1182A70036A167 /* MaxNumberOfKSumPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F772C1182A70036A167 /* MaxNumberOfKSumPairs.swift */; };
+		49450F802C11AE370036A167 /* LongTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F7F2C11AE370036A167 /* LongTestCases.swift */; };
+		49450F812C11AE370036A167 /* LongTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F7F2C11AE370036A167 /* LongTestCases.swift */; };
+		49450F822C11AE370036A167 /* LongTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F7F2C11AE370036A167 /* LongTestCases.swift */; };
+		49450F832C11AE370036A167 /* LongTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F7F2C11AE370036A167 /* LongTestCases.swift */; };
 		494A7B5628B91461008CDBFE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B5528B91461008CDBFE /* main.swift */; };
 		494A7B6C28B919C9008CDBFE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B5528B91461008CDBFE /* main.swift */; };
 		495D40492BFC94DC00ECFC81 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
@@ -140,6 +148,9 @@
 		490BD5812C0721AC003AE043 /* MaximumDepthOfBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumDepthOfBinaryTree.swift; sourceTree = "<group>"; };
 		490BD5852C072CD1003AE043 /* LeafSimilarTrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafSimilarTrees.swift; sourceTree = "<group>"; };
 		4912C7AC2C09CBBA00DEB016 /* MinCostClimbingStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinCostClimbingStairs.swift; sourceTree = "<group>"; };
+		49450F732C117FE90036A167 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
+		49450F772C1182A70036A167 /* MaxNumberOfKSumPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxNumberOfKSumPairs.swift; sourceTree = "<group>"; };
+		49450F7F2C11AE370036A167 /* LongTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongTestCases.swift; sourceTree = "<group>"; };
 		494A7B5228B91461008CDBFE /* LeetCode100 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode100; sourceTree = BUILT_PRODUCTS_DIR; };
 		494A7B5528B91461008CDBFE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		494A7B6128B91557008CDBFE /* LeetCode100_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode100_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -324,14 +335,30 @@
 			path = "746. Min Cost Climbing Stairs";
 			sourceTree = "<group>";
 		};
+		49450F722C117FD70036A167 /* 11. Container With Most Water */ = {
+			isa = PBXGroup;
+			children = (
+				49450F732C117FE90036A167 /* ContainerWithMostWater.swift */,
+			);
+			path = "11. Container With Most Water";
+			sourceTree = "<group>";
+		};
+		49450F762C11828B0036A167 /* 1679. Max Number of K-Sum Pairs */ = {
+			isa = PBXGroup;
+			children = (
+				49450F772C1182A70036A167 /* MaxNumberOfKSumPairs.swift */,
+			);
+			path = "1679. Max Number of K-Sum Pairs";
+			sourceTree = "<group>";
+		};
 		494A7B4928B91461008CDBFE = {
 			isa = PBXGroup;
 			children = (
 				491085842BFF893D006F73CC /* Shared */,
-				494A7B5428B91461008CDBFE /* LeetCode100 */,
 				499762EA2BFF8031009D6EF5 /* LeetCode75 */,
-				494A7B5328B91461008CDBFE /* Products */,
+				494A7B5428B91461008CDBFE /* LeetCode100 */,
 				494A7B6228B91557008CDBFE /* UnitTests */,
+				494A7B5328B91461008CDBFE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -372,6 +399,7 @@
 				495D404E2BFC965F00ECFC81 /* Node.swift */,
 				495D404A2BFC95E400ECFC81 /* ListNode.swift */,
 				495D404C2BFC960B00ECFC81 /* TreeNode.swift */,
+				49450F7F2C11AE370036A167 /* LongTestCases.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -514,10 +542,12 @@
 		49B7035E2C0EFA8A0005B3D4 /* Medium */ = {
 			isa = PBXGroup;
 			children = (
+				49450F722C117FD70036A167 /* 11. Container With Most Water */,
 				49B7035F2C0EFA9D0005B3D4 /* 151. Reverse Words in a String */,
 				49B703632C0F106C0005B3D4 /* 238. Product of Array Except Self */,
 				498B5C492C1061BB00B2DC79 /* 334. Increasing Triplet Subsequence */,
 				498B5C4D2C1062E800B2DC79 /* 443. String Compression */,
+				49450F762C11828B0036A167 /* 1679. Max Number of K-Sum Pairs */,
 			);
 			path = Medium;
 			sourceTree = "<group>";
@@ -854,6 +884,7 @@
 				495D40682BFC995D00ECFC81 /* LinkedListCycleII.swift in Sources */,
 				495D40712BFC9A2600ECFC81 /* MergeTwoSortedLists.swift in Sources */,
 				49E202582C04E623005D75E9 /* LongestPalindrome.swift in Sources */,
+				49450F802C11AE370036A167 /* LongTestCases.swift in Sources */,
 				49E202562C04E623005D75E9 /* NAryTreePreorderTraversal.swift in Sources */,
 				49EC4CC42C06096900D68CF9 /* LargestTimeForGivenDigits.swift in Sources */,
 			);
@@ -873,6 +904,7 @@
 				495D40FD2BFCBBBE00ECFC81 /* Node.swift in Sources */,
 				49E202592C04E623005D75E9 /* LongestPalindrome.swift in Sources */,
 				495D40FE2BFCBBBE00ECFC81 /* BenchTimer.swift in Sources */,
+				49450F812C11AE370036A167 /* LongTestCases.swift in Sources */,
 				495D40FF2BFCBBBE00ECFC81 /* TreeNode.swift in Sources */,
 				490BB3652C0F441B0026F70C /* MaximizeDistanceToClosestPerson.swift in Sources */,
 				495D41002BFCBBBE00ECFC81 /* ListNode.swift in Sources */,
@@ -895,6 +927,7 @@
 				497399162C0DBA1A003031AA /* CountingBits.swift in Sources */,
 				490BD57E2C071DB7003AE043 /* NumberOfRecentCalls.swift in Sources */,
 				49EC4CE02C060F1F00D68CF9 /* FindPivotIndex.swift in Sources */,
+				49450F822C11AE370036A167 /* LongTestCases.swift in Sources */,
 				499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */,
 				490119302C087DD0009ADEC2 /* SearchInBinarySearchTree.swift in Sources */,
 				490BD5862C072CD1003AE043 /* LeafSimilarTrees.swift in Sources */,
@@ -914,10 +947,12 @@
 				49EC4CEE2C06102E00D68CF9 /* GreatestCommonDivisorOfStrings.swift in Sources */,
 				49EC4CEC2C06102E00D68CF9 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */,
 				49DA51162C08B1D30062A064 /* GuessNumberHigherOrLower.swift in Sources */,
+				49450F782C1182A70036A167 /* MaxNumberOfKSumPairs.swift in Sources */,
 				49EC4CF82C06115C00D68CF9 /* FindTheHighestAltitude.swift in Sources */,
 				499763322BFF85D7009D6EF5 /* main.swift in Sources */,
 				49EC4CD82C060E0D00D68CF9 /* CanPlaceFlowers.swift in Sources */,
 				49EC4CEA2C06102E00D68CF9 /* UniqueNumberOfOccurrences.swift in Sources */,
+				49450F742C117FE90036A167 /* ContainerWithMostWater.swift in Sources */,
 				490BD5822C0721AC003AE043 /* MaximumDepthOfBinaryTree.swift in Sources */,
 				49B703612C0EFAAF0005B3D4 /* ReverseWordsInString.swift in Sources */,
 				49EC4CE22C060F1F00D68CF9 /* MaximumAverageSubarrayI.swift in Sources */,
@@ -945,6 +980,7 @@
 				4973991B2C0E0DFC003031AA /* SingleNumber.swift in Sources */,
 				490119312C087DD0009ADEC2 /* SearchInBinarySearchTree.swift in Sources */,
 				4997631D2BFF8181009D6EF5 /* ListNode.swift in Sources */,
+				49450F832C11AE370036A167 /* LongTestCases.swift in Sources */,
 				49EC4CF92C06115C00D68CF9 /* FindTheHighestAltitude.swift in Sources */,
 				49EC4CCD2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */,
 				4912C7AE2C09CBBA00DEB016 /* MinCostClimbingStairs.swift in Sources */,
@@ -952,9 +988,11 @@
 				490BD57F2C071DB7003AE043 /* NumberOfRecentCalls.swift in Sources */,
 				49DA51172C08B1D30062A064 /* GuessNumberHigherOrLower.swift in Sources */,
 				49B3312A2C09AE6600BC47D8 /* NthTribonacciNumber.swift in Sources */,
+				49450F792C1182A70036A167 /* MaxNumberOfKSumPairs.swift in Sources */,
 				497399172C0DBA1A003031AA /* CountingBits.swift in Sources */,
 				49EC4CF72C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
 				498B5C4C2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */,
+				49450F752C117FE90036A167 /* ContainerWithMostWater.swift in Sources */,
 				498B5C502C1062F700B2DC79 /* StringCompression.swift in Sources */,
 				499763332BFF85D8009D6EF5 /* main.swift in Sources */,
 				49EC4CED2C06102E00D68CF9 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */,
@@ -1092,7 +1130,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "Shared/Helpers/BenchTimer.swift Shared/Helpers/Node.swift Shared/Helpers/TreeNode.swift Shared/Helpers Shared/Helpers/ListNode.swift";
+				DEVELOPMENT_ASSET_PATHS = "Shared/Helpers/TreeNode.swift Shared/Helpers/BenchTimer.swift Shared/Helpers/ListNode.swift Shared/Helpers/Node.swift Shared/Helpers";
 				DEVELOPMENT_TEAM = 277JX9R2RP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -1110,7 +1148,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "Shared/Helpers/BenchTimer.swift Shared/Helpers/Node.swift Shared/Helpers/TreeNode.swift Shared/Helpers Shared/Helpers/ListNode.swift";
+				DEVELOPMENT_ASSET_PATHS = "Shared/Helpers/TreeNode.swift Shared/Helpers/BenchTimer.swift Shared/Helpers/ListNode.swift Shared/Helpers/Node.swift Shared/Helpers";
 				DEVELOPMENT_TEAM = 277JX9R2RP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -1162,7 +1200,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "Shared/Helpers/BenchTimer.swift Shared/Helpers/Node.swift Shared/Helpers/TreeNode.swift Shared/Helpers Shared/Helpers/ListNode.swift";
+				DEVELOPMENT_ASSET_PATHS = "Shared/Helpers/TreeNode.swift Shared/Helpers/BenchTimer.swift Shared/Helpers/ListNode.swift Shared/Helpers/Node.swift Shared/Helpers";
 				DEVELOPMENT_TEAM = 277JX9R2RP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -1183,7 +1221,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "Shared/Helpers/BenchTimer.swift Shared/Helpers/Node.swift Shared/Helpers/TreeNode.swift Shared/Helpers Shared/Helpers/ListNode.swift";
+				DEVELOPMENT_ASSET_PATHS = "Shared/Helpers/TreeNode.swift Shared/Helpers/BenchTimer.swift Shared/Helpers/ListNode.swift Shared/Helpers/Node.swift Shared/Helpers";
 				DEVELOPMENT_TEAM = 277JX9R2RP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;

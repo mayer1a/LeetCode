@@ -9,6 +9,13 @@ import Foundation
 
 final class Solution {
 
+    // MARK: - 11. Container With Most Water
+
+    func containerWithMostWater(_ height: [Int]) -> Int {
+        let solution = ContainerWithMostWater_Solution()
+        return solution.maxArea(height)
+    }
+
     // MARK: - 104. Maximum Depth of Binary Tree
     
     func maximumDepthOfBinaryTree(_ root: TreeNode?) -> Int {
@@ -154,6 +161,7 @@ final class Solution {
     }
 
     // MARK: - 933. Number of Recent Calls
+
     func numberOfRecentCalls(_ t: Int) -> Int {
         NumberOfRecentCalls_Solution.shared.ping(t)
     }
@@ -192,6 +200,13 @@ final class Solution {
     func kidsWithTheGreatestNumberOfCandies(_ candies: [Int], _ extraCandies: Int) -> [Bool] {
         let solution = KidsWithTheGreatestNumberOfCandies_Solution()
         return solution.kidsWithCandies(candies, extraCandies)
+    }
+
+    // MARK: - 1679. Max Number of K-Sum Pairs
+
+    func maxNumberOfKSumPairs(_ nums: [Int], _ k: Int) -> Int {
+        let solution = MaxNumberOfKSumPairs_Solution()
+        return solution.maxOperations(nums, k)
     }
 
     // MARK: - 1732. Find the Highest Altitude

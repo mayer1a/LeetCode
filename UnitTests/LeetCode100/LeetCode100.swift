@@ -18,29 +18,28 @@ final class UnitTests: XCTestCase {
 
         solution = Solution()
         listNode = ListNode()
-// Put setup code here. This method is called before the invocation of each test method in the class.
+        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDownWithError() throws {
         solution = nil
         try super.tearDownWithError()
-// Put teardown code here. This method is called after the invocation of each test method in the class.
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
     // MARK: - 21. Merge Two Sorted Lists
 
     func testMergeTwoSortedLists() throws {
-        let case1: (ListNode?, ListNode?) = (ListNode(1, ListNode(2, ListNode(4))),
-                                             ListNode(1, ListNode(3, ListNode(4))))
-        let case2: (ListNode?, ListNode?) = (nil, nil)
-        let case3: (ListNode?, ListNode?) = (nil, ListNode(0))
-        let case4: (ListNode?, ListNode?) = (ListNode(1, ListNode(3, ListNode(5))),
-                                             ListNode(2, ListNode(4, ListNode(6, ListNode(7, ListNode(8, ListNode(9, ListNode(10))))))))
+        let _cases = _MergeTwoSortedLists()
+        let case1 = _cases.case1
+        let case2 = _cases.case2
+        let case3 = _cases.case3
+        let case4 = _cases.case4
 
-        let case1Result = ListNode(1, ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(4))))))
-        let case2Result: ListNode? = nil
-        let case3Result = ListNode(0)
-        let case4Result = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5, ListNode(6, ListNode(7, ListNode(8, ListNode(9, ListNode(10))))))))))
+        let case1Result = _cases.case1Result
+        let case2Result = _cases.case2Result
+        let case3Result = _cases.case3Result
+        let case4Result = _cases.case4Result
 
         XCTAssertEqual(solution.mergeTwoSortedLists(case1.0, case1.1), case1Result)
         XCTAssertEqual(solution.mergeTwoSortedLists(case2.0, case2.1), case2Result)
@@ -60,13 +59,10 @@ final class UnitTests: XCTestCase {
     // MARK: - 102. Binary Tree Level Order Traversal
 
     func testBinaryTreeLevelOrderTraversal() throws {
-        let case1 = TreeNode(1,
-                             TreeNode(2,
-                                      TreeNode(4),
-                                      TreeNode(5)),
-                             TreeNode(3))
+        let _cases = _BinaryTreeLevelOrderTraversal()
+        let case1 = _cases.case1
 
-        let case1Result = [[1], [2, 3], [4, 5]]
+        let case1Result = _cases.case1Result
 
         XCTAssertEqual(solution.binaryTreeLevelOrderTraversal(case1), case1Result)
 
@@ -89,13 +85,10 @@ final class UnitTests: XCTestCase {
     // MARK: - 142. Linked List Cycle II
 
     func testLinkedListCycleII() throws {
-        let nnCycle = ListNode(5)
-        let nCycle = ListNode(4, nnCycle)
-        let sCycle = ListNode(3, nCycle)
-        nnCycle.next = sCycle
-        let case1: ListNode? = ListNode(1, ListNode(2, sCycle))
+        let _cases = _LinkedListCycleII()
+        let case1 = _cases.case1
 
-        let case1Result = 3
+        let case1Result = _cases.case1Result
 
         XCTAssertEqual(solution.linkedListCycleII(case1)?.val, case1Result)
     }
@@ -146,12 +139,11 @@ final class UnitTests: XCTestCase {
     // MARK: - 409. Longest Palindrome
 
     func testLongestPalindrome() throws {
-        let case1 = "abccccdd"
-        let case2 = "a"
-        let case3 = "aaaaabccccddd"
-        let case4 = """
-            civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth
-            """
+        let _cases = _LongestPalindrome()
+        let case1 = _cases.case1
+        let case2 = _cases.case2
+        let case3 = _cases.case3
+        let case4 = _cases.case4
 
         let case1Result = 7
         let case2Result = 1
@@ -167,38 +159,12 @@ final class UnitTests: XCTestCase {
     // MARK: - 589. N-ary Tree Preorder Traversal
 
     func testTreePreorderTraversal() throws {
-        let case1 = Node(1, children: [
-            Node(3, children: [
-                Node(5), Node(6)
-            ]),
-            Node(2),
-            Node(4)
-        ])
-        let case2 = Node(1, children: [
-            Node(2),
-            Node(3, children: [
-                Node(6),
-                Node(7, children: [
-                    Node(11, children: [
-                        Node(14)
-                    ])
-                ])
-            ]),
-            Node(4, children: [
-                Node(8, children: [
-                    Node(12)
-                ])
-            ]),
-            Node(5, children: [
-                Node(9, children: [
-                    Node(13)
-                ]),
-                Node(10)
-            ]),
-        ])
+        let _cases = _TreePreorderTraversal()
+        let case1 = _cases.case1
+        let case2 = _cases.case2
 
-        let case1Result = [1, 3, 5, 6, 2, 4]
-        let case2Result = [1, 2, 3, 6, 7, 11, 14, 4, 8, 12, 5, 9, 13, 10]
+        let case1Result = _cases.case1Result
+        let case2Result = _cases.case2Result
 
         XCTAssertEqual(solution.treePreorderTraversal(case1), case1Result)
         XCTAssertEqual(solution.treePreorderTraversal(case1, iterative: false), case1Result)
