@@ -47,7 +47,7 @@ final class LargestTimeForGivenDigits_Solution {
             for j in 0..<arr.count {
                 for k in 0..<arr.count {
                     guard i != j, i != k, j != k else { continue }
-                    print("\(ind)")
+                    
                     ind += 1
                     let hh = "\(arr[i])" + "\(arr[j])"
                     let mm = "\(arr[k])" + "\(arr[6 - i - j - k])"
