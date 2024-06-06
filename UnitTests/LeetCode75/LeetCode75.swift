@@ -27,6 +27,25 @@ final class UnitTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    // MARK: - 11. Container With Most Water
+
+    func testContainerWithMostWater() throws {
+        let case1 = [1, 8, 6, 2, 5, 4, 8, 3, 7]
+        let case2 = [1, 1]
+        let case3 = [1, 2, 100, 100, 4, 3]
+        let case4 = [1, 7, 6, 2, 5, 4, 8, 3, 7]
+
+        let case1Result = 49
+        let case2Result = 1
+        let case3Result = 100
+        let case4Result = 49
+
+        XCTAssertEqual(solution.containerWithMostWater(case1), case1Result)
+        XCTAssertEqual(solution.containerWithMostWater(case2), case2Result)
+        XCTAssertEqual(solution.containerWithMostWater(case3), case3Result)
+        XCTAssertEqual(solution.containerWithMostWater(case4), case4Result)
+    }
+
     // MARK: - 104. Maximum Depth of Binary Tree
 
     func testMaximumDepthOfBinaryTree() throws{

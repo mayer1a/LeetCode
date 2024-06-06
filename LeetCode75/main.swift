@@ -9,6 +9,13 @@ import Foundation
 
 final class Solution {
 
+    // MARK: - 11. Container With Most Water
+
+    func containerWithMostWater(_ height: [Int]) -> Int {
+        let solution = ContainerWithMostWater_Solution()
+        return solution.maxArea(height)
+    }
+
     // MARK: - 104. Maximum Depth of Binary Tree
     
     func maximumDepthOfBinaryTree(_ root: TreeNode?) -> Int {
