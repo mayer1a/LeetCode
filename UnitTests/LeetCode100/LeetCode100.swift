@@ -173,6 +173,26 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.treePreorderTraversal(case2, iterative: false), case2Result)
     }
 
+    // MARK: - 648. Replace Words
+
+    func testReplaceWords() throws {
+        let _cases = _ReplaceWords()
+        let case1 = _cases.case1
+        let case2 = _cases.case2
+        let case3 = _cases.case3
+        let case4 = _cases.case4
+
+        let case1Result = _cases.case1Result
+        let case2Result = _cases.case2Result
+        let case3Result = _cases.case3Result
+        let case4Result = _cases.case4Result
+
+        XCTAssertEqual(solution.replaceWords(case1.0, case1.1), case1Result)
+        XCTAssertEqual(solution.replaceWords(case2.0, case2.1), case2Result)
+        XCTAssertEqual(solution.replaceWords(case3.0, case3.1), case3Result)
+        XCTAssertEqual(solution.replaceWords(case4.0, case4.1), case4Result)
+    }
+
     // MARK: - 704. Binary Search
 
     func testBinarySearch() throws {

@@ -29,6 +29,12 @@
 		49450F832C11AE370036A167 /* LongTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F7F2C11AE370036A167 /* LongTestCases.swift */; };
 		494A7B5628B91461008CDBFE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B5528B91461008CDBFE /* main.swift */; };
 		494A7B6C28B919C9008CDBFE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B5528B91461008CDBFE /* main.swift */; };
+		495511992C12FC87004BCD04 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495511982C12FC86004BCD04 /* TrieNode.swift */; };
+		4955119A2C12FC87004BCD04 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495511982C12FC86004BCD04 /* TrieNode.swift */; };
+		4955119B2C12FC87004BCD04 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495511982C12FC86004BCD04 /* TrieNode.swift */; };
+		4955119C2C12FC87004BCD04 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495511982C12FC86004BCD04 /* TrieNode.swift */; };
+		4955119F2C12FCBB004BCD04 /* ReplaceWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4955119E2C12FCBB004BCD04 /* ReplaceWords.swift */; };
+		495511A02C12FCBB004BCD04 /* ReplaceWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4955119E2C12FCBB004BCD04 /* ReplaceWords.swift */; };
 		495D40492BFC94DC00ECFC81 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
 		495D404B2BFC95E400ECFC81 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404A2BFC95E400ECFC81 /* ListNode.swift */; };
 		495D404D2BFC960B00ECFC81 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
@@ -155,6 +161,8 @@
 		494A7B5528B91461008CDBFE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		494A7B6128B91557008CDBFE /* LeetCode100_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode100_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		494A7B6328B91557008CDBFE /* LeetCode100.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode100.swift; sourceTree = "<group>"; };
+		495511982C12FC86004BCD04 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
+		4955119E2C12FCBB004BCD04 /* ReplaceWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceWords.swift; sourceTree = "<group>"; };
 		495D40482BFC94DC00ECFC81 /* BenchTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchTimer.swift; sourceTree = "<group>"; };
 		495D404A2BFC95E400ECFC81 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		495D404C2BFC960B00ECFC81 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
@@ -272,6 +280,7 @@
 		490BB3672C0F44AD0026F70C /* Medium */ = {
 			isa = PBXGroup;
 			children = (
+				4955119D2C12FCA9004BCD04 /* 648. Replace Words */,
 				490BB3622C0F44060026F70C /* 849. Maximize Distance to Closest Person */,
 			);
 			path = Medium;
@@ -392,6 +401,14 @@
 			path = UnitTests;
 			sourceTree = "<group>";
 		};
+		4955119D2C12FCA9004BCD04 /* 648. Replace Words */ = {
+			isa = PBXGroup;
+			children = (
+				4955119E2C12FCBB004BCD04 /* ReplaceWords.swift */,
+			);
+			path = "648. Replace Words";
+			sourceTree = "<group>";
+		};
 		495D40502BFC967300ECFC81 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +417,7 @@
 				495D404A2BFC95E400ECFC81 /* ListNode.swift */,
 				495D404C2BFC960B00ECFC81 /* TreeNode.swift */,
 				49450F7F2C11AE370036A167 /* LongTestCases.swift */,
+				495511982C12FC86004BCD04 /* TrieNode.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -877,6 +895,7 @@
 				494A7B5628B91461008CDBFE /* main.swift in Sources */,
 				495D40532BFC969F00ECFC81 /* FirstBadVersion.swift in Sources */,
 				495D405C2BFC97AF00ECFC81 /* BinaryTreeLevelOrderTraversal.swift in Sources */,
+				495511992C12FC87004BCD04 /* TrieNode.swift in Sources */,
 				495D404B2BFC95E400ECFC81 /* ListNode.swift in Sources */,
 				495D404D2BFC960B00ECFC81 /* TreeNode.swift in Sources */,
 				49EC4CBE2C06082900D68CF9 /* MiddleOfTheLinkedList.swift in Sources */,
@@ -884,6 +903,7 @@
 				495D40682BFC995D00ECFC81 /* LinkedListCycleII.swift in Sources */,
 				495D40712BFC9A2600ECFC81 /* MergeTwoSortedLists.swift in Sources */,
 				49E202582C04E623005D75E9 /* LongestPalindrome.swift in Sources */,
+				4955119F2C12FCBB004BCD04 /* ReplaceWords.swift in Sources */,
 				49450F802C11AE370036A167 /* LongTestCases.swift in Sources */,
 				49E202562C04E623005D75E9 /* NAryTreePreorderTraversal.swift in Sources */,
 				49EC4CC42C06096900D68CF9 /* LargestTimeForGivenDigits.swift in Sources */,
@@ -895,6 +915,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				494A7B6C28B919C9008CDBFE /* main.swift in Sources */,
+				4955119A2C12FC87004BCD04 /* TrieNode.swift in Sources */,
 				495D40F12BFCBB8200ECFC81 /* LinkedListCycleII.swift in Sources */,
 				495D40F02BFCBB7900ECFC81 /* BestTimeToBuyAndSellStock.swift in Sources */,
 				495D40EE2BFCBB7000ECFC81 /* MergeTwoSortedLists.swift in Sources */,
@@ -904,6 +925,7 @@
 				495D40FD2BFCBBBE00ECFC81 /* Node.swift in Sources */,
 				49E202592C04E623005D75E9 /* LongestPalindrome.swift in Sources */,
 				495D40FE2BFCBBBE00ECFC81 /* BenchTimer.swift in Sources */,
+				495511A02C12FCBB004BCD04 /* ReplaceWords.swift in Sources */,
 				49450F812C11AE370036A167 /* LongTestCases.swift in Sources */,
 				495D40FF2BFCBBBE00ECFC81 /* TreeNode.swift in Sources */,
 				490BB3652C0F441B0026F70C /* MaximizeDistanceToClosestPerson.swift in Sources */,
@@ -939,6 +961,7 @@
 				49EC4CF62C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
 				49B703662C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift in Sources */,
 				498B5C4F2C1062F700B2DC79 /* StringCompression.swift in Sources */,
+				4955119B2C12FC87004BCD04 /* TrieNode.swift in Sources */,
 				49EC4CD62C060E0D00D68CF9 /* IsSubsequence.swift in Sources */,
 				4973991A2C0E0DFC003031AA /* SingleNumber.swift in Sources */,
 				498B5C4B2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */,
@@ -982,6 +1005,7 @@
 				4997631D2BFF8181009D6EF5 /* ListNode.swift in Sources */,
 				49450F832C11AE370036A167 /* LongTestCases.swift in Sources */,
 				49EC4CF92C06115C00D68CF9 /* FindTheHighestAltitude.swift in Sources */,
+				4955119C2C12FC87004BCD04 /* TrieNode.swift in Sources */,
 				49EC4CCD2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */,
 				4912C7AE2C09CBBA00DEB016 /* MinCostClimbingStairs.swift in Sources */,
 				490BD5832C0721AC003AE043 /* MaximumDepthOfBinaryTree.swift in Sources */,
