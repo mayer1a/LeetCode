@@ -70,6 +70,13 @@ final class Solution {
         return iterative ? solution.preorder_iteratively(root) : solution.preorder_recursive(root)
     }
 
+    // MARK: - 648. Replace Words
+
+    func replaceWords(_ dictionary: [String], _ sentence: String) -> String {
+        let solution = ReplaceWords_Solution()
+        return solution.replaceWords(dictionary, sentence)
+    }
+
     // MARK: - 704. Binary Search
 
     func binarySearch(_ nums: [Int], _ target: Int) -> Int {

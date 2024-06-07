@@ -33,6 +33,8 @@
 		4955119A2C12FC87004BCD04 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495511982C12FC86004BCD04 /* TrieNode.swift */; };
 		4955119B2C12FC87004BCD04 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495511982C12FC86004BCD04 /* TrieNode.swift */; };
 		4955119C2C12FC87004BCD04 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495511982C12FC86004BCD04 /* TrieNode.swift */; };
+		4955119F2C12FCBB004BCD04 /* ReplaceWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4955119E2C12FCBB004BCD04 /* ReplaceWords.swift */; };
+		495511A02C12FCBB004BCD04 /* ReplaceWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4955119E2C12FCBB004BCD04 /* ReplaceWords.swift */; };
 		495D40492BFC94DC00ECFC81 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
 		495D404B2BFC95E400ECFC81 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404A2BFC95E400ECFC81 /* ListNode.swift */; };
 		495D404D2BFC960B00ECFC81 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
@@ -160,6 +162,7 @@
 		494A7B6128B91557008CDBFE /* LeetCode100_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode100_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		494A7B6328B91557008CDBFE /* LeetCode100.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode100.swift; sourceTree = "<group>"; };
 		495511982C12FC86004BCD04 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
+		4955119E2C12FCBB004BCD04 /* ReplaceWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceWords.swift; sourceTree = "<group>"; };
 		495D40482BFC94DC00ECFC81 /* BenchTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchTimer.swift; sourceTree = "<group>"; };
 		495D404A2BFC95E400ECFC81 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		495D404C2BFC960B00ECFC81 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
@@ -277,6 +280,7 @@
 		490BB3672C0F44AD0026F70C /* Medium */ = {
 			isa = PBXGroup;
 			children = (
+				4955119D2C12FCA9004BCD04 /* 648. Replace Words */,
 				490BB3622C0F44060026F70C /* 849. Maximize Distance to Closest Person */,
 			);
 			path = Medium;
@@ -395,6 +399,14 @@
 				490BB3692C0F45880026F70C /* LeetCode100 */,
 			);
 			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		4955119D2C12FCA9004BCD04 /* 648. Replace Words */ = {
+			isa = PBXGroup;
+			children = (
+				4955119E2C12FCBB004BCD04 /* ReplaceWords.swift */,
+			);
+			path = "648. Replace Words";
 			sourceTree = "<group>";
 		};
 		495D40502BFC967300ECFC81 /* Helpers */ = {
@@ -891,6 +903,7 @@
 				495D40682BFC995D00ECFC81 /* LinkedListCycleII.swift in Sources */,
 				495D40712BFC9A2600ECFC81 /* MergeTwoSortedLists.swift in Sources */,
 				49E202582C04E623005D75E9 /* LongestPalindrome.swift in Sources */,
+				4955119F2C12FCBB004BCD04 /* ReplaceWords.swift in Sources */,
 				49450F802C11AE370036A167 /* LongTestCases.swift in Sources */,
 				49E202562C04E623005D75E9 /* NAryTreePreorderTraversal.swift in Sources */,
 				49EC4CC42C06096900D68CF9 /* LargestTimeForGivenDigits.swift in Sources */,
@@ -912,6 +925,7 @@
 				495D40FD2BFCBBBE00ECFC81 /* Node.swift in Sources */,
 				49E202592C04E623005D75E9 /* LongestPalindrome.swift in Sources */,
 				495D40FE2BFCBBBE00ECFC81 /* BenchTimer.swift in Sources */,
+				495511A02C12FCBB004BCD04 /* ReplaceWords.swift in Sources */,
 				49450F812C11AE370036A167 /* LongTestCases.swift in Sources */,
 				495D40FF2BFCBBBE00ECFC81 /* TreeNode.swift in Sources */,
 				490BB3652C0F441B0026F70C /* MaximizeDistanceToClosestPerson.swift in Sources */,
