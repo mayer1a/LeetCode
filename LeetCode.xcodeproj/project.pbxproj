@@ -66,6 +66,8 @@
 		498B5C502C1062F700B2DC79 /* StringCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C4E2C1062F700B2DC79 /* StringCompression.swift */; };
 		498B5C532C107BC600B2DC79 /* FindCommonCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C522C107BC600B2DC79 /* FindCommonCharacters.swift */; };
 		498B5C542C107BC600B2DC79 /* FindCommonCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C522C107BC600B2DC79 /* FindCommonCharacters.swift */; };
+		4992C5242C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992C5232C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift */; };
+		4992C5252C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992C5232C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift */; };
 		499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
 		499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
 		499763182BFF8181009D6EF5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404E2BFC965F00ECFC81 /* Node.swift */; };
@@ -178,6 +180,7 @@
 		498B5C4A2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreasingTripletSubsequence.swift; sourceTree = "<group>"; };
 		498B5C4E2C1062F700B2DC79 /* StringCompression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCompression.swift; sourceTree = "<group>"; };
 		498B5C522C107BC600B2DC79 /* FindCommonCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCommonCharacters.swift; sourceTree = "<group>"; };
+		4992C5232C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumNumberOfVowelsInSubstringOfGivenLength.swift; sourceTree = "<group>"; };
 		499762E92BFF8031009D6EF5 /* LeetCode75 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode75; sourceTree = BUILT_PRODUCTS_DIR; };
 		499762EB2BFF8031009D6EF5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		499762F42BFF809E009D6EF5 /* LeetCode75_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode75_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -510,6 +513,14 @@
 			path = "1002. Find Common Characters";
 			sourceTree = "<group>";
 		};
+		4992C5222C14AB7300E16FCF /* 1456. Maximum Number of Vowels in a Substring of Given Length */ = {
+			isa = PBXGroup;
+			children = (
+				4992C5232C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift */,
+			);
+			path = "1456. Maximum Number of Vowels in a Substring of Given Length";
+			sourceTree = "<group>";
+		};
 		499762EA2BFF8031009D6EF5 /* LeetCode75 */ = {
 			isa = PBXGroup;
 			children = (
@@ -565,6 +576,7 @@
 				49B703632C0F106C0005B3D4 /* 238. Product of Array Except Self */,
 				498B5C492C1061BB00B2DC79 /* 334. Increasing Triplet Subsequence */,
 				498B5C4D2C1062E800B2DC79 /* 443. String Compression */,
+				4992C5222C14AB7300E16FCF /* 1456. Maximum Number of Vowels in a Substring of Given Length */,
 				49450F762C11828B0036A167 /* 1679. Max Number of K-Sum Pairs */,
 			);
 			path = Medium;
@@ -978,6 +990,7 @@
 				49450F742C117FE90036A167 /* ContainerWithMostWater.swift in Sources */,
 				490BD5822C0721AC003AE043 /* MaximumDepthOfBinaryTree.swift in Sources */,
 				49B703612C0EFAAF0005B3D4 /* ReverseWordsInString.swift in Sources */,
+				4992C5242C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift in Sources */,
 				49EC4CE22C060F1F00D68CF9 /* MaximumAverageSubarrayI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1015,6 +1028,7 @@
 				49450F792C1182A70036A167 /* MaxNumberOfKSumPairs.swift in Sources */,
 				497399172C0DBA1A003031AA /* CountingBits.swift in Sources */,
 				49EC4CF72C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
+				4992C5252C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift in Sources */,
 				498B5C4C2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */,
 				49450F752C117FE90036A167 /* ContainerWithMostWater.swift in Sources */,
 				498B5C502C1062F700B2DC79 /* StringCompression.swift in Sources */,

@@ -579,6 +579,28 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.kidsWithTheGreatestNumberOfCandies(case3.0, case3.1), case3Result)
     }
 
+    // MARK: - 1456. Maximum Number of Vowels in a Substring of Given Length
+
+    func testMaximumNumberOfVowelsInSubstringOfGivenLength() throws {
+        let case1 = ("abciiidef", 3)
+        let case2 = ("aeiou", 2)
+        let case3 = ("leetcode", 3)
+        let case4 = ("novowels", 1)
+        let case5 = ("rhythms", 4)
+
+        let case1Result = 3
+        let case2Result = 2
+        let case3Result = 2
+        let case4Result = 1
+        let case5Result = 0
+
+        XCTAssertEqual(solution.maximumNumberOfVowelsInSubstringOfGivenLength(case1.0, case1.1), case1Result)
+        XCTAssertEqual(solution.maximumNumberOfVowelsInSubstringOfGivenLength(case2.0, case2.1), case2Result)
+        XCTAssertEqual(solution.maximumNumberOfVowelsInSubstringOfGivenLength(case3.0, case3.1), case3Result)
+        XCTAssertEqual(solution.maximumNumberOfVowelsInSubstringOfGivenLength(case4.0, case4.1), case4Result)
+        XCTAssertEqual(solution.maximumNumberOfVowelsInSubstringOfGivenLength(case5.0, case5.1), case5Result)
+    }
+
     // MARK: - 1679. Max Number of K-Sum Pairs
 
     func testMaxNumberOfKSumPairs() throws {
