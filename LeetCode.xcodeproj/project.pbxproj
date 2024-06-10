@@ -70,6 +70,8 @@
 		4992C5252C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992C5232C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift */; };
 		4992C5292C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992C5282C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift */; };
 		4992C52A2C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992C5282C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift */; };
+		4992C52D2C16FF2300E16FCF /* LongestSubarrayOf1sAfterDeletingOneElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992C52C2C16FF2300E16FCF /* LongestSubarrayOf1sAfterDeletingOneElement.swift */; };
+		4992C52E2C16FF2300E16FCF /* LongestSubarrayOf1sAfterDeletingOneElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992C52C2C16FF2300E16FCF /* LongestSubarrayOf1sAfterDeletingOneElement.swift */; };
 		499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
 		499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
 		499763182BFF8181009D6EF5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404E2BFC965F00ECFC81 /* Node.swift */; };
@@ -184,6 +186,7 @@
 		498B5C522C107BC600B2DC79 /* FindCommonCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCommonCharacters.swift; sourceTree = "<group>"; };
 		4992C5232C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumNumberOfVowelsInSubstringOfGivenLength.swift; sourceTree = "<group>"; };
 		4992C5282C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxConsecutiveOnesIII.swift; sourceTree = "<group>"; };
+		4992C52C2C16FF2300E16FCF /* LongestSubarrayOf1sAfterDeletingOneElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubarrayOf1sAfterDeletingOneElement.swift; sourceTree = "<group>"; };
 		499762E92BFF8031009D6EF5 /* LeetCode75 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode75; sourceTree = BUILT_PRODUCTS_DIR; };
 		499762EB2BFF8031009D6EF5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		499762F42BFF809E009D6EF5 /* LeetCode75_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode75_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -532,6 +535,14 @@
 			path = "1004. Max Consecutive Ones III";
 			sourceTree = "<group>";
 		};
+		4992C52B2C16FF0000E16FCF /* 1493. Longest Subarray of 1's After Deleting One Element  */ = {
+			isa = PBXGroup;
+			children = (
+				4992C52C2C16FF2300E16FCF /* LongestSubarrayOf1sAfterDeletingOneElement.swift */,
+			);
+			path = "1493. Longest Subarray of 1's After Deleting One Element ";
+			sourceTree = "<group>";
+		};
 		499762EA2BFF8031009D6EF5 /* LeetCode75 */ = {
 			isa = PBXGroup;
 			children = (
@@ -589,6 +600,7 @@
 				498B5C4D2C1062E800B2DC79 /* 443. String Compression */,
 				4992C5262C16FD9900E16FCF /* 1004. Max Consecutive Ones III */,
 				4992C5222C14AB7300E16FCF /* 1456. Maximum Number of Vowels in a Substring of Given Length */,
+				4992C52B2C16FF0000E16FCF /* 1493. Longest Subarray of 1's After Deleting One Element  */,
 				49450F762C11828B0036A167 /* 1679. Max Number of K-Sum Pairs */,
 			);
 			path = Medium;
@@ -985,6 +997,7 @@
 				49EC4CF62C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
 				49B703662C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift in Sources */,
 				498B5C4F2C1062F700B2DC79 /* StringCompression.swift in Sources */,
+				4992C52D2C16FF2300E16FCF /* LongestSubarrayOf1sAfterDeletingOneElement.swift in Sources */,
 				4955119B2C12FC87004BCD04 /* TrieNode.swift in Sources */,
 				49EC4CD62C060E0D00D68CF9 /* IsSubsequence.swift in Sources */,
 				4973991A2C0E0DFC003031AA /* SingleNumber.swift in Sources */,
@@ -1035,6 +1048,7 @@
 				4955119C2C12FC87004BCD04 /* TrieNode.swift in Sources */,
 				49EC4CCD2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */,
 				4912C7AE2C09CBBA00DEB016 /* MinCostClimbingStairs.swift in Sources */,
+				4992C52E2C16FF2300E16FCF /* LongestSubarrayOf1sAfterDeletingOneElement.swift in Sources */,
 				490BD5832C0721AC003AE043 /* MaximumDepthOfBinaryTree.swift in Sources */,
 				490BD57F2C071DB7003AE043 /* NumberOfRecentCalls.swift in Sources */,
 				49DA51172C08B1D30062A064 /* GuessNumberHigherOrLower.swift in Sources */,

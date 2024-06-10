@@ -216,6 +216,13 @@ final class Solution {
         return solution.maxVowels(s, k)
     }
 
+    // MARK: - 1493. Longest Subarray of 1's After Deleting One Element
+
+    func longestSubarrayOf1sAfterDeletingOneElement(_ nums: [Int]) -> Int {
+        let solution = LongestSubarrayOf1sAfterDeletingOneElement_Solution()
+        return solution.longestSubarray(nums)
+    }
+
     // MARK: - 1679. Max Number of K-Sum Pairs
 
     func maxNumberOfKSumPairs(_ nums: [Int], _ k: Int) -> Int {
