@@ -202,6 +202,27 @@ final class Solution {
         return solution.kidsWithCandies(candies, extraCandies)
     }
 
+    // MARK: - 1004. Max Consecutive Ones III
+
+    func maxConsecutiveOnesIII(_ nums: [Int], _ k: Int) -> Int {
+        let solution = MaxConsecutiveOnesIII_Solution()
+        return solution.longestOnes(nums, k)
+    }
+
+    // MARK: - 1456. Maximum Number of Vowels in a Substring of Given Length
+
+    func maximumNumberOfVowelsInSubstringOfGivenLength(_ s: String, _ k: Int) -> Int {
+        let solution = MaximumNumberOfVowelsInSubstringOfGivenLength_Soluton()
+        return solution.maxVowels(s, k)
+    }
+
+    // MARK: - 1493. Longest Subarray of 1's After Deleting One Element
+
+    func longestSubarrayOf1sAfterDeletingOneElement(_ nums: [Int]) -> Int {
+        let solution = LongestSubarrayOf1sAfterDeletingOneElement_Solution()
+        return solution.longestSubarray(nums)
+    }
+
     // MARK: - 1679. Max Number of K-Sum Pairs
 
     func maxNumberOfKSumPairs(_ nums: [Int], _ k: Int) -> Int {

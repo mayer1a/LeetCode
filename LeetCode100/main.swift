@@ -112,6 +112,13 @@ final class Solution {
         return solution.commonChars(words)
     }
 
+    //  MARK: - 1051. Height Checker
+
+    func heightChecker(_ heights: [Int]) -> Int {
+        let solution = HeightChecker_Solution()
+        return solution.heightChecker(heights)
+    }
+
     // MARK: - 1480. Running Sum of 1d Array
 
     func runningSumOf1dArray(_ nums: [Int]) -> [Int] {

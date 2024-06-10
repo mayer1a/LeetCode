@@ -285,6 +285,22 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.findCommonCharacters(case2).sorted(), case2Result)
     }
 
+    //  MARK: - 1051. Height Checker
+
+    func testHeightChecker() throws {
+        let case1 = [1, 1, 4, 2, 1, 3]
+        let case2 = [5, 1, 2, 3, 4]
+        let case3 = [1, 2, 3, 4, 5]
+
+        let case1Result = 3
+        let case2Result = 5
+        let case3Result = 0
+
+        XCTAssertEqual(solution.heightChecker(case1), case1Result)
+        XCTAssertEqual(solution.heightChecker(case2), case2Result)
+        XCTAssertEqual(solution.heightChecker(case3), case3Result)
+    }
+
     // MARK: - 1480. Running Sum of 1d Array
 
     func testRunningSumOf1dArray() throws {

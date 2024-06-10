@@ -579,6 +579,57 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.kidsWithTheGreatestNumberOfCandies(case3.0, case3.1), case3Result)
     }
 
+    // MARK: - 1004. Max Consecutive Ones III
+
+    func testMaxConsecutiveOnesIII() throws {
+        let case1 = ([1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], 2)
+        let case2 = ([0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1], 3)
+        
+        let case1Result = 6
+        let case2Result = 10
+
+        XCTAssertEqual(solution.maxConsecutiveOnesIII(case1.0, case1.1), case1Result)
+        XCTAssertEqual(solution.maxConsecutiveOnesIII(case2.0, case2.1), case2Result)
+    }
+
+    // MARK: - 1456. Maximum Number of Vowels in a Substring of Given Length
+
+    func testMaximumNumberOfVowelsInSubstringOfGivenLength() throws {
+        let case1 = ("abciiidef", 3)
+        let case2 = ("aeiou", 2)
+        let case3 = ("leetcode", 3)
+        let case4 = ("novowels", 1)
+        let case5 = ("rhythms", 4)
+
+        let case1Result = 3
+        let case2Result = 2
+        let case3Result = 2
+        let case4Result = 1
+        let case5Result = 0
+
+        XCTAssertEqual(solution.maximumNumberOfVowelsInSubstringOfGivenLength(case1.0, case1.1), case1Result)
+        XCTAssertEqual(solution.maximumNumberOfVowelsInSubstringOfGivenLength(case2.0, case2.1), case2Result)
+        XCTAssertEqual(solution.maximumNumberOfVowelsInSubstringOfGivenLength(case3.0, case3.1), case3Result)
+        XCTAssertEqual(solution.maximumNumberOfVowelsInSubstringOfGivenLength(case4.0, case4.1), case4Result)
+        XCTAssertEqual(solution.maximumNumberOfVowelsInSubstringOfGivenLength(case5.0, case5.1), case5Result)
+    }
+
+    // MARK: - 1493. Longest Subarray of 1's After Deleting One Element
+
+    func testLongestSubarrayOf1sAfterDeletingOneElement() throws {
+        let case1 = [1, 1, 0, 1]
+        let case2 = [0, 1, 1, 1, 0, 1, 1, 0, 1]
+        let case3 = [1, 1, 1]
+        
+        let case1Result = 3
+        let case2Result = 5
+        let case3Result = 2
+
+        XCTAssertEqual(solution.longestSubarrayOf1sAfterDeletingOneElement(case1), case1Result)
+        XCTAssertEqual(solution.longestSubarrayOf1sAfterDeletingOneElement(case2), case2Result)
+        XCTAssertEqual(solution.longestSubarrayOf1sAfterDeletingOneElement(case3), case3Result)
+    }
+
     // MARK: - 1679. Max Number of K-Sum Pairs
 
     func testMaxNumberOfKSumPairs() throws {
