@@ -72,6 +72,8 @@
 		4992C52A2C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992C5282C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift */; };
 		4992C52D2C16FF2300E16FCF /* LongestSubarrayOf1sAfterDeletingOneElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992C52C2C16FF2300E16FCF /* LongestSubarrayOf1sAfterDeletingOneElement.swift */; };
 		4992C52E2C16FF2300E16FCF /* LongestSubarrayOf1sAfterDeletingOneElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992C52C2C16FF2300E16FCF /* LongestSubarrayOf1sAfterDeletingOneElement.swift */; };
+		4992C5312C170E9900E16FCF /* HeightChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992C5302C170E9900E16FCF /* HeightChecker.swift */; };
+		4992C5322C170E9900E16FCF /* HeightChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992C5302C170E9900E16FCF /* HeightChecker.swift */; };
 		499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
 		499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
 		499763182BFF8181009D6EF5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404E2BFC965F00ECFC81 /* Node.swift */; };
@@ -187,6 +189,7 @@
 		4992C5232C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumNumberOfVowelsInSubstringOfGivenLength.swift; sourceTree = "<group>"; };
 		4992C5282C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxConsecutiveOnesIII.swift; sourceTree = "<group>"; };
 		4992C52C2C16FF2300E16FCF /* LongestSubarrayOf1sAfterDeletingOneElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubarrayOf1sAfterDeletingOneElement.swift; sourceTree = "<group>"; };
+		4992C5302C170E9900E16FCF /* HeightChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightChecker.swift; sourceTree = "<group>"; };
 		499762E92BFF8031009D6EF5 /* LeetCode75 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode75; sourceTree = BUILT_PRODUCTS_DIR; };
 		499762EB2BFF8031009D6EF5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		499762F42BFF809E009D6EF5 /* LeetCode75_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode75_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -281,6 +284,7 @@
 				49EC4CBB2C06082900D68CF9 /* 876. Middle of the Linked List */,
 				49EC4CC12C06096800D68CF9 /* 949. Largest Time for Given Digits */,
 				498B5C512C107BB500B2DC79 /* 1002. Find Common Characters */,
+				4992C52F2C170E8B00E16FCF /* 1051. Height Checker */,
 				49EC4CC32C06096800D68CF9 /* 1480. Running Sum of 1d Array */,
 			);
 			path = Easy;
@@ -541,6 +545,14 @@
 				4992C52C2C16FF2300E16FCF /* LongestSubarrayOf1sAfterDeletingOneElement.swift */,
 			);
 			path = "1493. Longest Subarray of 1's After Deleting One Element ";
+			sourceTree = "<group>";
+		};
+		4992C52F2C170E8B00E16FCF /* 1051. Height Checker */ = {
+			isa = PBXGroup;
+			children = (
+				4992C5302C170E9900E16FCF /* HeightChecker.swift */,
+			);
+			path = "1051. Height Checker";
 			sourceTree = "<group>";
 		};
 		499762EA2BFF8031009D6EF5 /* LeetCode75 */ = {
@@ -943,6 +955,7 @@
 				49450F802C11AE370036A167 /* LongTestCases.swift in Sources */,
 				49E202562C04E623005D75E9 /* NAryTreePreorderTraversal.swift in Sources */,
 				49EC4CC42C06096900D68CF9 /* LargestTimeForGivenDigits.swift in Sources */,
+				4992C5312C170E9900E16FCF /* HeightChecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -962,6 +975,7 @@
 				49E202592C04E623005D75E9 /* LongestPalindrome.swift in Sources */,
 				495D40FE2BFCBBBE00ECFC81 /* BenchTimer.swift in Sources */,
 				495511A02C12FCBB004BCD04 /* ReplaceWords.swift in Sources */,
+				4992C5322C170E9900E16FCF /* HeightChecker.swift in Sources */,
 				49450F812C11AE370036A167 /* LongTestCases.swift in Sources */,
 				495D40FF2BFCBBBE00ECFC81 /* TreeNode.swift in Sources */,
 				490BB3652C0F441B0026F70C /* MaximizeDistanceToClosestPerson.swift in Sources */,
