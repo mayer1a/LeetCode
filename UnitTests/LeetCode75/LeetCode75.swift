@@ -579,6 +579,19 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.kidsWithTheGreatestNumberOfCandies(case3.0, case3.1), case3Result)
     }
 
+    // MARK: - 1004. Max Consecutive Ones III
+
+    func testMaxConsecutiveOnesIII() throws {
+        let case1 = ([1,1,1,0,0,0,1,1,1,1,0], 2)
+        let case2 = ([0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], 3)
+        
+        let case1Result = 6
+        let case2Result = 10
+
+        XCTAssertEqual(solution.maxConsecutiveOnesIII(case1.0, case1.1), case1Result)
+        XCTAssertEqual(solution.maxConsecutiveOnesIII(case2.0, case2.1), case2Result)
+    }
+
     // MARK: - 1456. Maximum Number of Vowels in a Substring of Given Length
 
     func testMaximumNumberOfVowelsInSubstringOfGivenLength() throws {

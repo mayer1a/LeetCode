@@ -68,6 +68,8 @@
 		498B5C542C107BC600B2DC79 /* FindCommonCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C522C107BC600B2DC79 /* FindCommonCharacters.swift */; };
 		4992C5242C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992C5232C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift */; };
 		4992C5252C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992C5232C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift */; };
+		4992C5292C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992C5282C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift */; };
+		4992C52A2C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992C5282C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift */; };
 		499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D40482BFC94DC00ECFC81 /* BenchTimer.swift */; };
 		499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404C2BFC960B00ECFC81 /* TreeNode.swift */; };
 		499763182BFF8181009D6EF5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D404E2BFC965F00ECFC81 /* Node.swift */; };
@@ -181,6 +183,7 @@
 		498B5C4E2C1062F700B2DC79 /* StringCompression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCompression.swift; sourceTree = "<group>"; };
 		498B5C522C107BC600B2DC79 /* FindCommonCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCommonCharacters.swift; sourceTree = "<group>"; };
 		4992C5232C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumNumberOfVowelsInSubstringOfGivenLength.swift; sourceTree = "<group>"; };
+		4992C5282C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxConsecutiveOnesIII.swift; sourceTree = "<group>"; };
 		499762E92BFF8031009D6EF5 /* LeetCode75 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode75; sourceTree = BUILT_PRODUCTS_DIR; };
 		499762EB2BFF8031009D6EF5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		499762F42BFF809E009D6EF5 /* LeetCode75_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode75_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -521,6 +524,14 @@
 			path = "1456. Maximum Number of Vowels in a Substring of Given Length";
 			sourceTree = "<group>";
 		};
+		4992C5262C16FD9900E16FCF /* 1004. Max Consecutive Ones III */ = {
+			isa = PBXGroup;
+			children = (
+				4992C5282C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift */,
+			);
+			path = "1004. Max Consecutive Ones III";
+			sourceTree = "<group>";
+		};
 		499762EA2BFF8031009D6EF5 /* LeetCode75 */ = {
 			isa = PBXGroup;
 			children = (
@@ -576,6 +587,7 @@
 				49B703632C0F106C0005B3D4 /* 238. Product of Array Except Self */,
 				498B5C492C1061BB00B2DC79 /* 334. Increasing Triplet Subsequence */,
 				498B5C4D2C1062E800B2DC79 /* 443. String Compression */,
+				4992C5262C16FD9900E16FCF /* 1004. Max Consecutive Ones III */,
 				4992C5222C14AB7300E16FCF /* 1456. Maximum Number of Vowels in a Substring of Given Length */,
 				49450F762C11828B0036A167 /* 1679. Max Number of K-Sum Pairs */,
 			);
@@ -980,6 +992,7 @@
 				49B331292C09AE6600BC47D8 /* NthTribonacciNumber.swift in Sources */,
 				499763192BFF8181009D6EF5 /* ListNode.swift in Sources */,
 				49EC4CEE2C06102E00D68CF9 /* GreatestCommonDivisorOfStrings.swift in Sources */,
+				4992C5292C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift in Sources */,
 				49EC4CEC2C06102E00D68CF9 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */,
 				49DA51162C08B1D30062A064 /* GuessNumberHigherOrLower.swift in Sources */,
 				49450F782C1182A70036A167 /* MaxNumberOfKSumPairs.swift in Sources */,
@@ -1015,6 +1028,7 @@
 				49EC4CFB2C06115C00D68CF9 /* FindTheDifferenceOfTwoArrays.swift in Sources */,
 				4973991B2C0E0DFC003031AA /* SingleNumber.swift in Sources */,
 				490119312C087DD0009ADEC2 /* SearchInBinarySearchTree.swift in Sources */,
+				4992C52A2C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift in Sources */,
 				4997631D2BFF8181009D6EF5 /* ListNode.swift in Sources */,
 				49450F832C11AE370036A167 /* LongTestCases.swift in Sources */,
 				49EC4CF92C06115C00D68CF9 /* FindTheHighestAltitude.swift in Sources */,

@@ -202,6 +202,13 @@ final class Solution {
         return solution.kidsWithCandies(candies, extraCandies)
     }
 
+    // MARK: - 1004. Max Consecutive Ones III
+
+    func maxConsecutiveOnesIII(_ nums: [Int], _ k: Int) -> Int {
+        let solution = MaxConsecutiveOnesIII_Solution()
+        return solution.longestOnes(nums, k)
+    }
+
     // MARK: - 1456. Maximum Number of Vowels in a Substring of Given Length
 
     func maximumNumberOfVowelsInSubstringOfGivenLength(_ s: String, _ k: Int) -> Int {
