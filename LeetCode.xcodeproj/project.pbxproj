@@ -62,6 +62,8 @@
 		4973991D2C0E1873003031AA /* LeetCode100.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B6328B91557008CDBFE /* LeetCode100.swift */; };
 		49741A092C185A0700FFDC2C /* DetermineIfTwoStringsAreClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49741A082C185A0700FFDC2C /* DetermineIfTwoStringsAreClose.swift */; };
 		49741A0A2C185A0700FFDC2C /* DetermineIfTwoStringsAreClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49741A082C185A0700FFDC2C /* DetermineIfTwoStringsAreClose.swift */; };
+		49741A0D2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49741A0C2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift */; };
+		49741A0E2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49741A0C2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift */; };
 		498B5C4B2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C4A2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift */; };
 		498B5C4C2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C4A2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift */; };
 		498B5C4F2C1062F700B2DC79 /* StringCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C4E2C1062F700B2DC79 /* StringCompression.swift */; };
@@ -186,6 +188,7 @@
 		497399152C0DBA1A003031AA /* CountingBits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingBits.swift; sourceTree = "<group>"; };
 		497399192C0E0DFC003031AA /* SingleNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNumber.swift; sourceTree = "<group>"; };
 		49741A082C185A0700FFDC2C /* DetermineIfTwoStringsAreClose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetermineIfTwoStringsAreClose.swift; sourceTree = "<group>"; };
+		49741A0C2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualRowAndColumnPairs.swift; sourceTree = "<group>"; };
 		498B5C4A2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreasingTripletSubsequence.swift; sourceTree = "<group>"; };
 		498B5C4E2C1062F700B2DC79 /* StringCompression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCompression.swift; sourceTree = "<group>"; };
 		498B5C522C107BC600B2DC79 /* FindCommonCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCommonCharacters.swift; sourceTree = "<group>"; };
@@ -508,6 +511,14 @@
 				49741A082C185A0700FFDC2C /* DetermineIfTwoStringsAreClose.swift */,
 			);
 			path = "1657. Determine if Two Strings Are Close";
+			sourceTree = "<group>";
+		};
+		49741A0B2C186A9D00FFDC2C /* 2352. Equal Row and Column Pairs */ = {
+			isa = PBXGroup;
+			children = (
+				49741A0C2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift */,
+			);
+			path = "2352. Equal Row and Column Pairs";
 			sourceTree = "<group>";
 		};
 		498B5C492C1061BB00B2DC79 /* 334. Increasing Triplet Subsequence */ = {
@@ -1020,7 +1031,9 @@
 				4912C7AD2C09CBBA00DEB016 /* MinCostClimbingStairs.swift in Sources */,
 				499763182BFF8181009D6EF5 /* Node.swift in Sources */,
 				49EC4CDA2C060E0D00D68CF9 /* ReverseVowelsOfString.swift in Sources */,
+				49741A092C185A0700FFDC2C /* DetermineIfTwoStringsAreClose.swift in Sources */,
 				49EC4CCC2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */,
+				49741A0D2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift in Sources */,
 				49EC4CF62C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
 				49B703662C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift in Sources */,
 				498B5C4F2C1062F700B2DC79 /* StringCompression.swift in Sources */,
@@ -1053,6 +1066,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4997631A2BFF8181009D6EF5 /* BenchTimer.swift in Sources */,
+				49741A0E2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift in Sources */,
 				4997631B2BFF8181009D6EF5 /* TreeNode.swift in Sources */,
 				49EC4CD72C060E0D00D68CF9 /* IsSubsequence.swift in Sources */,
 				49B703672C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift in Sources */,

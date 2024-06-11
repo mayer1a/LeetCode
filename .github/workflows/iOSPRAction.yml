@@ -38,7 +38,7 @@ jobs:
             if ${{ contains(steps.label-the-PR.outputs.all-labels, 'LeetCode100') }}; then
               grp=$(echo 'LeetCode100\b')
             else
-              if ${{ contains(steps.label-the-PR.outputs.all-labels, 'LeetCode100') }}; then
+              if ${{ contains(steps.label-the-PR.outputs.all-labels, 'LeetCode75') }}; then
                 grp=$(echo 'LeetCode75\b')
               fi
             fi

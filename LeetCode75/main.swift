@@ -260,5 +260,12 @@ final class Solution {
         return solution.findDifference(nums1, nums2, version: version)
     }
 
+    // MARK: - 2352. Equal Row and Column Pairs
+
+    func equalRowAndColumnPairs(_ grid: [[Int]]) -> Int {
+        let solution = EqualRowAndColumnPairs_Solution()
+        return solution.equalPairs(grid)
+    }
+
 }
 

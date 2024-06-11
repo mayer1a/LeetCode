@@ -728,5 +728,18 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(answer1v3, case1Result)
         XCTAssertEqual(answer2v3, case2Result)
     }
+    
+    // MARK: - 2352. Equal Row and Column Pairs
+
+    func testEqualRowAndColumnPairs() throws {
+        let case1 = [[3, 2, 1], [1, 7, 6], [2, 7, 7]]
+        let case2 = [[3, 1, 2, 2], [1, 4, 4, 5], [2, 4, 2, 2], [2, 4, 2, 2]]
+
+        let case1Result = 1
+        let case2Result = 3
+
+        XCTAssertEqual(solution.equalRowAndColumnPairs(case1), case1Result)
+        XCTAssertEqual(solution.equalRowAndColumnPairs(case2), case2Result)
+    }
 
 }
