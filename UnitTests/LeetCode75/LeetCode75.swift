@@ -630,6 +630,22 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.longestSubarrayOf1sAfterDeletingOneElement(case3), case3Result)
     }
 
+    // MARK: - 1657. Determine if Two Strings Are Close
+
+    func testDetermineIfTwoStringsAreClose() throws {
+        let case1 = ("abc", "bca")
+        let case2 = ("a", "aa")
+        let case3 = ("cabbba", "abbccc")
+
+        let case1Result = true
+        let case2Result = false
+        let case3Result = true
+
+        XCTAssertEqual(solution.determineIfTwoStringsAreClose(case1.0, case1.1), case1Result)
+        XCTAssertEqual(solution.determineIfTwoStringsAreClose(case2.0, case2.1), case2Result)
+        XCTAssertEqual(solution.determineIfTwoStringsAreClose(case3.0, case3.1), case3Result)
+    }
+
     // MARK: - 1679. Max Number of K-Sum Pairs
 
     func testMaxNumberOfKSumPairs() throws {

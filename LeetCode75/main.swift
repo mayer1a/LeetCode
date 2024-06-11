@@ -223,6 +223,13 @@ final class Solution {
         return solution.longestSubarray(nums)
     }
 
+    // MARK: - 1657. Determine if Two Strings Are Close
+
+    func determineIfTwoStringsAreClose(_ word1: String, _ word2: String) -> Bool {
+        let solution = DetermineIfTwoStringsAreClose_Solution()
+        return solution.closeStrings(word1, word2)
+    }
+
     // MARK: - 1679. Max Number of K-Sum Pairs
 
     func maxNumberOfKSumPairs(_ nums: [Int], _ k: Int) -> Int {
