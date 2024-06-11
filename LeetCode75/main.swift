@@ -223,6 +223,13 @@ final class Solution {
         return solution.longestSubarray(nums)
     }
 
+    // MARK: - 1657. Determine if Two Strings Are Close
+
+    func determineIfTwoStringsAreClose(_ word1: String, _ word2: String) -> Bool {
+        let solution = DetermineIfTwoStringsAreClose_Solution()
+        return solution.closeStrings(word1, word2)
+    }
+
     // MARK: - 1679. Max Number of K-Sum Pairs
 
     func maxNumberOfKSumPairs(_ nums: [Int], _ k: Int) -> Int {
@@ -251,6 +258,13 @@ final class Solution {
         
         let solution = FindTheDifferenceOfTwoArrays_Solution()
         return solution.findDifference(nums1, nums2, version: version)
+    }
+
+    // MARK: - 2352. Equal Row and Column Pairs
+
+    func equalRowAndColumnPairs(_ grid: [[Int]]) -> Int {
+        let solution = EqualRowAndColumnPairs_Solution()
+        return solution.equalPairs(grid)
     }
 
 }

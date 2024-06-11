@@ -60,6 +60,10 @@
 		4973991A2C0E0DFC003031AA /* SingleNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497399192C0E0DFC003031AA /* SingleNumber.swift */; };
 		4973991B2C0E0DFC003031AA /* SingleNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497399192C0E0DFC003031AA /* SingleNumber.swift */; };
 		4973991D2C0E1873003031AA /* LeetCode100.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B6328B91557008CDBFE /* LeetCode100.swift */; };
+		49741A092C185A0700FFDC2C /* DetermineIfTwoStringsAreClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49741A082C185A0700FFDC2C /* DetermineIfTwoStringsAreClose.swift */; };
+		49741A0A2C185A0700FFDC2C /* DetermineIfTwoStringsAreClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49741A082C185A0700FFDC2C /* DetermineIfTwoStringsAreClose.swift */; };
+		49741A0D2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49741A0C2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift */; };
+		49741A0E2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49741A0C2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift */; };
 		498B5C4B2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C4A2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift */; };
 		498B5C4C2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C4A2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift */; };
 		498B5C4F2C1062F700B2DC79 /* StringCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5C4E2C1062F700B2DC79 /* StringCompression.swift */; };
@@ -183,6 +187,8 @@
 		495D40762BFC9ADE00ECFC81 /* IsomorphicStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsomorphicStrings.swift; sourceTree = "<group>"; };
 		497399152C0DBA1A003031AA /* CountingBits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingBits.swift; sourceTree = "<group>"; };
 		497399192C0E0DFC003031AA /* SingleNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNumber.swift; sourceTree = "<group>"; };
+		49741A082C185A0700FFDC2C /* DetermineIfTwoStringsAreClose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetermineIfTwoStringsAreClose.swift; sourceTree = "<group>"; };
+		49741A0C2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualRowAndColumnPairs.swift; sourceTree = "<group>"; };
 		498B5C4A2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreasingTripletSubsequence.swift; sourceTree = "<group>"; };
 		498B5C4E2C1062F700B2DC79 /* StringCompression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCompression.swift; sourceTree = "<group>"; };
 		498B5C522C107BC600B2DC79 /* FindCommonCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCommonCharacters.swift; sourceTree = "<group>"; };
@@ -499,6 +505,22 @@
 			path = "136. Single Number";
 			sourceTree = "<group>";
 		};
+		49741A072C1859F400FFDC2C /* 1657. Determine if Two Strings Are Close */ = {
+			isa = PBXGroup;
+			children = (
+				49741A082C185A0700FFDC2C /* DetermineIfTwoStringsAreClose.swift */,
+			);
+			path = "1657. Determine if Two Strings Are Close";
+			sourceTree = "<group>";
+		};
+		49741A0B2C186A9D00FFDC2C /* 2352. Equal Row and Column Pairs */ = {
+			isa = PBXGroup;
+			children = (
+				49741A0C2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift */,
+			);
+			path = "2352. Equal Row and Column Pairs";
+			sourceTree = "<group>";
+		};
 		498B5C492C1061BB00B2DC79 /* 334. Increasing Triplet Subsequence */ = {
 			isa = PBXGroup;
 			children = (
@@ -613,7 +635,9 @@
 				4992C5262C16FD9900E16FCF /* 1004. Max Consecutive Ones III */,
 				4992C5222C14AB7300E16FCF /* 1456. Maximum Number of Vowels in a Substring of Given Length */,
 				4992C52B2C16FF0000E16FCF /* 1493. Longest Subarray of 1's After Deleting One Element  */,
+				49741A072C1859F400FFDC2C /* 1657. Determine if Two Strings Are Close */,
 				49450F762C11828B0036A167 /* 1679. Max Number of K-Sum Pairs */,
+				49741A0B2C186A9D00FFDC2C /* 2352. Equal Row and Column Pairs */,
 			);
 			path = Medium;
 			sourceTree = "<group>";
@@ -1007,7 +1031,9 @@
 				4912C7AD2C09CBBA00DEB016 /* MinCostClimbingStairs.swift in Sources */,
 				499763182BFF8181009D6EF5 /* Node.swift in Sources */,
 				49EC4CDA2C060E0D00D68CF9 /* ReverseVowelsOfString.swift in Sources */,
+				49741A092C185A0700FFDC2C /* DetermineIfTwoStringsAreClose.swift in Sources */,
 				49EC4CCC2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */,
+				49741A0D2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift in Sources */,
 				49EC4CF62C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
 				49B703662C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift in Sources */,
 				498B5C4F2C1062F700B2DC79 /* StringCompression.swift in Sources */,
@@ -1040,6 +1066,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4997631A2BFF8181009D6EF5 /* BenchTimer.swift in Sources */,
+				49741A0E2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift in Sources */,
 				4997631B2BFF8181009D6EF5 /* TreeNode.swift in Sources */,
 				49EC4CD72C060E0D00D68CF9 /* IsSubsequence.swift in Sources */,
 				49B703672C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift in Sources */,
@@ -1051,6 +1078,7 @@
 				49EC4CE12C060F1F00D68CF9 /* FindPivotIndex.swift in Sources */,
 				49EC4CEB2C06102E00D68CF9 /* UniqueNumberOfOccurrences.swift in Sources */,
 				490BD5872C072CD1003AE043 /* LeafSimilarTrees.swift in Sources */,
+				49741A0A2C185A0700FFDC2C /* DetermineIfTwoStringsAreClose.swift in Sources */,
 				49EC4CDB2C060E0D00D68CF9 /* ReverseVowelsOfString.swift in Sources */,
 				49EC4CFB2C06115C00D68CF9 /* FindTheDifferenceOfTwoArrays.swift in Sources */,
 				4973991B2C0E0DFC003031AA /* SingleNumber.swift in Sources */,

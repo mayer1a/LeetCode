@@ -20,7 +20,7 @@ LeetCode75:
 
 Core:
 - changed-files:
-  - any-glob-to-any-file: ['.github/**', 'Shared/**']
+  - any-glob-to-any-file: ['Shared/**']
 
 # To clean fail labels when all is OK
 
