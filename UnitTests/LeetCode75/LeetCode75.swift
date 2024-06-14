@@ -757,6 +757,22 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.deleteMiddleNodeOfLinkedList(case3), case3Result)
     }
 
+    // MARK: - 2130. Maximum Twin Sum of a Linked List
+
+    func testMaximumTwinSumOfLinkedList() throws {
+        let case1 = ListNode(5, .init(4, .init(2, .init(1))))
+        let case2 = ListNode(4, .init(2, .init(2, .init(3))))
+        let case3 = ListNode(1, .init(100000))
+
+        let case1Result = 6
+        let case2Result = 7
+        let case3Result = 100001
+
+        XCTAssertEqual(solution.maximumTwinSumOfLinkedList(case1), case1Result)
+        XCTAssertEqual(solution.maximumTwinSumOfLinkedList(case2), case2Result)
+        XCTAssertEqual(solution.maximumTwinSumOfLinkedList(case3), case3Result)
+    }
+
     // MARK: - 2215. Find the Difference of Two Arrays
 
     func testFindTheDifferenceOfTwoArrays() throws {

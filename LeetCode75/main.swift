@@ -279,6 +279,13 @@ final class Solution {
         return solution.deleteMiddle(head)
     }
 
+    // MARK: - 2130. Maximum Twin Sum of a Linked List
+
+    func maximumTwinSumOfLinkedList(_ head: ListNode<Int>?) -> Int {
+        let solution = MaximumTwinSumOfLinkedList_Solution()
+        return solution.pairSum(head)
+    }
+
     // MARK: - 2215. Find the Difference of Two Arrays
 
     func findTheDifferenceOfTwoArrays(_ nums1: [Int], _ nums2: [Int],
