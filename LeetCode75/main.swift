@@ -274,5 +274,12 @@ final class Solution {
         return solution.equalPairs(grid)
     }
 
+    // MARK: - 2390. Removing Stars From a String
+
+    func removingStarsFromString(_ s: String) -> String {
+        let solution = RemovingStarsFromString_Solution()
+        return solution.removeStars(s)
+    }
+
 }
 
