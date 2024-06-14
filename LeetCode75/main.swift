@@ -103,6 +103,13 @@ final class Solution {
         }
     }
 
+    // MARK: - 394. Decode String
+
+    func decodeString(_ s: String) -> String {
+        let solution = DecodeString_Solution()
+        return solution.decodeString(s)
+    }
+
     // MARK: - 443. String Compression
 
     func stringCompression(_ chars: inout [Character]) -> Int {

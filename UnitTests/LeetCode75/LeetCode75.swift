@@ -276,6 +276,22 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.isSubsequence(case4.0, case4.1, alt: true), case4Result)
     }
 
+    // MARK: - 394. Decode String
+
+    func testDecodeString() throws {
+        let case1 = "3[a]2[bc]"
+        let case2 = "3[a2[c]]"
+        let case3 = "2[abc]3[cd]ef"
+        
+        let case1Result = "aaabcbc"
+        let case2Result = "accaccacc"
+        let case3Result = "abcabccdcdcdef"
+
+        XCTAssertEqual(solution.decodeString(case1), case1Result)
+        XCTAssertEqual(solution.decodeString(case2), case2Result)
+        XCTAssertEqual(solution.decodeString(case3), case3Result)
+    }
+
     // MARK: - 443. String Compression
 
     func testStringCompression() throws {
