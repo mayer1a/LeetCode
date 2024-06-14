@@ -11,13 +11,11 @@ import XCTest
 final class UnitTests: XCTestCase {
 
     var solution: Solution!
-    var listNode: ListNode!
 
     override func setUpWithError() throws {
         try super.setUpWithError()
 
         solution = Solution()
-        listNode = ListNode()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
@@ -110,12 +108,12 @@ final class UnitTests: XCTestCase {
         let case1: ListNode? = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
         let case2: ListNode? = ListNode(5, ListNode(4))
         let case3: ListNode? = ListNode(5)
-        let case4: ListNode? = nil
+        let case4: ListNode<Int>? = nil
 
         let case1Result: ListNode? = ListNode(5, ListNode(4, ListNode(3, ListNode(2, ListNode(1)))))
         let case2Result: ListNode? = ListNode(4, ListNode(5))
         let case3Result: ListNode? = ListNode(5)
-        let case4Result: ListNode? = nil
+        let case4Result: ListNode<Int>? = nil
 
         XCTAssertEqual(solution.reverseLinkedList(case1), case1Result)
         XCTAssertEqual(solution.reverseLinkedList(case2), case2Result)

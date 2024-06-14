@@ -37,11 +37,11 @@ import Foundation
 /// ```
 final class LeafSimilarTrees_Solution {
 
-    func leafSimilar(_ root1: TreeNode?, _ root2: TreeNode?) -> Bool {
+    func leafSimilar(_ root1: TreeNode<Int>?, _ root2: TreeNode<Int>?) -> Bool {
         getLastLeaf(root1) == getLastLeaf(root2)
     }
 
-    private func getLastLeaf(_ root: TreeNode?) -> [Int] {
+    private func getLastLeaf(_ root: TreeNode<Int>?) -> [Int] {
         guard let root else { return [] }
 
         if root.left == nil, root.right == nil {

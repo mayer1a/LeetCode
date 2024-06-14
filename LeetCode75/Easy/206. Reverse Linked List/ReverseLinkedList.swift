@@ -40,7 +40,7 @@ import Foundation
 final class ReverseLinkedList_Solution {
 
     /// Iterative
-    func reverseList_iterative(_ head: ListNode?) -> ListNode? {
+    func reverseList_iterative(_ head: ListNode<Int>?) -> ListNode<Int>? {
         var head = head
         let tail = head
 
@@ -54,7 +54,7 @@ final class ReverseLinkedList_Solution {
     }
 
     /// Recursive
-    func reverseList_recursive(_ head: ListNode?) -> ListNode? {
+    func reverseList_recursive(_ head: ListNode<Int>?) -> ListNode<Int>? {
         guard let head = head else { return nil }
         guard let next = head.next else { return head }
 

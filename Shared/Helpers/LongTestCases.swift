@@ -12,27 +12,28 @@ import Foundation
 struct _MergeTwoSortedLists {
 
     /// ((1 -> 2 -> 4), (1 -> 3 -> 4))
-    let case1: (ListNode?, ListNode?) = (ListNode(1, ListNode(2, ListNode(4))), ListNode(1, ListNode(3, ListNode(4))))
+    let case1: (ListNode<Int>?, ListNode<Int>?) = (ListNode(1, ListNode(2, ListNode(4))), 
+                                                   ListNode(1, ListNode(3, ListNode(4))))
     /// ((Empty List), (Empty List))
-    let case2: (ListNode?, ListNode?) = (nil, nil)
+    let case2: (ListNode<Int>?, ListNode<Int>?) = (nil, nil)
     /// ((Empty List), (0))
-    let case3: (ListNode?, ListNode?) = (nil, ListNode(0))
+    let case3: (ListNode<Int>?, ListNode<Int>?) = (nil, ListNode(0))
     /// ((1 -> 3 -> 5), (2 -> 4 -> 6 -> 7 -> 8 -> 9 -> 10))
-    let case4: (ListNode?, ListNode?) = {
+    let case4: (ListNode<Int>?, ListNode<Int>?) = {
         (ListNode(1, ListNode(3, ListNode(5))),
          ListNode(2, ListNode(4, ListNode(6, ListNode(7, ListNode(8, ListNode(9, ListNode(10))))))))
     }()
 
     /// (1 -> 1 -> 2 -> 3 -> 4 -> 4)
-    let case1Result = ListNode(1, ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(4))))))
+    let case1Result: ListNode<Int> = ListNode(1, ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(4))))))
     /// (Empty List)
-    let case2Result: ListNode? = nil
+    let case2Result: ListNode<Int>? = nil
     /// (0)
     let case3Result = ListNode(0)
     /// (1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10)
-    let case4Result = {
-        let treeFirstPart = ListNode(4, ListNode(5, ListNode(6, ListNode(7, ListNode(8, ListNode(9, ListNode(10)))))))
-        return ListNode(1, ListNode(2, ListNode(3, treeFirstPart)))
+    let case4Result: ListNode<Int> = {
+        let t: ListNode<Int> = .init(4, ListNode(5, ListNode(6, ListNode(7, ListNode(8, ListNode(9, ListNode(10)))))))
+        return ListNode<Int>(1, ListNode(2, ListNode(3, t)))
     }()
 
 }
@@ -43,11 +44,11 @@ struct _BinaryTreeLevelOrderTraversal {
 
     /// [1, 2, 3, 4, 5]
     /// ![Tree1](https://clck.ru/3B7ftu)
-    let case1 = TreeNode(1,
-                         TreeNode(2,
-                                  TreeNode(4),
-                                  TreeNode(5)),
-                         TreeNode(3))
+    let case1: TreeNode<Int> = TreeNode(1,
+                                        TreeNode(2,
+                                                 TreeNode(4),
+                                                 TreeNode(5)),
+                                        TreeNode(3))
 
     /// [[1], [2, 3], [4, 5]]
     let case1Result = [[1], [2, 3], [4, 5]]
@@ -60,12 +61,12 @@ struct _MaximumDepthOfBinaryTree {
 
     /// [3, 9, 20, null, null, 15, 7]
     /// ![Img1](https://clck.ru/3B7WJ8)
-    let case1 = TreeNode(3, .init(9), .init(20, .init(15), .init(7)))
+    let case1: TreeNode<Int> = TreeNode(3, .init(9), .init(20, .init(15), .init(7)))
     /// [1, null, 2]
     /// ![Img2](https://clck.ru/3B7WU5)
-    let case2 = TreeNode(1, nil, .init(2))
+    let case2: TreeNode<Int> = TreeNode(1, nil, .init(2))
     /// **Empty tree**
-    let case3: TreeNode? = nil
+    let case3: TreeNode<Int>? = nil
     /// ```swift
     /// [
     ///   1, 2, 3, 4, 5, 6, 7,
@@ -76,37 +77,37 @@ struct _MaximumDepthOfBinaryTree {
     /// ]
     /// ```
     /// ![Img4](https://clck.ru/3B7WVe)
-    let case4 = TreeNode(1,
-                         .init(2,
-                               .init(4,
-                                     .init(8),
-                                     .init(9,
-                                           .init(10,
-                                                 .init(19),
-                                                 nil),
-                                           .init(12))),
-                               .init(5,
-                                     .init(20,
-                                           .init(24,
-                                                 .init(30),
-                                                 nil),
-                                           nil),
-                                     nil)),
-                         .init(3,
-                               .init(6,
-                                     nil,
-                                     .init(31,
-                                           .init(29,
-                                                 .init(40,
-                                                       .init(41),
-                                                       nil),
-                                                 nil),
-                                           nil)),
-                               .init(7,
-                                     nil,
-                                     .init(32,
-                                           .init(33),
-                                           nil))))
+    let case4: TreeNode<Int> = TreeNode(1,
+                                        .init(2,
+                                              .init(4,
+                                                    .init(8),
+                                                    .init(9,
+                                                          .init(10,
+                                                                .init(19),
+                                                                nil),
+                                                          .init(12))),
+                                              .init(5,
+                                                    .init(20,
+                                                          .init(24,
+                                                                .init(30),
+                                                                nil),
+                                                          nil),
+                                                    nil)),
+                                        .init(3,
+                                              .init(6,
+                                                    nil,
+                                                    .init(31,
+                                                          .init(29,
+                                                                .init(40,
+                                                                      .init(41),
+                                                                      nil),
+                                                                nil),
+                                                          nil)),
+                                              .init(7,
+                                                    nil,
+                                                    .init(32,
+                                                          .init(33),
+                                                          nil))))
 
 }
 
@@ -115,16 +116,16 @@ struct _MaximumDepthOfBinaryTree {
 struct _LinkedListCycleII {
 
     init() {
-        let nnCycle = ListNode(5)
-        let nCycle = ListNode(4, nnCycle)
-        let sCycle = ListNode(3, nCycle)
+        let nnCycle: ListNode<Int> = ListNode(5)
+        let nCycle: ListNode<Int> = ListNode(4, nnCycle)
+        let sCycle: ListNode<Int> = ListNode(3, nCycle)
         nnCycle.next = sCycle
 
         case1 = ListNode(1, ListNode(2, sCycle))
         case1Result = 3
     }
 
-    let case1: ListNode?
+    let case1: ListNode<Int>?
     let case1Result: Int
 
 }
@@ -207,15 +208,15 @@ struct _TreePreorderTraversal {
     /// ```swift
     /// [1, nil, 3, 2, 4, nil, 5, 6]
     /// ```
-    let case1 = Node(1,
-                     children: [
-                        Node(3, 
-                             children: [
-                                Node(5), Node(6)
-                             ]),
-                        Node(2),
-                        Node(4)
-                     ])
+    let case1: Node<Int> = Node(1,
+                                children: [
+                                    Node(3,
+                                         children: [
+                                            Node(5), Node(6)
+                                         ]),
+                                    Node(2),
+                                    Node(4)
+                                ])
     /// ```swift
     /// [
     ///   1, nil, 2, 3, 4, 5, nil,
@@ -223,36 +224,36 @@ struct _TreePreorderTraversal {
     ///   nil, 11, nil, 12, nil, 13, nil, nil, 14
     /// ]
     /// ```
-    let case2 = Node(1,
-                     children: [
-                        Node(2),
-                        Node(3,
-                             children: [
-                                Node(6),
-                                Node(7,
-                                     children: [
-                                        Node(11,
-                                             children: [
-                                                Node(14)
-                                             ])
-                                     ])
-                             ]),
-                        Node(4,
-                             children: [
-                                Node(8,
-                                     children: [
-                                        Node(12)
-                                     ])
-                             ]),
-                        Node(5,
-                             children: [
-                                Node(9,
-                                     children: [
-                                        Node(13)
-                                     ]),
-                                Node(10)
-                             ]),
-                     ])
+    let case2: Node<Int> = Node(1,
+                                children: [
+                                    Node(2),
+                                    Node(3,
+                                         children: [
+                                            Node(6),
+                                            Node(7,
+                                                 children: [
+                                                    Node(11,
+                                                         children: [
+                                                            Node(14)
+                                                         ])
+                                                 ])
+                                         ]),
+                                    Node(4,
+                                         children: [
+                                            Node(8,
+                                                 children: [
+                                                    Node(12)
+                                                 ])
+                                         ]),
+                                    Node(5,
+                                         children: [
+                                            Node(9,
+                                                 children: [
+                                                    Node(13)
+                                                 ]),
+                                            Node(10)
+                                         ]),
+                                ])
 
     let case1Result = [1, 3, 5, 6, 2, 4]
     let case2Result = [1, 2, 3, 6, 7, 11, 14, 4, 8, 12, 5, 9, 13, 10]
@@ -318,30 +319,30 @@ struct _SearchInBinarySearchTree {
 
     /// ([4, 2, 7, 1, 3, null, null], 2)
     /// ![Tree1](https://clck.ru/3B7b6e)
-    let case1: (TreeNode?, Int)
+    let case1: (TreeNode<Int>?, Int)
     /// ([4, 2, 7, 1, 3, null, null], 5)
     /// ![Tree1](https://clck.ru/3B7b6e)
-    let case2: (TreeNode?, Int)
+    let case2: (TreeNode<Int>?, Int)
     /// ([8, 3, 10, 1, 6, null, 14, null, null, 4, 7, 13], 2)
     /// ![Tree2](https://clck.ru/3B7anv)
-    let case3: (TreeNode?, Int)
+    let case3: (TreeNode<Int>?, Int)
     /// ([8, 3, 10, 1, 6, null, 14, null, null, 4, 7, 13], 7)
     /// ![Tree2](https://clck.ru/3B7anv)
-    let case4: (TreeNode?, Int)
+    let case4: (TreeNode<Int>?, Int)
     /// (Empty Tree, 2)
-    let case5: (TreeNode?, Int)
+    let case5: (TreeNode<Int>?, Int)
 
-    let case1Result: TreeNode?
-    let case2Result: TreeNode?
-    let case3Result: TreeNode?
-    let case4Result: TreeNode?
-    let case5Result: TreeNode?
+    let case1Result: TreeNode<Int>?
+    let case2Result: TreeNode<Int>?
+    let case3Result: TreeNode<Int>?
+    let case4Result: TreeNode<Int>?
+    let case5Result: TreeNode<Int>?
 
-    private let tree1: TreeNode?
-    private let tree2: TreeNode?
-    private let tree3: TreeNode?
-    private let subTree1: TreeNode?
-    private let subTree2: TreeNode?
+    private let tree1: TreeNode<Int>?
+    private let tree2: TreeNode<Int>?
+    private let tree3: TreeNode<Int>?
+    private let subTree1: TreeNode<Int>?
+    private let subTree2: TreeNode<Int>?
 
 }
 
@@ -508,15 +509,15 @@ struct _LeafSimilarTrees {
 
     /// [3, 5, 1, 6, 2, 9, 8, null, null, 7, 4]
     /// ![Case1.1](https://clck.ru/3B7e3y)
-    let case1_1: TreeNode?
+    let case1_1: TreeNode<Int>?
     /// [3, 5, 1, 6, 7, 4, 2, null, null, null, null, null, null, 9, 8]
     /// ![Case1.2](https://clck.ru/3B7e6h)
-    let case1_2: TreeNode?
+    let case1_2: TreeNode<Int>?
     /// [Empty Tree]
-    let case2_1: TreeNode?
+    let case2_1: TreeNode<Int>?
     /// [8]
     /// ![Case2.2](https://clck.ru/3B7e9e)
-    let case2_2: TreeNode?
+    let case2_2: TreeNode<Int>?
     /// ```swift
     /// [
     ///   1, 2, 3, 4, 5, 6, 7,
@@ -527,7 +528,7 @@ struct _LeafSimilarTrees {
     /// ]
     /// ```
     /// ![Case3.1](https://clck.ru/3B7eB6)
-    let case3_1: TreeNode?
+    let case3_1: TreeNode<Int>?
     /// ```swift
     /// [
     ///   1, 2, 3, 4, 5, 6, 7,
@@ -538,13 +539,13 @@ struct _LeafSimilarTrees {
     /// ]
     /// ```
     /// ![Case3.2](https://clck.ru/3B7eCW)
-    let case3_2: TreeNode?
+    let case3_2: TreeNode<Int>?
     /// [1, 2, 3]
     /// ![Case4.1](https://clck.ru/3B7eFP)
-    let case4_1: TreeNode?
+    let case4_1: TreeNode<Int>?
     /// [1, 3, 2]
     /// ![Case4.2](https://clck.ru/3B7eGQ)
-    let case4_2: TreeNode?
+    let case4_2: TreeNode<Int>?
 
 }
 

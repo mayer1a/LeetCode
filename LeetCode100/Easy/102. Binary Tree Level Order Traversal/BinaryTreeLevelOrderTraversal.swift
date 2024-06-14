@@ -38,7 +38,7 @@ import Foundation
 final class BinaryTreeLevelOrderTraversal_Solution {
     
     // Recursively
-    func levelOrder_recursively(_ root: TreeNode?) -> [[Int]] {
+    func levelOrder_recursively(_ root: TreeNode<Int>?) -> [[Int]] {
         guard let root else { return [] }
 
         let left = levelOrder_recursively(root.left)
@@ -59,11 +59,11 @@ final class BinaryTreeLevelOrderTraversal_Solution {
     }
 
     // Iteratively
-    func levelOrder_iteratively(_ root: TreeNode?) -> [[Int]] {
+    func levelOrder_iteratively(_ root: TreeNode<Int>?) -> [[Int]] {
         if root == nil { return [] }
 
         var result: [[Int]] = []
-        var queue: [TreeNode?] = [root]
+        var queue: [TreeNode<Int>?] = [root]
 
         while let _ = queue.first {
             var level: [Int] = []

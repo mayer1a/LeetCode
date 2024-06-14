@@ -57,7 +57,7 @@ import Foundation
 final class NAryTreePreorderTraversal_Solution {
 
     /// Recursive solution
-    func preorder_recursive(_ root: Node?) -> [Int] {
+    func preorder_recursive(_ root: Node<Int>?) -> [Int] {
         guard let root else { return [] }
 
         var result = [root.val]
@@ -70,7 +70,7 @@ final class NAryTreePreorderTraversal_Solution {
     }
 
     /// Iteratively solution
-    func preorder_iteratively(_ root: Node?) -> [Int] {
+    func preorder_iteratively(_ root: Node<Int>?) -> [Int] {
         if root == nil { return [] }
 
         var stack = [root!]

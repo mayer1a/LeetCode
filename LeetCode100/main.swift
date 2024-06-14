@@ -11,10 +11,10 @@ final class Solution {
 
     // MARK: - 21. Merge Two Sorted Lists
 
-    func mergeTwoSortedLists(_ list1: ListNode?,
-                             _ list2: ListNode?,
-                             alternativeSolution: Bool = false) -> ListNode? {
-        
+    func mergeTwoSortedLists(_ list1: ListNode<Int>?,
+                             _ list2: ListNode<Int>?,
+                             alternativeSolution: Bool = false) -> ListNode<Int>? {
+
         let solution = MergeTwoSortedLists_Solution()
         return alternativeSolution ?
             solution.mergeTwoLists_v2(list1, list2) :
@@ -23,7 +23,7 @@ final class Solution {
 
     // MARK: - 102. Binary Tree Level Order Traversal
 
-    func binaryTreeLevelOrderTraversal(_ root: TreeNode?, iterative: Bool = true) -> [[Int]] {
+    func binaryTreeLevelOrderTraversal(_ root: TreeNode<Int>?, iterative: Bool = true) -> [[Int]] {
         let solution = BinaryTreeLevelOrderTraversal_Solution()
         return iterative ? solution.levelOrder_iteratively(root) : solution.levelOrder_recursively(root)
     }
@@ -37,7 +37,7 @@ final class Solution {
 
     // MARK: - 142. Linked List Cycle II
 
-    func linkedListCycleII(_ head: ListNode?) -> ListNode? {
+    func linkedListCycleII(_ head: ListNode<Int>?) -> ListNode<Int>? {
         let solution = LinkedListCycleII_Solution()
         return solution.detectCycle(head)
     }
@@ -65,7 +65,7 @@ final class Solution {
 
     // MARK: - 589. N-ary Tree Preorder Traversal
 
-    func treePreorderTraversal(_ root: Node?, iterative: Bool = true) -> [Int] {
+    func treePreorderTraversal(_ root: Node<Int>?, iterative: Bool = true) -> [Int] {
         let solution = NAryTreePreorderTraversal_Solution()
         return iterative ? solution.preorder_iteratively(root) : solution.preorder_recursive(root)
     }
@@ -93,7 +93,7 @@ final class Solution {
 
     // MARK: - 876. Middle of the Linked List
 
-    func middleNodeOfTheLinkedList(_ head: ListNode?) -> ListNode? {
+    func middleNodeOfTheLinkedList(_ head: ListNode<Int>?) -> ListNode<Int>? {
         let solution = MiddleOfTheLinkedList_Solution()
         return solution.middleNode(head)
     }

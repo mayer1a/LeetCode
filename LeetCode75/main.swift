@@ -18,7 +18,7 @@ final class Solution {
 
     // MARK: - 104. Maximum Depth of Binary Tree
     
-    func maximumDepthOfBinaryTree(_ root: TreeNode?) -> Int {
+    func maximumDepthOfBinaryTree(_ root: TreeNode<Int>?) -> Int {
         let solution = MaximumDepthOfBinaryTree_Solution()
         return solution.maxDepth(root)
     }
@@ -39,7 +39,7 @@ final class Solution {
 
     // MARK: - 206. Reverse Linked List
 
-    func reverseLinkedList(_ head: ListNode?, iterative: Bool = true) -> ListNode? {
+    func reverseLinkedList(_ head: ListNode<Int>?, iterative: Bool = true) -> ListNode<Int>? {
         let solution = ReverseLinkedList_Solution()
         return iterative ? solution.reverseList_iterative(head) : solution.reverseList_recursive(head)
     }
@@ -137,7 +137,7 @@ final class Solution {
 
     // MARK: - 700. Search in a Binary Search Tree
 
-    func searchInBinarySearchTree(_ root: TreeNode?, _ val: Int, alt: Bool = false) -> TreeNode? {
+    func searchInBinarySearchTree(_ root: TreeNode<Int>?, _ val: Int, alt: Bool = false) -> TreeNode<Int>? {
         let solution = SearchInBinarySearchTree_Solution()
         if alt {
             return solution.searchBST_v2(root, val)
@@ -169,7 +169,7 @@ final class Solution {
 
     // MARK: - 872. Leaf-Similar Trees
 
-    func leafSimilarTrees(_ root1: TreeNode?, _ root2: TreeNode?) -> Bool {
+    func leafSimilarTrees(_ root1: TreeNode<Int>?, _ root2: TreeNode<Int>?) -> Bool {
         let solution = LeafSimilarTrees_Solution()
         return solution.leafSimilar(root1, root2)
     }

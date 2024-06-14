@@ -35,7 +35,7 @@ import Foundation
 /// ```
 final class MiddleOfTheLinkedList_Solution {
 
-    func middleNode(_ head: ListNode?) -> ListNode? {
+    func middleNode(_ head: ListNode<Int>?) -> ListNode<Int>? {
         var mid = head
         var next = head
 
