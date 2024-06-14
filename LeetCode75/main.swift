@@ -146,6 +146,13 @@ final class Solution {
         return solution.pivotIndex(nums)
     }
 
+    // MARK: - 735. Asteroid Collision
+
+    func asteroidCollision(_ asteroids: [Int]) -> [Int] {
+        let solution = AsteroidCollision_Solution()
+        return solution.asteroidCollision(asteroids)
+    }
+
     // MARK: - 746. Min Cost Climbing Stairs
 
     func minCostClimbingStairs(_ costs: [Int]) -> Int {

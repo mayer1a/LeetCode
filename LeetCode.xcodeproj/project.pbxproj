@@ -19,6 +19,8 @@
 		490BD5872C072CD1003AE043 /* LeafSimilarTrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BD5852C072CD1003AE043 /* LeafSimilarTrees.swift */; };
 		4912C7AD2C09CBBA00DEB016 /* MinCostClimbingStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912C7AC2C09CBBA00DEB016 /* MinCostClimbingStairs.swift */; };
 		4912C7AE2C09CBBA00DEB016 /* MinCostClimbingStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912C7AC2C09CBBA00DEB016 /* MinCostClimbingStairs.swift */; };
+		494007402C1C312A006EFCC4 /* AsteroidCollision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940073F2C1C312A006EFCC4 /* AsteroidCollision.swift */; };
+		494007412C1C312A006EFCC4 /* AsteroidCollision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940073F2C1C312A006EFCC4 /* AsteroidCollision.swift */; };
 		49450F742C117FE90036A167 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F732C117FE90036A167 /* ContainerWithMostWater.swift */; };
 		49450F752C117FE90036A167 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F732C117FE90036A167 /* ContainerWithMostWater.swift */; };
 		49450F782C1182A70036A167 /* MaxNumberOfKSumPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F772C1182A70036A167 /* MaxNumberOfKSumPairs.swift */; };
@@ -166,6 +168,7 @@
 		490BD5812C0721AC003AE043 /* MaximumDepthOfBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumDepthOfBinaryTree.swift; sourceTree = "<group>"; };
 		490BD5852C072CD1003AE043 /* LeafSimilarTrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafSimilarTrees.swift; sourceTree = "<group>"; };
 		4912C7AC2C09CBBA00DEB016 /* MinCostClimbingStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinCostClimbingStairs.swift; sourceTree = "<group>"; };
+		4940073F2C1C312A006EFCC4 /* AsteroidCollision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidCollision.swift; sourceTree = "<group>"; };
 		49450F732C117FE90036A167 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		49450F772C1182A70036A167 /* MaxNumberOfKSumPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxNumberOfKSumPairs.swift; sourceTree = "<group>"; };
 		49450F7F2C11AE370036A167 /* LongTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongTestCases.swift; sourceTree = "<group>"; };
@@ -361,6 +364,14 @@
 				4912C7AC2C09CBBA00DEB016 /* MinCostClimbingStairs.swift */,
 			);
 			path = "746. Min Cost Climbing Stairs";
+			sourceTree = "<group>";
+		};
+		4940073E2C1C311B006EFCC4 /* 735. Asteroid Collision */ = {
+			isa = PBXGroup;
+			children = (
+				4940073F2C1C312A006EFCC4 /* AsteroidCollision.swift */,
+			);
+			path = "735. Asteroid Collision";
 			sourceTree = "<group>";
 		};
 		49450F722C117FD70036A167 /* 11. Container With Most Water */ = {
@@ -632,6 +643,7 @@
 				49B703632C0F106C0005B3D4 /* 238. Product of Array Except Self */,
 				498B5C492C1061BB00B2DC79 /* 334. Increasing Triplet Subsequence */,
 				498B5C4D2C1062E800B2DC79 /* 443. String Compression */,
+				4940073E2C1C311B006EFCC4 /* 735. Asteroid Collision */,
 				4992C5262C16FD9900E16FCF /* 1004. Max Consecutive Ones III */,
 				4992C5222C14AB7300E16FCF /* 1456. Maximum Number of Vowels in a Substring of Given Length */,
 				4992C52B2C16FF0000E16FCF /* 1493. Longest Subarray of 1's After Deleting One Element  */,
@@ -1052,6 +1064,7 @@
 				49EC4CF82C06115C00D68CF9 /* FindTheHighestAltitude.swift in Sources */,
 				499763322BFF85D7009D6EF5 /* main.swift in Sources */,
 				49EC4CD82C060E0D00D68CF9 /* CanPlaceFlowers.swift in Sources */,
+				494007402C1C312A006EFCC4 /* AsteroidCollision.swift in Sources */,
 				49EC4CEA2C06102E00D68CF9 /* UniqueNumberOfOccurrences.swift in Sources */,
 				49450F742C117FE90036A167 /* ContainerWithMostWater.swift in Sources */,
 				490BD5822C0721AC003AE043 /* MaximumDepthOfBinaryTree.swift in Sources */,
@@ -1066,6 +1079,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4997631A2BFF8181009D6EF5 /* BenchTimer.swift in Sources */,
+				494007412C1C312A006EFCC4 /* AsteroidCollision.swift in Sources */,
 				49741A0E2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift in Sources */,
 				4997631B2BFF8181009D6EF5 /* TreeNode.swift in Sources */,
 				49EC4CD72C060E0D00D68CF9 /* IsSubsequence.swift in Sources */,

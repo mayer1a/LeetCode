@@ -419,6 +419,25 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.findPivotIndex(case7), case7Result)
     }
 
+    // MARK: - 735. Asteroid Collision
+
+    func testAsteroidCollision() throws {
+        let case1 = [5, 10, -5]
+        let case2 = [8, -8]
+        let case3 = [10, 2, -5]
+        let case4 = [-2, -2, 1, -2]
+        
+        let case1Result = [5, 10]
+        let case2Result: [Int] = []
+        let case3Result = [10]
+        let case4Result = [-2, -2, -2]
+
+        XCTAssertEqual(solution.asteroidCollision(case1), case1Result)
+        XCTAssertEqual(solution.asteroidCollision(case2), case2Result)
+        XCTAssertEqual(solution.asteroidCollision(case3), case3Result)
+        XCTAssertEqual(solution.asteroidCollision(case4), case4Result)
+    }
+
     // MARK: - 746. Min Cost Climbing Stairs
 
     func testMinCostClimbingStairs() throws {
