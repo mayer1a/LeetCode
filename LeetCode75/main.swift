@@ -62,6 +62,13 @@ final class Solution {
         }
     }
 
+    // MARK: - 328. Odd Even Linked List
+
+    func oddEvenLinkedList(_ head: ListNode<Int>?) -> ListNode<Int>? {
+        let solution = OddEvenLinkedList_Solution()
+        return solution.oddEvenList(head)
+    }
+
     // MARK: - 334. Increasing Triplet Subsequence
     
     func increasingTripletSubsequence(_ nums: [Int]) -> Bool {
