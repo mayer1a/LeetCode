@@ -18,6 +18,18 @@ public final class ListNode<T: Hashable> {
         self.next = next
     }
 
+    /// Returns all linked list values array
+    public var description: [T] {
+        var _result = [T]()
+        var _current: ListNode<T>? = self
+
+        while let val = _current?.val {
+            _result.append(val)
+            _current = _current?.next
+        }
+        return _result
+    }
+
 }
 
 extension ListNode: Equatable {

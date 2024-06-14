@@ -62,6 +62,13 @@ final class Solution {
         }
     }
 
+    // MARK: - 328. Odd Even Linked List
+
+    func oddEvenLinkedList(_ head: ListNode<Int>?) -> ListNode<Int>? {
+        let solution = OddEvenLinkedList_Solution()
+        return solution.oddEvenList(head)
+    }
+
     // MARK: - 334. Increasing Triplet Subsequence
     
     func increasingTripletSubsequence(_ nums: [Int]) -> Bool {
@@ -270,6 +277,13 @@ final class Solution {
     func deleteMiddleNodeOfLinkedList(_ head: ListNode<Int>?) -> ListNode<Int>? {
         let solution = DeleteMiddleNodeOfLinkedList_Solution()
         return solution.deleteMiddle(head)
+    }
+
+    // MARK: - 2130. Maximum Twin Sum of a Linked List
+
+    func maximumTwinSumOfLinkedList(_ head: ListNode<Int>?) -> Int {
+        let solution = MaximumTwinSumOfLinkedList_Solution()
+        return solution.pairSum(head)
     }
 
     // MARK: - 2215. Find the Difference of Two Arrays

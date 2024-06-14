@@ -35,6 +35,10 @@
 		49450F812C11AE370036A167 /* LongTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F7F2C11AE370036A167 /* LongTestCases.swift */; };
 		49450F822C11AE370036A167 /* LongTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F7F2C11AE370036A167 /* LongTestCases.swift */; };
 		49450F832C11AE370036A167 /* LongTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F7F2C11AE370036A167 /* LongTestCases.swift */; };
+		49451E782C1C880700C8D017 /* OddEvenLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49451E772C1C880700C8D017 /* OddEvenLinkedList.swift */; };
+		49451E792C1C880700C8D017 /* OddEvenLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49451E772C1C880700C8D017 /* OddEvenLinkedList.swift */; };
+		49451E7C2C1C898700C8D017 /* MaximumTwinSumOfLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49451E7B2C1C898700C8D017 /* MaximumTwinSumOfLinkedList.swift */; };
+		49451E7D2C1C898700C8D017 /* MaximumTwinSumOfLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49451E7B2C1C898700C8D017 /* MaximumTwinSumOfLinkedList.swift */; };
 		494A7B5628B91461008CDBFE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B5528B91461008CDBFE /* main.swift */; };
 		494A7B6C28B919C9008CDBFE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A7B5528B91461008CDBFE /* main.swift */; };
 		495511992C12FC87004BCD04 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495511982C12FC86004BCD04 /* TrieNode.swift */; };
@@ -181,6 +185,8 @@
 		49450F732C117FE90036A167 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		49450F772C1182A70036A167 /* MaxNumberOfKSumPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxNumberOfKSumPairs.swift; sourceTree = "<group>"; };
 		49450F7F2C11AE370036A167 /* LongTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongTestCases.swift; sourceTree = "<group>"; };
+		49451E772C1C880700C8D017 /* OddEvenLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddEvenLinkedList.swift; sourceTree = "<group>"; };
+		49451E7B2C1C898700C8D017 /* MaximumTwinSumOfLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumTwinSumOfLinkedList.swift; sourceTree = "<group>"; };
 		494A7B5228B91461008CDBFE /* LeetCode100 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode100; sourceTree = BUILT_PRODUCTS_DIR; };
 		494A7B5528B91461008CDBFE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		494A7B6128B91557008CDBFE /* LeetCode100_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode100_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -421,6 +427,22 @@
 				49450F772C1182A70036A167 /* MaxNumberOfKSumPairs.swift */,
 			);
 			path = "1679. Max Number of K-Sum Pairs";
+			sourceTree = "<group>";
+		};
+		49451E762C1C87F900C8D017 /* 328. Odd Even Linked List */ = {
+			isa = PBXGroup;
+			children = (
+				49451E772C1C880700C8D017 /* OddEvenLinkedList.swift */,
+			);
+			path = "328. Odd Even Linked List";
+			sourceTree = "<group>";
+		};
+		49451E7A2C1C897500C8D017 /* 2130. Maximum Twin Sum of a Linked List */ = {
+			isa = PBXGroup;
+			children = (
+				49451E7B2C1C898700C8D017 /* MaximumTwinSumOfLinkedList.swift */,
+			);
+			path = "2130. Maximum Twin Sum of a Linked List";
 			sourceTree = "<group>";
 		};
 		494A7B4928B91461008CDBFE = {
@@ -674,6 +696,7 @@
 				49450F722C117FD70036A167 /* 11. Container With Most Water */,
 				49B7035F2C0EFA9D0005B3D4 /* 151. Reverse Words in a String */,
 				49B703632C0F106C0005B3D4 /* 238. Product of Array Except Self */,
+				49451E762C1C87F900C8D017 /* 328. Odd Even Linked List */,
 				498B5C492C1061BB00B2DC79 /* 334. Increasing Triplet Subsequence */,
 				494007462C1C370F006EFCC4 /* 394. Decode String */,
 				498B5C4D2C1062E800B2DC79 /* 443. String Compression */,
@@ -684,6 +707,7 @@
 				49741A072C1859F400FFDC2C /* 1657. Determine if Two Strings Are Close */,
 				49450F762C11828B0036A167 /* 1679. Max Number of K-Sum Pairs */,
 				4940074A2C1C37F7006EFCC4 /* 2095. Delete the Middle Node of a Linked List */,
+				49451E7A2C1C897500C8D017 /* 2130. Maximum Twin Sum of a Linked List */,
 				49741A0B2C186A9D00FFDC2C /* 2352. Equal Row and Column Pairs */,
 				494007422C1C3261006EFCC4 /* 2390. Removing Stars From a String */,
 			);
@@ -1068,6 +1092,7 @@
 			files = (
 				49EC4CCE2C060CAA00D68CF9 /* MoveZeroes.swift in Sources */,
 				49EC4CFA2C06115C00D68CF9 /* FindTheDifferenceOfTwoArrays.swift in Sources */,
+				49451E7C2C1C898700C8D017 /* MaximumTwinSumOfLinkedList.swift in Sources */,
 				497399162C0DBA1A003031AA /* CountingBits.swift in Sources */,
 				490BD57E2C071DB7003AE043 /* NumberOfRecentCalls.swift in Sources */,
 				49EC4CE02C060F1F00D68CF9 /* FindPivotIndex.swift in Sources */,
@@ -1093,6 +1118,7 @@
 				49B331292C09AE6600BC47D8 /* NthTribonacciNumber.swift in Sources */,
 				499763192BFF8181009D6EF5 /* ListNode.swift in Sources */,
 				494007482C1C371D006EFCC4 /* DecodeString.swift in Sources */,
+				49451E782C1C880700C8D017 /* OddEvenLinkedList.swift in Sources */,
 				49EC4CEE2C06102E00D68CF9 /* GreatestCommonDivisorOfStrings.swift in Sources */,
 				4992C5292C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift in Sources */,
 				49EC4CEC2C06102E00D68CF9 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */,
@@ -1153,6 +1179,8 @@
 				49B3312A2C09AE6600BC47D8 /* NthTribonacciNumber.swift in Sources */,
 				49450F792C1182A70036A167 /* MaxNumberOfKSumPairs.swift in Sources */,
 				497399172C0DBA1A003031AA /* CountingBits.swift in Sources */,
+				49451E792C1C880700C8D017 /* OddEvenLinkedList.swift in Sources */,
+				49451E7D2C1C898700C8D017 /* MaximumTwinSumOfLinkedList.swift in Sources */,
 				49EC4CF72C06115C00D68CF9 /* MergeStringsAlternately.swift in Sources */,
 				4992C5252C14AB8900E16FCF /* MaximumNumberOfVowelsInSubstringOfGivenLength.swift in Sources */,
 				498B5C4C2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */,

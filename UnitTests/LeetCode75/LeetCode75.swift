@@ -160,6 +160,19 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual({ solution.moveZeroes(&case2, alt: true); return case2 }(), case2Result)
     }
 
+    // MARK: - 328. Odd Even Linked List
+
+    func testOddEvenLinkedList() throws {
+        let case1 = ListNode(1, .init(2, .init(3, .init(4, .init(5)))))
+        let case2 = ListNode(2, .init(1, .init(3, .init(5, .init(6, .init(4, .init(7)))))))
+        
+        let case1Result = ListNode(1, .init(3, .init(5, .init(2, .init(4)))))
+        let case2Result = ListNode(2, .init(3, .init(6, .init(7, .init(1, .init(5, .init(4)))))))
+
+        XCTAssertEqual(solution.oddEvenLinkedList(case1), case1Result)
+        XCTAssertEqual(solution.oddEvenLinkedList(case2), case2Result)
+    }
+
     // MARK: - 334. Increasing Triplet Subsequence
 
     func testIncreasingTripletSubsequence() throws {
@@ -742,6 +755,22 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.deleteMiddleNodeOfLinkedList(case1), case1Result)
         XCTAssertEqual(solution.deleteMiddleNodeOfLinkedList(case2), case2Result)
         XCTAssertEqual(solution.deleteMiddleNodeOfLinkedList(case3), case3Result)
+    }
+
+    // MARK: - 2130. Maximum Twin Sum of a Linked List
+
+    func testMaximumTwinSumOfLinkedList() throws {
+        let case1 = ListNode(5, .init(4, .init(2, .init(1))))
+        let case2 = ListNode(4, .init(2, .init(2, .init(3))))
+        let case3 = ListNode(1, .init(100000))
+
+        let case1Result = 6
+        let case2Result = 7
+        let case3Result = 100001
+
+        XCTAssertEqual(solution.maximumTwinSumOfLinkedList(case1), case1Result)
+        XCTAssertEqual(solution.maximumTwinSumOfLinkedList(case2), case2Result)
+        XCTAssertEqual(solution.maximumTwinSumOfLinkedList(case3), case3Result)
     }
 
     // MARK: - 2215. Find the Difference of Two Arrays
