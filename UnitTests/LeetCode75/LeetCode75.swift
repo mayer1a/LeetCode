@@ -419,6 +419,25 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.findPivotIndex(case7), case7Result)
     }
 
+    // MARK: - 735. Asteroid Collision
+
+    func testAsteroidCollision() throws {
+        let case1 = [5, 10, -5]
+        let case2 = [8, -8]
+        let case3 = [10, 2, -5]
+        let case4 = [-2, -2, 1, -2]
+        
+        let case1Result = [5, 10]
+        let case2Result: [Int] = []
+        let case3Result = [10]
+        let case4Result = [-2, -2, -2]
+
+        XCTAssertEqual(solution.asteroidCollision(case1), case1Result)
+        XCTAssertEqual(solution.asteroidCollision(case2), case2Result)
+        XCTAssertEqual(solution.asteroidCollision(case3), case3Result)
+        XCTAssertEqual(solution.asteroidCollision(case4), case4Result)
+    }
+
     // MARK: - 746. Min Cost Climbing Stairs
 
     func testMinCostClimbingStairs() throws {
@@ -740,6 +759,19 @@ final class UnitTests: XCTestCase {
 
         XCTAssertEqual(solution.equalRowAndColumnPairs(case1), case1Result)
         XCTAssertEqual(solution.equalRowAndColumnPairs(case2), case2Result)
+    }
+
+    // MARK: - 2390. Removing Stars From a String
+
+    func testRemovingStarsFromString() throws {
+        let case1 = "leet**cod*e"
+        let case2 = "erase*****"
+
+        let case1Result = "lecoe"
+        let case2Result = ""
+
+        XCTAssertEqual(solution.removingStarsFromString(case1), case1Result)
+        XCTAssertEqual(solution.removingStarsFromString(case2), case2Result)
     }
 
 }

@@ -146,6 +146,13 @@ final class Solution {
         return solution.pivotIndex(nums)
     }
 
+    // MARK: - 735. Asteroid Collision
+
+    func asteroidCollision(_ asteroids: [Int]) -> [Int] {
+        let solution = AsteroidCollision_Solution()
+        return solution.asteroidCollision(asteroids)
+    }
+
     // MARK: - 746. Min Cost Climbing Stairs
 
     func minCostClimbingStairs(_ costs: [Int]) -> Int {
@@ -265,6 +272,13 @@ final class Solution {
     func equalRowAndColumnPairs(_ grid: [[Int]]) -> Int {
         let solution = EqualRowAndColumnPairs_Solution()
         return solution.equalPairs(grid)
+    }
+
+    // MARK: - 2390. Removing Stars From a String
+
+    func removingStarsFromString(_ s: String) -> String {
+        let solution = RemovingStarsFromString_Solution()
+        return solution.removeStars(s)
     }
 
 }
