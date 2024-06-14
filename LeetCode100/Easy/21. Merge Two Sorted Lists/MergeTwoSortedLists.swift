@@ -42,12 +42,12 @@ import Foundation
 /// ```
 final class MergeTwoSortedLists_Solution {
 
-    func mergeTwoLists_v1(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
+    func mergeTwoLists_v1(_ list1: ListNode<Int>?, _ list2: ListNode<Int>?) -> ListNode<Int>? {
         guard list1 != nil else { return list2 }
         guard list2 != nil else { return list1 }
 
-        var head: ListNode?
-        var temp: ListNode?
+        var head: ListNode<Int>?
+        var temp: ListNode<Int>?
         var l1 = list1
         var l2 = list2
 
@@ -83,7 +83,7 @@ final class MergeTwoSortedLists_Solution {
     }
 
     /// Alternative
-    func mergeTwoLists_v2(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
+    func mergeTwoLists_v2(_ list1: ListNode<Int>?, _ list2: ListNode<Int>?) -> ListNode<Int>? {
         guard list1 != nil else { return list2 }
         guard list2 != nil else { return list1 }
 

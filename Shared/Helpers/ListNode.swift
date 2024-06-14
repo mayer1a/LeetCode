@@ -8,22 +8,12 @@
 import Foundation
 
 /// Definition for a single-linked list node
-public final class ListNode {
-    
-    public var val: Int
+public final class ListNode<T: Hashable> {
+
+    public var val: T
     public var next: ListNode?
 
-    public init() {
-        self.val = 0
-        self.next = nil
-    }
-
-    public init(_ val: Int) {
-        self.val = val
-        self.next = nil
-    }
-
-    public init(_ val: Int, _ next: ListNode?) {
+    public init(_ val: T, _ next: ListNode? = nil) {
         self.val = val
         self.next = next
     }
@@ -33,7 +23,7 @@ public final class ListNode {
 extension ListNode: Equatable {
 
     public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
-        lhs.next == nil && rhs.next == nil ? lhs.val == rhs.val : lhs.next == rhs.next
+        lhs.val == rhs.val && lhs.next == rhs.next
     }
 
 }

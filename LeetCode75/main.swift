@@ -18,7 +18,7 @@ final class Solution {
 
     // MARK: - 104. Maximum Depth of Binary Tree
     
-    func maximumDepthOfBinaryTree(_ root: TreeNode?) -> Int {
+    func maximumDepthOfBinaryTree(_ root: TreeNode<Int>?) -> Int {
         let solution = MaximumDepthOfBinaryTree_Solution()
         return solution.maxDepth(root)
     }
@@ -39,7 +39,7 @@ final class Solution {
 
     // MARK: - 206. Reverse Linked List
 
-    func reverseLinkedList(_ head: ListNode?, iterative: Bool = true) -> ListNode? {
+    func reverseLinkedList(_ head: ListNode<Int>?, iterative: Bool = true) -> ListNode<Int>? {
         let solution = ReverseLinkedList_Solution()
         return iterative ? solution.reverseList_iterative(head) : solution.reverseList_recursive(head)
     }
@@ -103,6 +103,13 @@ final class Solution {
         }
     }
 
+    // MARK: - 394. Decode String
+
+    func decodeString(_ s: String) -> String {
+        let solution = DecodeString_Solution()
+        return solution.decodeString(s)
+    }
+
     // MARK: - 443. String Compression
 
     func stringCompression(_ chars: inout [Character]) -> Int {
@@ -130,7 +137,7 @@ final class Solution {
 
     // MARK: - 700. Search in a Binary Search Tree
 
-    func searchInBinarySearchTree(_ root: TreeNode?, _ val: Int, alt: Bool = false) -> TreeNode? {
+    func searchInBinarySearchTree(_ root: TreeNode<Int>?, _ val: Int, alt: Bool = false) -> TreeNode<Int>? {
         let solution = SearchInBinarySearchTree_Solution()
         if alt {
             return solution.searchBST_v2(root, val)
@@ -162,7 +169,7 @@ final class Solution {
 
     // MARK: - 872. Leaf-Similar Trees
 
-    func leafSimilarTrees(_ root1: TreeNode?, _ root2: TreeNode?) -> Bool {
+    func leafSimilarTrees(_ root1: TreeNode<Int>?, _ root2: TreeNode<Int>?) -> Bool {
         let solution = LeafSimilarTrees_Solution()
         return solution.leafSimilar(root1, root2)
     }
@@ -256,6 +263,13 @@ final class Solution {
     func mergeStringsAlternately(_ word1: String, _ word2: String) -> String {
         let solution = MergeStringsAlternately_Solution()
         return solution.mergeAlternately(word1, word2)
+    }
+
+    // MARK: - 2095. Delete the Middle Node of a Linked List
+
+    func deleteMiddleNodeOfLinkedList(_ head: ListNode<Int>?) -> ListNode<Int>? {
+        let solution = DeleteMiddleNodeOfLinkedList_Solution()
+        return solution.deleteMiddle(head)
     }
 
     // MARK: - 2215. Find the Difference of Two Arrays

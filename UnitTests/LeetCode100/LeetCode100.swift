@@ -11,13 +11,11 @@ import XCTest
 final class UnitTests: XCTestCase {
 
     var solution: Solution!
-    var listNode: ListNode!
 
     override func setUpWithError() throws {
         try super.setUpWithError()
 
         solution = Solution()
-        listNode = ListNode()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 

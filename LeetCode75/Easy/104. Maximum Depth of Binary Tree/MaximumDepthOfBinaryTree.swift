@@ -37,7 +37,7 @@ import Foundation
 /// ```
 final class MaximumDepthOfBinaryTree_Solution {
 
-    func maxDepth(_ root: TreeNode?) -> Int {
+    func maxDepth(_ root: TreeNode<Int>?) -> Int {
         root == nil ? 0 : max(maxDepth(root?.left), maxDepth(root?.right)) + 1
     }
 

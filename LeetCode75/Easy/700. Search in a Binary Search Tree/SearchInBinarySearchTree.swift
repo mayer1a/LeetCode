@@ -40,7 +40,7 @@ import Foundation
 final class SearchInBinarySearchTree_Solution {
 
     /// Fisrt recurcive solution
-    func searchBST_v1(_ root: TreeNode?, _ val: Int) -> TreeNode? {
+    func searchBST_v1(_ root: TreeNode<Int>?, _ val: Int) -> TreeNode<Int>? {
         guard let root else { return nil }
 
         if val == root.val {
@@ -51,7 +51,7 @@ final class SearchInBinarySearchTree_Solution {
     }
 
     /// Second linear solution
-    func searchBST_v2(_ root: TreeNode?, _ val: Int) -> TreeNode? {
+    func searchBST_v2(_ root: TreeNode<Int>?, _ val: Int) -> TreeNode<Int>? {
         var root = root
 
         while root != nil {

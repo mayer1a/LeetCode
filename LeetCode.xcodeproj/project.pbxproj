@@ -23,6 +23,10 @@
 		494007412C1C312A006EFCC4 /* AsteroidCollision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940073F2C1C312A006EFCC4 /* AsteroidCollision.swift */; };
 		494007442C1C3271006EFCC4 /* RemovingStarsFromString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494007432C1C3271006EFCC4 /* RemovingStarsFromString.swift */; };
 		494007452C1C3271006EFCC4 /* RemovingStarsFromString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494007432C1C3271006EFCC4 /* RemovingStarsFromString.swift */; };
+		494007482C1C371D006EFCC4 /* DecodeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494007472C1C371D006EFCC4 /* DecodeString.swift */; };
+		494007492C1C371D006EFCC4 /* DecodeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494007472C1C371D006EFCC4 /* DecodeString.swift */; };
+		4940074C2C1C380C006EFCC4 /* DeleteMiddleNodeOfLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940074B2C1C380C006EFCC4 /* DeleteMiddleNodeOfLinkedList.swift */; };
+		4940074D2C1C380C006EFCC4 /* DeleteMiddleNodeOfLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940074B2C1C380C006EFCC4 /* DeleteMiddleNodeOfLinkedList.swift */; };
 		49450F742C117FE90036A167 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F732C117FE90036A167 /* ContainerWithMostWater.swift */; };
 		49450F752C117FE90036A167 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F732C117FE90036A167 /* ContainerWithMostWater.swift */; };
 		49450F782C1182A70036A167 /* MaxNumberOfKSumPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49450F772C1182A70036A167 /* MaxNumberOfKSumPairs.swift */; };
@@ -172,6 +176,8 @@
 		4912C7AC2C09CBBA00DEB016 /* MinCostClimbingStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinCostClimbingStairs.swift; sourceTree = "<group>"; };
 		4940073F2C1C312A006EFCC4 /* AsteroidCollision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidCollision.swift; sourceTree = "<group>"; };
 		494007432C1C3271006EFCC4 /* RemovingStarsFromString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemovingStarsFromString.swift; sourceTree = "<group>"; };
+		494007472C1C371D006EFCC4 /* DecodeString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeString.swift; sourceTree = "<group>"; };
+		4940074B2C1C380C006EFCC4 /* DeleteMiddleNodeOfLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMiddleNodeOfLinkedList.swift; sourceTree = "<group>"; };
 		49450F732C117FE90036A167 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		49450F772C1182A70036A167 /* MaxNumberOfKSumPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxNumberOfKSumPairs.swift; sourceTree = "<group>"; };
 		49450F7F2C11AE370036A167 /* LongTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongTestCases.swift; sourceTree = "<group>"; };
@@ -383,6 +389,22 @@
 				494007432C1C3271006EFCC4 /* RemovingStarsFromString.swift */,
 			);
 			path = "2390. Removing Stars From a String";
+			sourceTree = "<group>";
+		};
+		494007462C1C370F006EFCC4 /* 394. Decode String */ = {
+			isa = PBXGroup;
+			children = (
+				494007472C1C371D006EFCC4 /* DecodeString.swift */,
+			);
+			path = "394. Decode String";
+			sourceTree = "<group>";
+		};
+		4940074A2C1C37F7006EFCC4 /* 2095. Delete the Middle Node of a Linked List */ = {
+			isa = PBXGroup;
+			children = (
+				4940074B2C1C380C006EFCC4 /* DeleteMiddleNodeOfLinkedList.swift */,
+			);
+			path = "2095. Delete the Middle Node of a Linked List";
 			sourceTree = "<group>";
 		};
 		49450F722C117FD70036A167 /* 11. Container With Most Water */ = {
@@ -653,6 +675,7 @@
 				49B7035F2C0EFA9D0005B3D4 /* 151. Reverse Words in a String */,
 				49B703632C0F106C0005B3D4 /* 238. Product of Array Except Self */,
 				498B5C492C1061BB00B2DC79 /* 334. Increasing Triplet Subsequence */,
+				494007462C1C370F006EFCC4 /* 394. Decode String */,
 				498B5C4D2C1062E800B2DC79 /* 443. String Compression */,
 				4940073E2C1C311B006EFCC4 /* 735. Asteroid Collision */,
 				4992C5262C16FD9900E16FCF /* 1004. Max Consecutive Ones III */,
@@ -660,6 +683,7 @@
 				4992C52B2C16FF0000E16FCF /* 1493. Longest Subarray of 1's After Deleting One Element  */,
 				49741A072C1859F400FFDC2C /* 1657. Determine if Two Strings Are Close */,
 				49450F762C11828B0036A167 /* 1679. Max Number of K-Sum Pairs */,
+				4940074A2C1C37F7006EFCC4 /* 2095. Delete the Middle Node of a Linked List */,
 				49741A0B2C186A9D00FFDC2C /* 2352. Equal Row and Column Pairs */,
 				494007422C1C3261006EFCC4 /* 2390. Removing Stars From a String */,
 			);
@@ -1068,12 +1092,14 @@
 				498B5C4B2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */,
 				49B331292C09AE6600BC47D8 /* NthTribonacciNumber.swift in Sources */,
 				499763192BFF8181009D6EF5 /* ListNode.swift in Sources */,
+				494007482C1C371D006EFCC4 /* DecodeString.swift in Sources */,
 				49EC4CEE2C06102E00D68CF9 /* GreatestCommonDivisorOfStrings.swift in Sources */,
 				4992C5292C16FDAC00E16FCF /* MaxConsecutiveOnesIII.swift in Sources */,
 				49EC4CEC2C06102E00D68CF9 /* KidsWithTheGreatestNumberOfCandies.swift in Sources */,
 				49DA51162C08B1D30062A064 /* GuessNumberHigherOrLower.swift in Sources */,
 				49450F782C1182A70036A167 /* MaxNumberOfKSumPairs.swift in Sources */,
 				49EC4CF82C06115C00D68CF9 /* FindTheHighestAltitude.swift in Sources */,
+				4940074C2C1C380C006EFCC4 /* DeleteMiddleNodeOfLinkedList.swift in Sources */,
 				499763322BFF85D7009D6EF5 /* main.swift in Sources */,
 				49EC4CD82C060E0D00D68CF9 /* CanPlaceFlowers.swift in Sources */,
 				494007402C1C312A006EFCC4 /* AsteroidCollision.swift in Sources */,
@@ -1099,6 +1125,8 @@
 				49B703672C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift in Sources */,
 				49B703622C0EFAAF0005B3D4 /* ReverseWordsInString.swift in Sources */,
 				49EC4CCF2C060CAA00D68CF9 /* MoveZeroes.swift in Sources */,
+				494007492C1C371D006EFCC4 /* DecodeString.swift in Sources */,
+				4940074D2C1C380C006EFCC4 /* DeleteMiddleNodeOfLinkedList.swift in Sources */,
 				4997631C2BFF8181009D6EF5 /* Node.swift in Sources */,
 				49EC4CD92C060E0D00D68CF9 /* CanPlaceFlowers.swift in Sources */,
 				49EC4CEF2C06102E00D68CF9 /* GreatestCommonDivisorOfStrings.swift in Sources */,

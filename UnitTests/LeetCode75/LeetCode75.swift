@@ -11,13 +11,11 @@ import XCTest
 final class UnitTests: XCTestCase {
 
     var solution: Solution!
-    var listNode: ListNode!
 
     override func setUpWithError() throws {
         try super.setUpWithError()
 
         solution = Solution()
-        listNode = ListNode()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
@@ -110,12 +108,12 @@ final class UnitTests: XCTestCase {
         let case1: ListNode? = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
         let case2: ListNode? = ListNode(5, ListNode(4))
         let case3: ListNode? = ListNode(5)
-        let case4: ListNode? = nil
+        let case4: ListNode<Int>? = nil
 
         let case1Result: ListNode? = ListNode(5, ListNode(4, ListNode(3, ListNode(2, ListNode(1)))))
         let case2Result: ListNode? = ListNode(4, ListNode(5))
         let case3Result: ListNode? = ListNode(5)
-        let case4Result: ListNode? = nil
+        let case4Result: ListNode<Int>? = nil
 
         XCTAssertEqual(solution.reverseLinkedList(case1), case1Result)
         XCTAssertEqual(solution.reverseLinkedList(case2), case2Result)
@@ -274,6 +272,22 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.isSubsequence(case2.0, case2.1, alt: true), case2Result)
         XCTAssertEqual(solution.isSubsequence(case3.0, case3.1, alt: true), case3Result)
         XCTAssertEqual(solution.isSubsequence(case4.0, case4.1, alt: true), case4Result)
+    }
+
+    // MARK: - 394. Decode String
+
+    func testDecodeString() throws {
+        let case1 = "3[a]2[bc]"
+        let case2 = "3[a2[c]]"
+        let case3 = "2[abc]3[cd]ef"
+        
+        let case1Result = "aaabcbc"
+        let case2Result = "accaccacc"
+        let case3Result = "abcabccdcdcdef"
+
+        XCTAssertEqual(solution.decodeString(case1), case1Result)
+        XCTAssertEqual(solution.decodeString(case2), case2Result)
+        XCTAssertEqual(solution.decodeString(case3), case3Result)
     }
 
     // MARK: - 443. String Compression
@@ -712,6 +726,22 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.mergeStringsAlternately(case1.0, case1.1), case1Result)
         XCTAssertEqual(solution.mergeStringsAlternately(case2.0, case2.1), case2Result)
         XCTAssertEqual(solution.mergeStringsAlternately(case3.0, case3.1), case3Result)
+    }
+
+    // MARK: - 2095. Delete the Middle Node of a Linked List
+
+    func testDeleteMiddleNodeOfLinkedList() throws {
+        let case1 = ListNode(1, .init(3, .init(4, .init(7, .init(1, .init(2, .init(6)))))))
+        let case2 = ListNode(1, .init(2, .init(3, .init(4))))
+        let case3 = ListNode(2, .init(1))
+
+        let case1Result: ListNode? = ListNode(1, .init(3, .init(4, .init(1, .init(2, .init(6))))))
+        let case2Result: ListNode? = ListNode(1, .init(2, .init(4)))
+        let case3Result: ListNode? = ListNode(2)
+
+        XCTAssertEqual(solution.deleteMiddleNodeOfLinkedList(case1), case1Result)
+        XCTAssertEqual(solution.deleteMiddleNodeOfLinkedList(case2), case2Result)
+        XCTAssertEqual(solution.deleteMiddleNodeOfLinkedList(case3), case3Result)
     }
 
     // MARK: - 2215. Find the Difference of Two Arrays

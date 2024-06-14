@@ -8,19 +8,22 @@
 import Foundation
 
 /// Definition for a tree node
-public final class Node {
+public final class Node<T: Hashable> {
 
-    public var val: Int
+    public var val: T
     public var children: [Node]
 
-    public init(_ val: Int) {
-        self.val = val
-        self.children = []
-    }
-
-    public init(_ val: Int, children: [Node]) {
+    public init(_ val: T, children: [Node] = []) {
         self.val = val
         self.children = children
+    }
+
+}
+
+extension Node: Equatable {
+
+    public static func ==(_ lhs: Node, _ rhs: Node) -> Bool {
+        lhs.val == rhs.val && lhs.children == rhs.children
     }
 
 }

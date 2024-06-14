@@ -47,7 +47,7 @@ import Foundation
 /// - Note: Can you solve it using O(1) (i.e. constant) memory?
 final class LinkedListCycleII_Solution {
 
-    func detectCycle(_ head: ListNode?) -> ListNode? {
+    func detectCycle(_ head: ListNode<Int>?) -> ListNode<Int>? {
         var slow = head
         var fast = head
 
