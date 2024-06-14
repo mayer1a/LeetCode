@@ -265,6 +265,13 @@ final class Solution {
         return solution.mergeAlternately(word1, word2)
     }
 
+    // MARK: - 2095. Delete the Middle Node of a Linked List
+
+    func deleteMiddleNodeOfLinkedList(_ head: ListNode<Int>?) -> ListNode<Int>? {
+        let solution = DeleteMiddleNodeOfLinkedList_Solution()
+        return solution.deleteMiddle(head)
+    }
+
     // MARK: - 2215. Find the Difference of Two Arrays
 
     func findTheDifferenceOfTwoArrays(_ nums1: [Int], _ nums2: [Int],

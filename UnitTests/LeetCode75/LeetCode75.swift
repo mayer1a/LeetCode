@@ -728,6 +728,22 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.mergeStringsAlternately(case3.0, case3.1), case3Result)
     }
 
+    // MARK: - 2095. Delete the Middle Node of a Linked List
+
+    func testDeleteMiddleNodeOfLinkedList() throws {
+        let case1 = ListNode(1, .init(3, .init(4, .init(7, .init(1, .init(2, .init(6)))))))
+        let case2 = ListNode(1, .init(2, .init(3, .init(4))))
+        let case3 = ListNode(2, .init(1))
+
+        let case1Result: ListNode? = ListNode(1, .init(3, .init(4, .init(1, .init(2, .init(6))))))
+        let case2Result: ListNode? = ListNode(1, .init(2, .init(4)))
+        let case3Result: ListNode? = ListNode(2)
+
+        XCTAssertEqual(solution.deleteMiddleNodeOfLinkedList(case1), case1Result)
+        XCTAssertEqual(solution.deleteMiddleNodeOfLinkedList(case2), case2Result)
+        XCTAssertEqual(solution.deleteMiddleNodeOfLinkedList(case3), case3Result)
+    }
+
     // MARK: - 2215. Find the Difference of Two Arrays
 
     func testFindTheDifferenceOfTwoArrays() throws {
