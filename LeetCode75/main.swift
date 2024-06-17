@@ -117,6 +117,13 @@ final class Solution {
         return solution.decodeString(s)
     }
 
+    // MARK: - 437. Path Sum III
+
+    func pathSumIII(_ root: TreeNode<Int>?, _ targetSum: Int) -> Int {
+        let solution = PathSumIII_Solution()
+        return solution.pathSum(root, targetSum)
+    }
+
     // MARK: - 443. String Compression
 
     func stringCompression(_ chars: inout [Character]) -> Int {

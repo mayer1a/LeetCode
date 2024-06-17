@@ -109,6 +109,8 @@
 		49B703672C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B703652C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift */; };
 		49C0E2E82C2047D200AAB855 /* CountGoodNodesInBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C0E2E72C2047D200AAB855 /* CountGoodNodesInBinaryTree.swift */; };
 		49C0E2E92C2047D200AAB855 /* CountGoodNodesInBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C0E2E72C2047D200AAB855 /* CountGoodNodesInBinaryTree.swift */; };
+		49C0E2EC2C2049C200AAB855 /* PathSumIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C0E2EB2C2049C200AAB855 /* PathSumIII.swift */; };
+		49C0E2ED2C2049C200AAB855 /* PathSumIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C0E2EB2C2049C200AAB855 /* PathSumIII.swift */; };
 		49DA51162C08B1D30062A064 /* GuessNumberHigherOrLower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA51152C08B1D30062A064 /* GuessNumberHigherOrLower.swift */; };
 		49DA51172C08B1D30062A064 /* GuessNumberHigherOrLower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA51152C08B1D30062A064 /* GuessNumberHigherOrLower.swift */; };
 		49E2024E2C03ABB4005D75E9 /* LeetCode75.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 49E2024D2C03ABB4005D75E9 /* LeetCode75.xctestplan */; };
@@ -224,6 +226,7 @@
 		49B703602C0EFAAF0005B3D4 /* ReverseWordsInString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseWordsInString.swift; sourceTree = "<group>"; };
 		49B703652C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExceptSelf.swift; sourceTree = "<group>"; };
 		49C0E2E72C2047D200AAB855 /* CountGoodNodesInBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountGoodNodesInBinaryTree.swift; sourceTree = "<group>"; };
+		49C0E2EB2C2049C200AAB855 /* PathSumIII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathSumIII.swift; sourceTree = "<group>"; };
 		49C7A34E2C03A823000CE31E /* LeetCode100.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = LeetCode100.xctestplan; sourceTree = "<group>"; };
 		49DA51152C08B1D30062A064 /* GuessNumberHigherOrLower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberHigherOrLower.swift; sourceTree = "<group>"; };
 		49E2024D2C03ABB4005D75E9 /* LeetCode75.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LeetCode75.xctestplan; sourceTree = "<group>"; };
@@ -702,6 +705,7 @@
 				49451E762C1C87F900C8D017 /* 328. Odd Even Linked List */,
 				498B5C492C1061BB00B2DC79 /* 334. Increasing Triplet Subsequence */,
 				494007462C1C370F006EFCC4 /* 394. Decode String */,
+				49C0E2EA2C2049B300AAB855 /* 437. Path Sum III */,
 				498B5C4D2C1062E800B2DC79 /* 443. String Compression */,
 				4940073E2C1C311B006EFCC4 /* 735. Asteroid Collision */,
 				4992C5262C16FD9900E16FCF /* 1004. Max Consecutive Ones III */,
@@ -740,6 +744,14 @@
 				49C0E2E72C2047D200AAB855 /* CountGoodNodesInBinaryTree.swift */,
 			);
 			path = "1448. Count Good Nodes in Binary Tree";
+			sourceTree = "<group>";
+		};
+		49C0E2EA2C2049B300AAB855 /* 437. Path Sum III */ = {
+			isa = PBXGroup;
+			children = (
+				49C0E2EB2C2049C200AAB855 /* PathSumIII.swift */,
+			);
+			path = "437. Path Sum III";
 			sourceTree = "<group>";
 		};
 		49DA51142C08B1BF0062A064 /* 374. Guess Number Higher or Lower */ = {
@@ -1126,6 +1138,7 @@
 				4992C52D2C16FF2300E16FCF /* LongestSubarrayOf1sAfterDeletingOneElement.swift in Sources */,
 				4955119B2C12FC87004BCD04 /* TrieNode.swift in Sources */,
 				49EC4CD62C060E0D00D68CF9 /* IsSubsequence.swift in Sources */,
+				49C0E2EC2C2049C200AAB855 /* PathSumIII.swift in Sources */,
 				4973991A2C0E0DFC003031AA /* SingleNumber.swift in Sources */,
 				498B5C4B2C1061DE00B2DC79 /* IncreasingTripletSubsequence.swift in Sources */,
 				49B331292C09AE6600BC47D8 /* NthTribonacciNumber.swift in Sources */,
@@ -1183,6 +1196,7 @@
 				4997631D2BFF8181009D6EF5 /* ListNode.swift in Sources */,
 				49450F832C11AE370036A167 /* LongTestCases.swift in Sources */,
 				49EC4CF92C06115C00D68CF9 /* FindTheHighestAltitude.swift in Sources */,
+				49C0E2ED2C2049C200AAB855 /* PathSumIII.swift in Sources */,
 				4955119C2C12FC87004BCD04 /* TrieNode.swift in Sources */,
 				49EC4CCD2C060CAA00D68CF9 /* ReverseLinkedList.swift in Sources */,
 				4912C7AE2C09CBBA00DEB016 /* MinCostClimbingStairs.swift in Sources */,

@@ -303,6 +303,26 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.decodeString(case3), case3Result)
     }
 
+    // MARK: - 437. Path Sum III
+
+    func testPathSumIII() throws {
+        let tree1: TreeNode<Int>? = TreeNode(10,
+                                             .init(5, .init(3, .init(3), .init(-2)), .init(2, nil, .init(1))),
+                                             .init(-3, nil, .init(11)))
+        let tree2: TreeNode<Int>? = TreeNode(5,
+                                             .init(4, .init(11, .init(7), .init(2)), nil),
+                                             .init(8, .init(13), .init(4, .init(5), .init(1))))
+
+        let case1: (TreeNode<Int>?, Int) = (tree1, 8)
+        let case2: (TreeNode<Int>?, Int) = (tree2, 22)
+
+        let case1Result = 3
+        let case2Result = 3
+
+        XCTAssertEqual(solution.pathSumIII(case1.0, case1.1), case1Result)
+        XCTAssertEqual(solution.pathSumIII(case2.0, case2.1), case2Result)
+    }
+
     // MARK: - 443. String Compression
 
     func testStringCompression() throws {
