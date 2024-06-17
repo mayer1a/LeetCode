@@ -187,6 +187,13 @@ final class Solution {
         NumberOfRecentCalls_Solution.shared.ping(t)
     }
 
+    // MARK: - 1004. Max Consecutive Ones III
+
+    func maxConsecutiveOnesIII(_ nums: [Int], _ k: Int) -> Int {
+        let solution = MaxConsecutiveOnesIII_Solution()
+        return solution.longestOnes(nums, k)
+    }
+
     // MARK: - 1071. Greatest Common Divisor of Strings
 
     func greatestCommonDivisorOfStrings(_ str1: String, _ str2: String, alt: Bool = false) -> String {
@@ -223,11 +230,11 @@ final class Solution {
         return solution.kidsWithCandies(candies, extraCandies)
     }
 
-    // MARK: - 1004. Max Consecutive Ones III
+    // MARK: - 1448. Count Good Nodes in Binary Tree
 
-    func maxConsecutiveOnesIII(_ nums: [Int], _ k: Int) -> Int {
-        let solution = MaxConsecutiveOnesIII_Solution()
-        return solution.longestOnes(nums, k)
+    func countGoodNodesInBinaryTree(_ root: TreeNode<Int>?) -> Int {
+        let solution = CountGoodNodesInBinaryTree_Solution()
+        return solution.goodNodes(root)
     }
 
     // MARK: - 1456. Maximum Number of Vowels in a Substring of Given Length

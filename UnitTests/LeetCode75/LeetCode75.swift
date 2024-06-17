@@ -530,6 +530,19 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.numberOfRecentCalls(case4), case4Result)
     }
 
+    // MARK: - 1004. Max Consecutive Ones III
+
+    func testMaxConsecutiveOnesIII() throws {
+        let case1 = ([1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], 2)
+        let case2 = ([0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1], 3)
+
+        let case1Result = 6
+        let case2Result = 10
+
+        XCTAssertEqual(solution.maxConsecutiveOnesIII(case1.0, case1.1), case1Result)
+        XCTAssertEqual(solution.maxConsecutiveOnesIII(case2.0, case2.1), case2Result)
+    }
+
     // MARK: - 1071. Greatest Common Divisor of Strings
 
     func testGreatestCommonDivisorOfStrings() throws {
@@ -625,17 +638,23 @@ final class UnitTests: XCTestCase {
         XCTAssertEqual(solution.kidsWithTheGreatestNumberOfCandies(case3.0, case3.1), case3Result)
     }
 
-    // MARK: - 1004. Max Consecutive Ones III
+    // MARK: - 1448. Count Good Nodes in Binary Tree
 
-    func testMaxConsecutiveOnesIII() throws {
-        let case1 = ([1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], 2)
-        let case2 = ([0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1], 3)
-        
-        let case1Result = 6
-        let case2Result = 10
+    func testCountGoodNodesInBinaryTree() throws {
+        let case1: TreeNode<Int>? = TreeNode(3, .init(1, .init(3), nil), .init(4, .init(1), .init(5)))
+        let case2: TreeNode<Int>? = TreeNode(3, .init(3, .init(4), .init(2)), nil)
+        let case3: TreeNode<Int>? = TreeNode(1)
+        let case4: TreeNode<Int>? = TreeNode(9, nil, .init(3, .init(6), nil))
 
-        XCTAssertEqual(solution.maxConsecutiveOnesIII(case1.0, case1.1), case1Result)
-        XCTAssertEqual(solution.maxConsecutiveOnesIII(case2.0, case2.1), case2Result)
+        let case1Result = 4
+        let case2Result = 3
+        let case3Result = 1
+        let case4Result = 1
+
+        XCTAssertEqual(solution.countGoodNodesInBinaryTree(case1), case1Result)
+        XCTAssertEqual(solution.countGoodNodesInBinaryTree(case2), case2Result)
+        XCTAssertEqual(solution.countGoodNodesInBinaryTree(case3), case3Result)
+        XCTAssertEqual(solution.countGoodNodesInBinaryTree(case4), case4Result)
     }
 
     // MARK: - 1456. Maximum Number of Vowels in a Substring of Given Length

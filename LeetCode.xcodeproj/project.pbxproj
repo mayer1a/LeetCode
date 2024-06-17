@@ -107,6 +107,8 @@
 		49B703622C0EFAAF0005B3D4 /* ReverseWordsInString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B703602C0EFAAF0005B3D4 /* ReverseWordsInString.swift */; };
 		49B703662C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B703652C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift */; };
 		49B703672C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B703652C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift */; };
+		49C0E2E82C2047D200AAB855 /* CountGoodNodesInBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C0E2E72C2047D200AAB855 /* CountGoodNodesInBinaryTree.swift */; };
+		49C0E2E92C2047D200AAB855 /* CountGoodNodesInBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C0E2E72C2047D200AAB855 /* CountGoodNodesInBinaryTree.swift */; };
 		49DA51162C08B1D30062A064 /* GuessNumberHigherOrLower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA51152C08B1D30062A064 /* GuessNumberHigherOrLower.swift */; };
 		49DA51172C08B1D30062A064 /* GuessNumberHigherOrLower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA51152C08B1D30062A064 /* GuessNumberHigherOrLower.swift */; };
 		49E2024E2C03ABB4005D75E9 /* LeetCode75.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 49E2024D2C03ABB4005D75E9 /* LeetCode75.xctestplan */; };
@@ -221,6 +223,7 @@
 		49B331282C09AE6600BC47D8 /* NthTribonacciNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NthTribonacciNumber.swift; sourceTree = "<group>"; };
 		49B703602C0EFAAF0005B3D4 /* ReverseWordsInString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseWordsInString.swift; sourceTree = "<group>"; };
 		49B703652C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExceptSelf.swift; sourceTree = "<group>"; };
+		49C0E2E72C2047D200AAB855 /* CountGoodNodesInBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountGoodNodesInBinaryTree.swift; sourceTree = "<group>"; };
 		49C7A34E2C03A823000CE31E /* LeetCode100.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = LeetCode100.xctestplan; sourceTree = "<group>"; };
 		49DA51152C08B1D30062A064 /* GuessNumberHigherOrLower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberHigherOrLower.swift; sourceTree = "<group>"; };
 		49E2024D2C03ABB4005D75E9 /* LeetCode75.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LeetCode75.xctestplan; sourceTree = "<group>"; };
@@ -702,6 +705,7 @@
 				498B5C4D2C1062E800B2DC79 /* 443. String Compression */,
 				4940073E2C1C311B006EFCC4 /* 735. Asteroid Collision */,
 				4992C5262C16FD9900E16FCF /* 1004. Max Consecutive Ones III */,
+				49C0E2E62C2047C100AAB855 /* 1448. Count Good Nodes in Binary Tree */,
 				4992C5222C14AB7300E16FCF /* 1456. Maximum Number of Vowels in a Substring of Given Length */,
 				4992C52B2C16FF0000E16FCF /* 1493. Longest Subarray of 1's After Deleting One Element  */,
 				49741A072C1859F400FFDC2C /* 1657. Determine if Two Strings Are Close */,
@@ -728,6 +732,14 @@
 				49B703652C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift */,
 			);
 			path = "238. Product of Array Except Self";
+			sourceTree = "<group>";
+		};
+		49C0E2E62C2047C100AAB855 /* 1448. Count Good Nodes in Binary Tree */ = {
+			isa = PBXGroup;
+			children = (
+				49C0E2E72C2047D200AAB855 /* CountGoodNodesInBinaryTree.swift */,
+			);
+			path = "1448. Count Good Nodes in Binary Tree";
 			sourceTree = "<group>";
 		};
 		49DA51142C08B1BF0062A064 /* 374. Guess Number Higher or Lower */ = {
@@ -1098,6 +1110,7 @@
 				49EC4CE02C060F1F00D68CF9 /* FindPivotIndex.swift in Sources */,
 				49450F822C11AE370036A167 /* LongTestCases.swift in Sources */,
 				499763162BFF8181009D6EF5 /* BenchTimer.swift in Sources */,
+				49C0E2E82C2047D200AAB855 /* CountGoodNodesInBinaryTree.swift in Sources */,
 				490119302C087DD0009ADEC2 /* SearchInBinarySearchTree.swift in Sources */,
 				490BD5862C072CD1003AE043 /* LeafSimilarTrees.swift in Sources */,
 				499763172BFF8181009D6EF5 /* TreeNode.swift in Sources */,
@@ -1147,6 +1160,7 @@
 				494007412C1C312A006EFCC4 /* AsteroidCollision.swift in Sources */,
 				49741A0E2C186AB100FFDC2C /* EqualRowAndColumnPairs.swift in Sources */,
 				4997631B2BFF8181009D6EF5 /* TreeNode.swift in Sources */,
+				49C0E2E92C2047D200AAB855 /* CountGoodNodesInBinaryTree.swift in Sources */,
 				49EC4CD72C060E0D00D68CF9 /* IsSubsequence.swift in Sources */,
 				49B703672C0F10830005B3D4 /* ProductOfArrayExceptSelf.swift in Sources */,
 				49B703622C0EFAAF0005B3D4 /* ReverseWordsInString.swift in Sources */,
